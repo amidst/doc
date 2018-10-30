@@ -1,0 +1,257 @@
+\begin{sphinxtheindex}
+\def\bigletter#1{{\Large\sffamily#1}\nopagebreak\vspace{1mm}}
+
+  \bigletter {Symbols}
+  \item \_\_init\_\_() (inferpy.inferences.qmodel.Qmodel method), \hyperpage{45}
+  \item \_\_init\_\_() (inferpy.models.deterministic.Deterministic method), \hyperpage{46}
+  \item \_\_init\_\_() (inferpy.models.factory.Bernoulli method), \hyperpage{47}
+  \item \_\_init\_\_() (inferpy.models.factory.Beta method), \hyperpage{47}
+  \item \_\_init\_\_() (inferpy.models.factory.Categorical method), \hyperpage{47}
+  \item \_\_init\_\_() (inferpy.models.factory.Dirichlet method), \hyperpage{47}
+  \item \_\_init\_\_() (inferpy.models.factory.Exponential method), \hyperpage{48}
+  \item \_\_init\_\_() (inferpy.models.factory.Gamma method), \hyperpage{48}
+  \item \_\_init\_\_() (inferpy.models.factory.InverseGamma method), \hyperpage{48}
+  \item \_\_init\_\_() (inferpy.models.factory.Laplace method), \hyperpage{48}
+  \item \_\_init\_\_() (inferpy.models.factory.Multinomial method), \hyperpage{48}
+  \item \_\_init\_\_() (inferpy.models.factory.MultivariateNormalDiag method), \hyperpage{49}
+  \item \_\_init\_\_() (inferpy.models.factory.Normal method), \hyperpage{49}
+  \item \_\_init\_\_() (inferpy.models.factory.Poisson method), \hyperpage{49}
+  \item \_\_init\_\_() (inferpy.models.factory.Uniform method), \hyperpage{49}
+  \item \_\_init\_\_() (inferpy.models.prob\_model.ProbModel method), \hyperpage{51}
+  \item \_\_init\_\_() (inferpy.models.random\_variable.RandomVariable method), \hyperpage{53}
+  \item \_\_init\_\_() (inferpy.models.replicate.replicate method), \hyperpage{55}
+
+  \indexspace
+  \bigletter A
+  \item add\_var() (inferpy.inferences.qmodel.Qmodel method), \hyperpage{45}
+  \item add\_var() (inferpy.models.prob\_model.ProbModel method), \hyperpage{51}
+  \item ALLOWED\_METRICS (in module inferpy.criticism.evaluate), \hyperpage{41}
+
+  \indexspace
+  \bigletter B
+  \item base\_object (inferpy.models.random\_variable.RandomVariable attribute), \hyperpage{53}
+  \item batches (inferpy.models.random\_variable.RandomVariable attribute), \hyperpage{53}
+  \item Bernoulli (class in inferpy.models.factory), \hyperpage{47}
+  \item Bernoulli() (inferpy.inferences.qmodel.Qmodel class method), \hyperpage{43}
+  \item Beta (class in inferpy.models.factory), \hyperpage{47}
+  \item Beta() (inferpy.inferences.qmodel.Qmodel class method), \hyperpage{43}
+  \item bind (inferpy.models.random\_variable.RandomVariable attribute), \hyperpage{53}
+  \item build\_from\_pmodel() (inferpy.inferences.qmodel.Qmodel static method), \hyperpage{45}
+
+  \indexspace
+  \bigletter C
+  \item case() (in module inferpy.util.ops), \hyperpage{56}
+  \item case\_states() (in module inferpy.util.ops), \hyperpage{56}
+  \item Categorical (class in inferpy.models.factory), \hyperpage{47}
+  \item Categorical() (inferpy.inferences.qmodel.Qmodel class method), \hyperpage{43}
+  \item compatible\_var() (inferpy.inferences.qmodel.Qmodel static method), \hyperpage{45}
+  \item compatible\_var() (inferpy.models.prob\_model.ProbModel static method), \hyperpage{52}
+  \item compile() (inferpy.models.prob\_model.ProbModel method), \hyperpage{52}
+  \item concentration (inferpy.models.factory.Dirichlet attribute), \hyperpage{47}
+  \item concentration (inferpy.models.factory.Gamma attribute), \hyperpage{48}
+  \item concentration (inferpy.models.factory.InverseGamma attribute), \hyperpage{48}
+  \item concentration0 (inferpy.models.factory.Beta attribute), \hyperpage{47}
+  \item concentration1 (inferpy.models.factory.Beta attribute), \hyperpage{47}
+  \item copy() (inferpy.models.prob\_model.ProbModel method), \hyperpage{52}
+  \item copy() (inferpy.models.random\_variable.RandomVariable method), \hyperpage{53}
+
+  \indexspace
+  \bigletter D
+  \item def\_random\_variable() (in module inferpy.models.factory), \hyperpage{49}
+  \item Deterministic (class in inferpy.models.deterministic), \hyperpage{46}
+  \item Deterministic() (inferpy.inferences.qmodel.Qmodel class method), \hyperpage{43}
+  \item dict (inferpy.inferences.qmodel.Qmodel attribute), \hyperpage{45}
+  \item dim (inferpy.models.random\_variable.RandomVariable attribute), \hyperpage{53}
+  \item Dirichlet (class in inferpy.models.factory), \hyperpage{47}
+  \item Dirichlet() (inferpy.inferences.qmodel.Qmodel class method), \hyperpage{43}
+  \item dist (inferpy.models.random\_variable.RandomVariable attribute), \hyperpage{53}
+  \item dot() (in module inferpy.util.ops), \hyperpage{57}
+
+  \indexspace
+  \bigletter E
+  \item Empirical() (inferpy.inferences.qmodel.Qmodel static method), \hyperpage{43}
+  \item equal() (inferpy.models.random\_variable.RandomVariable method), \hyperpage{53}
+  \item evaluate() (in module inferpy.criticism.evaluate), \hyperpage{41}
+  \item event\_shape (inferpy.models.random\_variable.RandomVariable attribute), \hyperpage{53}
+  \item Exponential (class in inferpy.models.factory), \hyperpage{47}
+  \item Exponential() (inferpy.inferences.qmodel.Qmodel class method), \hyperpage{43}
+
+  \indexspace
+  \bigletter F
+  \item fit() (inferpy.models.prob\_model.ProbModel method), \hyperpage{52}
+  \item fix\_shape() (in module inferpy.util.ops), \hyperpage{57}
+
+  \indexspace
+  \bigletter G
+  \item Gamma (class in inferpy.models.factory), \hyperpage{48}
+  \item Gamma() (inferpy.inferences.qmodel.Qmodel class method), \hyperpage{44}
+  \item gather() (in module inferpy.util.ops), \hyperpage{57}
+  \item get\_active\_model() (inferpy.models.prob\_model.ProbModel static method), \hyperpage{52}
+  \item get\_active\_replicate() (inferpy.models.replicate.replicate static method), \hyperpage{55}
+  \item get\_all\_replicate() (inferpy.models.replicate.replicate static method), \hyperpage{55}
+  \item get\_config() (inferpy.models.prob\_model.ProbModel method), \hyperpage{52}
+  \item get\_copy\_from() (inferpy.models.prob\_model.ProbModel method), \hyperpage{52}
+  \item get\_key\_from\_var() (inferpy.models.random\_variable.RandomVariable static method), 
+		\hyperpage{53}
+  \item get\_local\_hidden() (inferpy.models.random\_variable.RandomVariable method), 
+		\hyperpage{53}
+  \item get\_parents() (inferpy.models.prob\_model.ProbModel method), \hyperpage{52}
+  \item get\_replicate\_list() (inferpy.models.random\_variable.RandomVariable method), 
+		\hyperpage{53}
+  \item get\_session() (in module inferpy.util.runtime), \hyperpage{58}
+  \item get\_total\_size() (inferpy.models.replicate.replicate static method), \hyperpage{55}
+  \item get\_var() (inferpy.models.prob\_model.ProbModel method), \hyperpage{52}
+  \item get\_var\_with\_key() (inferpy.models.random\_variable.RandomVariable static method), 
+		\hyperpage{53}
+  \item get\_vardict() (inferpy.models.prob\_model.ProbModel method), \hyperpage{52}
+  \item get\_vardict\_rev() (inferpy.models.prob\_model.ProbModel method), \hyperpage{52}
+
+  \indexspace
+  \bigletter H
+  \item high (inferpy.models.factory.Uniform attribute), \hyperpage{49}
+
+  \indexspace
+  \bigletter I
+  \item in\_replicate() (inferpy.models.replicate.replicate static method), \hyperpage{55}
+  \item INF\_METHODS (in module inferpy.inferences.inference), \hyperpage{41}
+  \item INF\_METHODS\_ALIAS (in module inferpy.inferences.inference), \hyperpage{41}
+  \item inferpy.criticism.evaluate (module), \hyperpage{41}
+  \item inferpy.inferences.inference (module), \hyperpage{41}
+  \item inferpy.inferences.qmodel (module), \hyperpage{42}
+  \item inferpy.models.deterministic (module), \hyperpage{46}
+  \item inferpy.models.factory (module), \hyperpage{47}
+  \item inferpy.models.prob\_model (module), \hyperpage{49}
+  \item inferpy.models.random\_variable (module), \hyperpage{53}
+  \item inferpy.models.replicate (module), \hyperpage{54}
+  \item inferpy.util.error (module), \hyperpage{56}
+  \item inferpy.util.format (module), \hyperpage{56}
+  \item inferpy.util.ops (module), \hyperpage{56}
+  \item inferpy.util.runtime (module), \hyperpage{58}
+  \item inferpy.util.wrappers (module), \hyperpage{58}
+  \item inferpy.version (module), \hyperpage{58}
+  \item input\_model\_data() (in module inferpy.util.wrappers), \hyperpage{58}
+  \item InverseGamma (class in inferpy.models.factory), \hyperpage{48}
+  \item InverseGamma() (inferpy.inferences.qmodel.Qmodel class method), \hyperpage{44}
+  \item is\_active() (inferpy.models.prob\_model.ProbModel static method), \hyperpage{52}
+  \item is\_compiled() (inferpy.models.prob\_model.ProbModel method), \hyperpage{52}
+  \item is\_generic\_variable() (inferpy.models.random\_variable.RandomVariable method), 
+		\hyperpage{54}
+
+  \indexspace
+  \bigletter L
+  \item Laplace (class in inferpy.models.factory), \hyperpage{48}
+  \item Laplace() (inferpy.inferences.qmodel.Qmodel class method), \hyperpage{44}
+  \item latent\_vars (inferpy.models.prob\_model.ProbModel attribute), \hyperpage{52}
+  \item loc (inferpy.models.deterministic.Deterministic attribute), \hyperpage{47}
+  \item loc (inferpy.models.factory.Laplace attribute), \hyperpage{48}
+  \item loc (inferpy.models.factory.MultivariateNormalDiag attribute), \hyperpage{49}
+  \item loc (inferpy.models.factory.Normal attribute), \hyperpage{49}
+  \item log\_prob() (inferpy.models.prob\_model.ProbModel method), \hyperpage{52}
+  \item log\_prob() (inferpy.models.random\_variable.RandomVariable method), \hyperpage{54}
+  \item logits (inferpy.models.factory.Bernoulli attribute), \hyperpage{47}
+  \item logits (inferpy.models.factory.Categorical attribute), \hyperpage{47}
+  \item logits (inferpy.models.factory.Multinomial attribute), \hyperpage{48}
+  \item low (inferpy.models.factory.Uniform attribute), \hyperpage{49}
+
+  \indexspace
+  \bigletter M
+  \item matmul() (in module inferpy.util.ops), \hyperpage{57}
+  \item mean() (inferpy.models.random\_variable.RandomVariable method), \hyperpage{54}
+  \item Multinomial (class in inferpy.models.factory), \hyperpage{48}
+  \item Multinomial() (inferpy.inferences.qmodel.Qmodel class method), \hyperpage{44}
+  \item multishape() (in module inferpy.util.wrappers), \hyperpage{58}
+  \item MultivariateNormalDiag (class in inferpy.models.factory), \hyperpage{49}
+  \item MultivariateNormalDiag() (inferpy.inferences.qmodel.Qmodel class method), \hyperpage{44}
+
+  \indexspace
+  \bigletter N
+  \item name (inferpy.models.random\_variable.RandomVariable attribute), \hyperpage{54}
+  \item new\_qvar() (inferpy.inferences.qmodel.Qmodel static method), \hyperpage{45}
+  \item new\_qvar\_empirical() (inferpy.inferences.qmodel.Qmodel static method), \hyperpage{45}
+  \item no\_parents() (inferpy.models.prob\_model.ProbModel method), \hyperpage{52}
+  \item Normal (class in inferpy.models.factory), \hyperpage{49}
+  \item Normal() (inferpy.inferences.qmodel.Qmodel class method), \hyperpage{44}
+  \item np\_str() (in module inferpy.util.format), \hyperpage{56}
+
+  \indexspace
+  \bigletter O
+  \item observed (inferpy.models.random\_variable.RandomVariable attribute), \hyperpage{54}
+  \item observed\_vars (inferpy.models.prob\_model.ProbModel attribute), \hyperpage{52}
+
+  \indexspace
+  \bigletter P
+  \item param\_to\_tf() (in module inferpy.util.ops), \hyperpage{58}
+  \item PARAMS (inferpy.models.factory.Bernoulli attribute), \hyperpage{47}
+  \item PARAMS (inferpy.models.factory.Beta attribute), \hyperpage{47}
+  \item PARAMS (inferpy.models.factory.Categorical attribute), \hyperpage{47}
+  \item PARAMS (inferpy.models.factory.Dirichlet attribute), \hyperpage{47}
+  \item PARAMS (inferpy.models.factory.Exponential attribute), \hyperpage{48}
+  \item PARAMS (inferpy.models.factory.Gamma attribute), \hyperpage{48}
+  \item PARAMS (inferpy.models.factory.InverseGamma attribute), \hyperpage{48}
+  \item PARAMS (inferpy.models.factory.Laplace attribute), \hyperpage{48}
+  \item PARAMS (inferpy.models.factory.Multinomial attribute), \hyperpage{48}
+  \item PARAMS (inferpy.models.factory.MultivariateNormalDiag attribute), \hyperpage{49}
+  \item PARAMS (inferpy.models.factory.Normal attribute), \hyperpage{49}
+  \item PARAMS (inferpy.models.factory.Poisson attribute), \hyperpage{49}
+  \item PARAMS (inferpy.models.factory.Uniform attribute), \hyperpage{49}
+  \item Poisson (class in inferpy.models.factory), \hyperpage{49}
+  \item Poisson() (inferpy.inferences.qmodel.Qmodel class method), \hyperpage{44}
+  \item posterior() (inferpy.models.prob\_model.ProbModel method), \hyperpage{52}
+  \item predict() (inferpy.models.prob\_model.ProbModel method), \hyperpage{52}
+  \item predict\_old() (inferpy.models.prob\_model.ProbModel method), \hyperpage{52}
+  \item print\_total\_size() (inferpy.models.replicate.replicate static method), \hyperpage{55}
+  \item prob() (inferpy.models.random\_variable.RandomVariable method), \hyperpage{54}
+  \item ProbModel (class in inferpy.models.prob\_model), \hyperpage{49}
+  \item probs (inferpy.models.factory.Bernoulli attribute), \hyperpage{47}
+  \item probs (inferpy.models.factory.Categorical attribute), \hyperpage{47}
+  \item probs (inferpy.models.factory.Multinomial attribute), \hyperpage{48}
+  \item prod\_prob() (inferpy.models.random\_variable.RandomVariable method), \hyperpage{54}
+
+  \indexspace
+  \bigletter Q
+  \item Qmodel (class in inferpy.inferences.qmodel), \hyperpage{42}
+
+  \indexspace
+  \bigletter R
+  \item RandomVariable (class in inferpy.models.random\_variable), \hyperpage{53}
+  \item rate (inferpy.models.factory.Exponential attribute), \hyperpage{48}
+  \item rate (inferpy.models.factory.Gamma attribute), \hyperpage{48}
+  \item rate (inferpy.models.factory.InverseGamma attribute), \hyperpage{48}
+  \item replicate (class in inferpy.models.replicate), \hyperpage{54}
+  \item reset\_compilation() (inferpy.models.prob\_model.ProbModel method), \hyperpage{52}
+
+  \indexspace
+  \bigletter S
+  \item sample() (inferpy.models.prob\_model.ProbModel method), \hyperpage{52}
+  \item sample() (inferpy.models.random\_variable.RandomVariable method), \hyperpage{54}
+  \item scale (inferpy.models.factory.Laplace attribute), \hyperpage{48}
+  \item scale (inferpy.models.factory.Normal attribute), \hyperpage{49}
+  \item scale\_diag (inferpy.models.factory.MultivariateNormalDiag attribute), \hyperpage{49}
+  \item ScopeException, \hyperpage{56}
+  \item shape (inferpy.models.random\_variable.RandomVariable attribute), \hyperpage{54}
+  \item shape\_to\_list() (in module inferpy.util.ops), \hyperpage{58}
+  \item singleton() (in module inferpy.util.wrappers), \hyperpage{58}
+  \item static\_multishape() (in module inferpy.util.wrappers), \hyperpage{58}
+  \item stddev() (inferpy.models.random\_variable.RandomVariable method), \hyperpage{54}
+  \item sum\_log\_prob() (inferpy.models.prob\_model.ProbModel method), \hyperpage{52}
+  \item sum\_log\_prob() (inferpy.models.random\_variable.RandomVariable method), \hyperpage{54}
+  \item summary() (inferpy.models.prob\_model.ProbModel method), \hyperpage{52}
+
+  \indexspace
+  \bigletter T
+  \item tf\_run\_wrapper() (in module inferpy.util.wrappers), \hyperpage{58}
+  \item to\_json() (inferpy.models.prob\_model.ProbModel method), \hyperpage{53}
+  \item total\_count (inferpy.models.factory.Multinomial attribute), \hyperpage{49}
+
+  \indexspace
+  \bigletter U
+  \item Uniform (class in inferpy.models.factory), \hyperpage{49}
+  \item Uniform() (inferpy.inferences.qmodel.Qmodel class method), \hyperpage{45}
+
+  \indexspace
+  \bigletter V
+  \item variance() (inferpy.models.random\_variable.RandomVariable method), \hyperpage{54}
+  \item varlist (inferpy.inferences.qmodel.Qmodel attribute), \hyperpage{46}
+  \item varlist (inferpy.models.prob\_model.ProbModel attribute), \hyperpage{53}
+
+\end{sphinxtheindex}
