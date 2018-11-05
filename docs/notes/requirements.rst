@@ -1,60 +1,69 @@
-Requirements
-================
+.. _requirements-amidst-toolbox:
 
+Requirements for AMIDST Toolbox
+===============================
 
-Python
--------------
+For toolbox users 
+------------------
 
+This toolbox has been specifically designed for using the
+functional-style features provided by the Java 8 release. You can check
+the Java version installed in your system with the following command:
 
+::
 
-Currently, InferPy requires Python 2.7 or 3.x. For checking your default Python version, type:
+   $ java -version    
 
+| If everything is right, the following output (or similar) will be
+  generated:
 
-.. code:: bash
+::
 
-    $ python --version
+   java version "1.8.0_73"
+   Java(TM) SE Runtime Environment (build 1.8.0_73-b02)
+   Java HotSpot(TM) 64-Bit Server VM (build 25.73-b02, mixed mode)   
 
-Travis tests are performed on versions 2.7, 3.5 and 3.6. Go to `https://www.python.org/ <https://www.python.org/>`_
-for specific instructions for installing the Python interpreter in your system.
+Make sure that the Java version is 1.8 or higher. Otherwise you must
+install a `more recent release of
+Java. <http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html>`__
 
+The second requirement consists of having maven installed your system:
+`http://maven.apache.org/download.cgi <http://maven.apache.org/download.cgi%20%28follow%20specific%20instructions%20for%20your%20OS%29>`__ 
+(follow specific instructions for your OS). Use the following command
+for verifying that everything works properly:
 
-Edward
--------------
+::
 
-InferPy requires exactly the version 1.3.5 of `Edward <http://edwardlib.org>`_. You may check the installed
-package version as follows.
+   $ mvn -v
 
+| which should generate an output similar to
 
-.. code:: bash
+::
 
-    $ pip freeze | grep edward
+   Apache Maven 3.2.3 (33f8c3e1027c3ddde99d3cdebad2656a31e8fdf4; 2014-08-11T22:58:10+02:00)
+   Maven home: /sw/share/maven
+   Java version: 1.8.0_73, vendor: Oracle Corporation
+   Java home: /Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/jre
+   Default locale: en_US, platform encoding: UTF-8
+   OS name: "mac os x", version: "10.11.3", arch: "x86_64", family: "mac"    
 
-Tensorflow
------------------
+Having git installed is advisable for downloading relevant material
+(i.e., source code, example project, datasets, etc.) Further information
+can be found
+`here <https://git-scm.com/book/en/v2/Getting-Started-Installing-Git>`__.
 
-`Tensorflow <http://www.tensorflow.org/>`_: from version 1.5 up to 1.7 (both included). To check the installed tensorflow version, type:
+For AMIDST developers 
+----------------------
 
-.. code:: bash
-
-    $ pip freeze | grep tensorflow
-
-Numpy
-----------------
-
-`Numpy <http://www.numpy.org/>`_ 1.14 or higher is required. To check the version of this package, type:
-
-
-.. code:: bash
-
-    $ pip freeze | grep numpy
-
-
-Pandas
-----------------
-
-`Pandas <https://pandas.pydata.org>`_ 0.15.0 or higher is required. The installed version of this package can be checked as follows:
-
-
-.. code:: bash
-
-    $ pip freeze | grep pandas
+AMIDST toolbox is hosted on
+`GitHub <https://github.com/amidst/toolbox>`__. To work with AMIDST code
+you should follow the `Fork &
+Pull <https://help.github.com/articles/using-pull-requests/>`__
+collaboration model. Read this
+`guide <https://guides.github.com/activities/forking/>`__ for full
+details about how to fork a project and make a pull request. Once you
+have forked the project, you can clone to you computer and open it with
+Intellij by pointing at the pom.xml file, and everything will be ready
+to start. Further details about how to contribute to this project are
+given this
+`link <http://amidst.github.io/toolbox/ContributingToAMIDST.html>`__.
