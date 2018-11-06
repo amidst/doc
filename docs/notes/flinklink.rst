@@ -3,78 +3,38 @@
 Flinklink: Code Examples
 ========================
 
--  
 
-   .. raw:: latex
+* `Input/output`_
 
-      \hyperref[sec:flinklink:io]{Input/output}
+	- `Reading data`_
 
-   -  
+	- `Write data`_
 
-      .. raw:: latex
+* `Parametric Learning`_
 
-         \hyperref[sec:flinklink:io:read]{Reading data}
+	- `Parallel Maximum Likelihood`_
 
-   -  
+	- `Distributed Variational Message Pasing`_
 
-      .. raw:: latex
+	- `Distributed VI`_
 
-         \hyperref[sec:flinklink:io:write]{Write data}
+	- `Stochastic VI`_
 
--  
+* `Extensions and applications`_
 
-   .. raw:: latex
+	- `Latent variable models with Flink`_
 
-      \hyperref[sec:flinklink:learning]{Parametric Learning}
+	- `Concept drift`_  
 
-   -  
 
-      .. raw:: latex
-
-         \hyperref[sec:flinklink:learning:pml]{Parallel Maximum Likelihood}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:flinklink:learning:dvmp]{Distributed Variational Message Pasing}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:flinklink:learning:dvi]{Distributed VI}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:flinklink:learning:svi]{Stochastic VI}
-
--  
-
-   .. raw:: latex
-
-      \hyperref[sec:flinklink:ext]{ Extensions and applications}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:flinklink:ext:models]{ Latent variable models with Flink}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:flinklink:ext:conceptdrift]{Concept drift}
-
-.. _sec:flinklink:io:
+.. _`Input/output`:
 
 Input/output
 ------------
 
 .. _sec:flinklink:io:read:
+
+.. _`Reading data`:
 
 Reading data
 ~~~~~~~~~~~~
@@ -94,6 +54,8 @@ the process is the same regardless being a single or a distributed file.
    \newline 
 
 .. _sec:flinklink:io:write:
+
+.. _`Write data`:
 
 Writing data
 ~~~~~~~~~~~~
@@ -115,6 +77,7 @@ save it as a distributed dataset (format ARFF folder).
 
 .. _sec:flinklink:learning:
 
+
 Parametric learning
 -------------------
 
@@ -126,6 +89,8 @@ on the constructor used (e.g. *new ParallelMaximumLikelihood()*, *new
 dVMP()*, etc.)
 
 .. _sec:flinklink:learning:pml:
+
+.. _`Parallel Maximum Likelihood`:
 
 Parallel Maximum Likelihood
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -143,6 +108,8 @@ Parallel Maximum Likelihood
 
 .. _sec:flinklink:learning:dvmp:
 
+.. _`Distributed Variational Message Pasing`:
+
 Distributed Variational Message Passing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -159,6 +126,8 @@ Distributed Variational Message Passing
 
 .. _sec:flinklink:learning:dvi:
 
+.. _`Distributed VI`:
+
 Distributed VI
 ~~~~~~~~~~~~~~
 
@@ -174,6 +143,8 @@ Distributed VI
    \newline 
 
 .. _sec:flinklink:learning:svi:
+
+.. _`Stochastic VI`:
 
 Stochastic VI
 ~~~~~~~~~~~~~
@@ -195,10 +166,14 @@ and the *data size*.
 
 .. _sec:flinklink:ext:
 
+.. _`Extensions and applications`:
+
 Extensions and applications
 ---------------------------
 
 .. _sec:flinklink:ext:models:
+
+.. _`Latent variable models with Flink`_
 
 Latent variable models with Flink
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -222,6 +197,8 @@ model *Factor Analysis* is learnt from a distributed dataset.
    \newline 
 
 .. _sec:flinklink:ext:conceptdrift:
+
+.. _`Concept drift`:
 
 Concept drift detection
 ~~~~~~~~~~~~~~~~~~~~~~~

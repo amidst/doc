@@ -12,7 +12,7 @@ and temporal dependencies.
 For start using AMIDST, just visit the
 `Getting-started <getting-started.html>`__ section.
 
-The main features of the tooblox are listed below:
+The main features of the toolbox are listed below:
 
 -  **Probabilistic Graphical Models**: Specify your model using
    probabilistic graphical models with latent variables and temporal
@@ -64,7 +64,7 @@ ARFF format.
 
    \centering
 
-.. figure:: img/multicore_res.png
+.. figure:: ../img/multicore_res.png
    :alt: fig:multicoreres
    :width: 15cm
 
@@ -86,7 +86,7 @@ scalability of our approach under these settings.
 
    \centering
 
-.. figure:: img/cluster_res.png
+.. figure:: ../img/cluster_res.png
    :alt: fig:clusterres
    :width: 15cm
 
@@ -105,7 +105,7 @@ toolbox are compared against other related tools.
 
    \centering
 
-.. figure:: img/related_tools.png
+.. figure:: ../img/related_tools.png
    :alt: fig:relatedtools
    :width: 15cm
 
