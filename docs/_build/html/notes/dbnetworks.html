@@ -24,20 +24,29 @@
 
   
 
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/inferpy_theme.css" type="text/css" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Bayesian Networks: Code Examples" href="bnetworks.html" />
-    <link rel="prev" title="Flinklink: Code Examples" href="flinklink.html" /> 
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/inferpy_theme.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="InferPy 1.0 documentation" href="../index.html"/>
+        <link rel="next" title="Bayesian Networks: Code Examples" href="bnetworks.html"/>
+        <link rel="prev" title="Flinklink: Code Examples" href="flinklink.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" role="document">
 
    
   <div class="wy-grid-for-nav">
@@ -54,7 +63,7 @@
 
           
             
-            <img src="../_static/logo-doc.png" class="logo" alt="Logo"/>
+            <img src="../_static/logo-doc.png" class="logo" />
           
           </a>
 
@@ -276,7 +285,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">InferPy</a>
@@ -284,10 +293,9 @@
       </nav>
 
 
+      
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -358,7 +366,7 @@
 <p>In this example we show how to use the main features of a <em>DataStream</em>
 object. More precisely, we show how to load a dynamic data stream and
 how to iterate over the <em>DynamicDataInstance</em> objects.</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm"> *</span>
 <span class="cm"> *</span>
 <span class="cm"> *    Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.</span>
@@ -420,7 +428,7 @@ how to iterate over the <em>DynamicDataInstance</em> objects.</p>
 <span id="sec-dbns-variables"></span><h2>Dynamic Random Variables<a class="headerlink" href="#dynamic-random-variables" title="Permalink to this headline">¶</a></h2>
 <p>This example show the basic functionalities related to dynamic
 variables.</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm"> *</span>
 <span class="cm"> *</span>
 <span class="cm"> *    Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.</span>
@@ -495,7 +503,7 @@ variables.</p>
 <span id="sec-dbns-dbns-creating"></span><h3>Creating Dynamic Bayesian networks<a class="headerlink" href="#creating-dynamic-bayesian-networks" title="Permalink to this headline">¶</a></h3>
 <p>This example creates a dynamic BN, from a dynamic data stream, with
 randomly generated probability distributions, then saves it to a file.</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm"> *</span>
 <span class="cm"> *</span>
 <span class="cm"> *    Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.</span>
@@ -607,7 +615,7 @@ randomly generated probability distributions, then saves it to a file.</p>
 simply create a BN for clustering, i.e., a naive Bayes like structure
 with a single hidden variable acting as parant of all the remaining
 observable variables.</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm"> *</span>
 <span class="cm"> *</span>
 <span class="cm"> *    Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.</span>
@@ -771,7 +779,7 @@ observable variables.</p>
 <p>This example shows how to create a BN model with hidden variables. We
 This example shows how to access and modify the conditional
 probabilities of a Dynamic Bayesian network model.</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm"> *</span>
 <span class="cm"> *</span>
 <span class="cm"> *    Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.</span>
@@ -997,7 +1005,7 @@ probabilities of a Dynamic Bayesian network model.</p>
 <p>This example shows how to use the <em>DynamicBayesianNetworkSampler</em> class
 to randomly generate a dynamic data stream from a given Dynamic Bayesian
 network.</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm"> *</span>
 <span class="cm"> *</span>
 <span class="cm"> *    Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.</span>
@@ -1064,7 +1072,7 @@ network.</p>
 <div class="section" id="the-dynamic-map-inference">
 <span id="sec-dbns-inference-dmap"></span><h3>The Dynamic MAP Inference<a class="headerlink" href="#the-dynamic-map-inference" title="Permalink to this headline">¶</a></h3>
 <p>This example shows how to use the Dynamic MAP Inference algorithm.</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm"> *</span>
 <span class="cm"> *</span>
 <span class="cm"> *    Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.</span>
@@ -1209,7 +1217,7 @@ network.</p>
 <p>This example shows how to use the Factored Frontier algorithm with
 Variational Message Passing for running inference on dynamic Bayesian
 networks.</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm"> *</span>
 <span class="cm"> *</span>
 <span class="cm"> *    Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.</span>
@@ -1306,7 +1314,7 @@ networks.</p>
 <span id="sec-dbns-inference-dis"></span><h3>The Dynamic Importance Sampling<a class="headerlink" href="#the-dynamic-importance-sampling" title="Permalink to this headline">¶</a></h3>
 <p>This example shows how to use the Factored Frontier algorithm with
 Importance Sampling for running inference in dynamic Bayesian networks.</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm"> *</span>
 <span class="cm"> *</span>
 <span class="cm"> *    Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.</span>
@@ -1408,7 +1416,7 @@ Importance Sampling for running inference in dynamic Bayesian networks.</p>
 <span id="sec-dbns-learning-ml"></span><h3>Maximum Likelihood for DBNs<a class="headerlink" href="#maximum-likelihood-for-dbns" title="Permalink to this headline">¶</a></h3>
 <p>This example shows how to learn the parameters of a dynamic Bayesian
 network using maximum likelihood from a randomly sampled data stream.</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm"> *</span>
 <span class="cm"> *</span>
 <span class="cm"> *    Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.</span>
@@ -1486,7 +1494,7 @@ network using maximum likelihood from a randomly sampled data stream.</p>
 <p>This example shows how to learn the parameters of a dynamic Bayesian
 network using streaming variational Bayes from a randomly sampled data
 stream.</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm"> *</span>
 <span class="cm"> *</span>
 <span class="cm"> *    Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.</span>
@@ -1568,7 +1576,9 @@ stream.</p>
 
 
            </div>
-           
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
@@ -1586,11 +1596,11 @@ stream.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Andrés R. Masegosa, Rafael Cabañas
+        &copy; Copyright 2017, Andrés R. Masegosa, Rafael Cabañas.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -1605,24 +1615,37 @@ stream.</p>
 
   
 
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
 
+  
+  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
+          SphinxRtdTheme.StickyNav.enable();
       });
-  </script> 
+  </script>
+   
 
 </body>
 </html>

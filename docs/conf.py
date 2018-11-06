@@ -15,7 +15,12 @@
 import os
 import sys
 
+
 import sphinx_rtd_theme
+
+
+
+
 
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -31,6 +36,11 @@ import sphinx_rtd_theme
 
 #sys.path.append('/Users/rcabanas/Documents/UAL/inferpy/repo/InferPy/')
 sys.path.insert(0, os.path.abspath('..'))
+sys.path.insert(0, os.path.abspath('.'))
+
+
+import preprocess
+preprocess.parse_version()
 
 # -- General configuration ------------------------------------------------
 

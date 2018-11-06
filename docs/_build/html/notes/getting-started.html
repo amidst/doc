@@ -24,20 +24,29 @@
 
   
 
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/inferpy_theme.css" type="text/css" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Requirements for AMIDST Toolbox" href="requirements.html" />
-    <link rel="prev" title="Bayesian Networks: Code Examples" href="bnetworks.html" /> 
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/inferpy_theme.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="InferPy 1.0 documentation" href="../index.html"/>
+        <link rel="next" title="Requirements for AMIDST Toolbox" href="requirements.html"/>
+        <link rel="prev" title="Bayesian Networks: Code Examples" href="bnetworks.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" role="document">
 
    
   <div class="wy-grid-for-nav">
@@ -54,7 +63,7 @@
 
           
             
-            <img src="../_static/logo-doc.png" class="logo" alt="Logo"/>
+            <img src="../_static/logo-doc.png" class="logo" />
           
           </a>
 
@@ -276,7 +285,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">InferPy</a>
@@ -284,10 +293,9 @@
       </nav>
 
 
+      
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -338,25 +346,25 @@ AMIDST functionality. You will need to have <em>java 8, mvn</em> and <em>git</em
 installed. For more information, read the
 <a class="reference external" href="requirements.html">requirements</a> section. First, download the
 example project code:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/amidst/example-project.git
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git clone https://github.com/amidst/example-project.git
 </pre></div>
 </div>
 <p>Enter in the downloaded folder:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd example-project/
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ cd example-project/
 </pre></div>
 </div>
 <p>A code example illustrating the use of the toolbox is provided in the
 file <strong>./src/main/java/BasicExample.java</strong>.</p>
 <p>Compile and build the package:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ mvn clean package
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ mvn clean package
 </pre></div>
 </div>
 <p>Finally, run the code example previously mentioned:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ java -cp target/example-project-full.jar BasicExample
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ java -cp target/example-project-full.jar BasicExample
 </pre></div>
 </div>
 <p>Each time that our model is updated, the following output is shown:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Processing</span> <span class="n">batch</span> <span class="mi">1</span><span class="p">:</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Processing</span> <span class="n">batch</span> <span class="mi">1</span><span class="p">:</span>
     <span class="n">Total</span> <span class="n">instance</span> <span class="n">count</span><span class="p">:</span> <span class="mi">1000</span>
     <span class="n">N</span> <span class="n">Iter</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="n">elbo</span><span class="p">:</span><span class="mf">2781.727395615198</span>
 <span class="n">Processing</span> <span class="n">batch</span> <span class="mi">2</span><span class="p">:</span>
@@ -422,7 +430,7 @@ lower bound)</em>. Finally, distributions in the learnt Bayesian network are
 given.</p>
 <p>In general, for start using the AMIDST toolbox, add the following lines
 to the pom.xml file of your maven project:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">repositories</span><span class="o">&gt;</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">repositories</span><span class="o">&gt;</span>
   <span class="o">&lt;</span><span class="n">repositories</span><span class="o">&gt;</span>
     <span class="o">&lt;</span><span class="n">repository</span><span class="o">&gt;</span>
   <span class="o">&lt;</span><span class="nb">id</span><span class="o">&gt;</span><span class="n">amidstRepo</span><span class="o">&lt;/</span><span class="nb">id</span><span class="o">&gt;</span>
@@ -464,7 +472,9 @@ toolbox could read the following tutorials:</p>
 
 
            </div>
-           
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
@@ -482,11 +492,11 @@ toolbox could read the following tutorials:</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Andrés R. Masegosa, Rafael Cabañas
+        &copy; Copyright 2017, Andrés R. Masegosa, Rafael Cabañas.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -501,24 +511,37 @@ toolbox could read the following tutorials:</p>
 
   
 
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
 
+  
+  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
+          SphinxRtdTheme.StickyNav.enable();
       });
-  </script> 
+  </script>
+   
 
 </body>
 </html>

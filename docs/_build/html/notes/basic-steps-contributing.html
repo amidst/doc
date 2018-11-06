@@ -24,19 +24,28 @@
 
   
 
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/inferpy_theme.css" type="text/css" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Generating the packages for each module and for its dependencies" href="generating-packages.html" /> 
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/inferpy_theme.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="InferPy 1.0 documentation" href="../index.html"/>
+        <link rel="prev" title="Generating the packages for each module and for its dependencies" href="generating-packages.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" role="document">
 
    
   <div class="wy-grid-for-nav">
@@ -53,7 +62,7 @@
 
           
             
-            <img src="../_static/logo-doc.png" class="logo" alt="Logo"/>
+            <img src="../_static/logo-doc.png" class="logo" />
           
           </a>
 
@@ -275,7 +284,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">InferPy</a>
@@ -283,10 +292,9 @@
       </nav>
 
 
+      
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -346,11 +354,11 @@ shown below:</p>
 <h2>Clone the repository<a class="headerlink" href="#clone-the-repository" title="Permalink to this headline">¶</a></h2>
 <p>First, you can download the source code from github using the following
 command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/amidst/toolbox.git
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git clone https://github.com/amidst/toolbox.git
 </pre></div>
 </div>
 <p>Once the download has finished, enter into the downloaded folder:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd toolbox
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ cd toolbox
 </pre></div>
 </div>
 </div>
@@ -360,11 +368,11 @@ command:</p>
 modify the master branch</strong> because it should always contain the source
 of the very last release. Thus we change into the develop branch with
 the following command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git checkout develop
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git checkout develop
 </pre></div>
 </div>
 <p>The terminal replies with the following output:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Checking</span> <span class="n">out</span> <span class="n">files</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span> <span class="p">(</span><span class="mi">469</span><span class="o">/</span><span class="mi">469</span><span class="p">),</span> <span class="n">done</span><span class="o">.</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Checking</span> <span class="n">out</span> <span class="n">files</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span> <span class="p">(</span><span class="mi">469</span><span class="o">/</span><span class="mi">469</span><span class="p">),</span> <span class="n">done</span><span class="o">.</span>
 <span class="n">Branch</span> <span class="n">develop</span> <span class="nb">set</span> <span class="n">up</span> <span class="n">to</span> <span class="n">track</span> <span class="n">remote</span> <span class="n">branch</span> <span class="n">develop</span> <span class="kn">from</span> <span class="nn">origin.</span>
 <span class="n">Switched</span> <span class="n">to</span> <span class="n">a</span> <span class="n">new</span> <span class="n">branch</span> <span class="s1">&#39;develop&#39;</span>
 </pre></div>
@@ -373,35 +381,35 @@ the following command:</p>
 changes in a new branch created from develop. The name of this new
 branch will be newfeature and it can be created with the following
 command</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git branch newfeature
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git branch newfeature
 </pre></div>
 </div>
 <p>We move into the recently created branch:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git checkout newfeature
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git checkout newfeature
 </pre></div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Switched</span> <span class="n">to</span> <span class="n">branch</span> <span class="s1">&#39;newfeature&#39;</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Switched</span> <span class="n">to</span> <span class="n">branch</span> <span class="s1">&#39;newfeature&#39;</span>
 </pre></div>
 </div>
 <p>At any moment, we can verify which is the current branch with the
 command show below. Make sure that your current branch is always the one
 you have created.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git branch
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git branch
 </pre></div>
 </div>
 <p>Previous command shows a list with all the local branches, being the
 current branch the one with the symbol *, for example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">develop</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">develop</span>
 <span class="n">master</span>
 <span class="o">*</span> <span class="n">newfeature</span>
 </pre></div>
 </div>
 <p>The new branch is not yet a remote branch. For uploading it to the
 server, we will use the following command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git push --set-upstream origin newfeature
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git push --set-upstream origin newfeature
 </pre></div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Total</span> <span class="mi">0</span> <span class="p">(</span><span class="n">delta</span> <span class="mi">0</span><span class="p">),</span> <span class="n">reused</span> <span class="mi">0</span> <span class="p">(</span><span class="n">delta</span> <span class="mi">0</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Total</span> <span class="mi">0</span> <span class="p">(</span><span class="n">delta</span> <span class="mi">0</span><span class="p">),</span> <span class="n">reused</span> <span class="mi">0</span> <span class="p">(</span><span class="n">delta</span> <span class="mi">0</span><span class="p">)</span>
 <span class="n">To</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">amidst</span><span class="o">/</span><span class="n">toolbox</span><span class="o">.</span><span class="n">git</span>
 <span class="o">*</span> <span class="p">[</span><span class="n">new</span> <span class="n">branch</span><span class="p">]</span>      <span class="n">newfeature</span> <span class="o">-&gt;</span> <span class="n">newfeature</span>
 <span class="n">Branch</span> <span class="n">newfeature</span> <span class="nb">set</span> <span class="n">up</span> <span class="n">to</span> <span class="n">track</span> <span class="n">remote</span> <span class="n">branch</span> <span class="n">newfeature</span> <span class="kn">from</span> <span class="nn">origin.</span>
@@ -412,20 +420,20 @@ server, we will use the following command:</p>
 <h2>Modify the code and upload your changes<a class="headerlink" href="#modify-the-code-and-upload-your-changes" title="Permalink to this headline">¶</a></h2>
 <p>As an example, we will simply create a new text file and upload it to
 the server. For creating such file run:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ echo &quot;file to be deleted&quot; &gt; newfile.txt
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ echo &quot;file to be deleted&quot; &gt; newfile.txt
 </pre></div>
 </div>
 <p>Now, we have to set the new file as a tracked file, for that purpose:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git add newfile.txt
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git add newfile.txt
 </pre></div>
 </div>
 <p>Which generates the output shown below indicating which of the tracked
 files contain changes to be committed</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git status
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git status
 </pre></div>
 </div>
 <p>that generates the following output:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">On</span> <span class="n">branch</span> <span class="n">newfeature</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">On</span> <span class="n">branch</span> <span class="n">newfeature</span>
 <span class="n">Your</span> <span class="n">branch</span> <span class="ow">is</span> <span class="n">up</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">date</span> <span class="k">with</span> <span class="s1">&#39;origin/newfeature&#39;</span><span class="o">.</span>
 <span class="n">Changes</span> <span class="n">to</span> <span class="n">be</span> <span class="n">committed</span><span class="p">:</span>
 <span class="p">(</span><span class="n">use</span> <span class="s2">&quot;git reset HEAD &lt;file&gt;...&quot;</span> <span class="n">to</span> <span class="n">unstage</span><span class="p">)</span>
@@ -442,10 +450,10 @@ files contain changes to be committed</p>
 <div class="line">Now we will do a commit including the message “added newfile.txt” with
 the following command:</div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git commit -m &quot;added newfile.txt&quot;
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git commit -m &quot;added newfile.txt&quot;
 </pre></div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">newfeature</span> <span class="n">f256d1e</span><span class="p">]</span> <span class="n">added</span> <span class="n">newfile</span><span class="o">.</span><span class="n">txt</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">newfeature</span> <span class="n">f256d1e</span><span class="p">]</span> <span class="n">added</span> <span class="n">newfile</span><span class="o">.</span><span class="n">txt</span>
 <span class="mi">1</span> <span class="n">file</span> <span class="n">changed</span><span class="p">,</span> <span class="mi">1</span> <span class="n">insertion</span><span class="p">(</span><span class="o">+</span><span class="p">)</span>
 <span class="n">create</span> <span class="n">mode</span> <span class="mi">100644</span> <span class="n">newfile</span><span class="o">.</span><span class="n">txt</span>
 </pre></div>
@@ -453,7 +461,7 @@ the following command:</div>
 <div class="line-block">
 <div class="line">Finally, we have upload all the changes to the server:</div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git push
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git push
 </pre></div>
 </div>
 </div>
@@ -464,20 +472,20 @@ the following command:</div>
 However, we should integrate these changes with the develop branch.
 Thus, we first change to the branch develop:</div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git checkout develop
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git checkout develop
 </pre></div>
 </div>
 <div class="line-block">
 <div class="line">Now, we will merge both branches:</div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git merge newfeature
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git merge newfeature
 </pre></div>
 </div>
 <div class="line-block">
 <div class="line">If there is not conflicts, an output similar to the following one will
 be generated:</div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Updating</span> <span class="mi">20</span><span class="n">ff914</span><span class="o">..</span><span class="n">f256d1e</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Updating</span> <span class="mi">20</span><span class="n">ff914</span><span class="o">..</span><span class="n">f256d1e</span>
 <span class="n">Fast</span><span class="o">-</span><span class="n">forward</span>
 <span class="n">newfile</span><span class="o">.</span><span class="n">txt</span> <span class="o">|</span> <span class="mi">1</span> <span class="o">+</span>
 <span class="mi">1</span> <span class="n">file</span> <span class="n">changed</span><span class="p">,</span> <span class="mi">1</span> <span class="n">insertion</span><span class="p">(</span><span class="o">+</span><span class="p">)</span>
@@ -488,7 +496,7 @@ be generated:</div>
 <div class="line">Finally, we will upload the result of merging both branches to the
 server:</div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git push
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ git push
 </pre></div>
 </div>
 <p>Now, if we go to the AMIDST github website
@@ -504,7 +512,9 @@ develop contains the changes in the code:</p>
 
 
            </div>
-           
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
@@ -520,11 +530,11 @@ develop contains the changes in the code:</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Andrés R. Masegosa, Rafael Cabañas
+        &copy; Copyright 2017, Andrés R. Masegosa, Rafael Cabañas.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -539,24 +549,37 @@ develop contains the changes in the code:</p>
 
   
 
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
 
+  
+  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
+          SphinxRtdTheme.StickyNav.enable();
       });
-  </script> 
+  </script>
+   
 
 </body>
 </html>
