@@ -14,7 +14,7 @@ lines of code.
 
    \centering
 
-.. figure:: img/amidstModels.png
+.. figure:: ../img/amidstModels.png
    :alt: Set of predefined latent variable models in AMIDST
    :name: fig:lvmodels:amidstModels
    :width: 13cm
@@ -58,7 +58,7 @@ transparent way for the user. An scheme of this idea is shown below:
 
    \centering
 
-.. figure:: img/overview.png
+.. figure:: ../img/overview.png
    :alt: Set of predefined latent variable models in AMIDST
    :name: fig:lvmodels:overview
    :width: 13cm
@@ -98,7 +98,7 @@ button. It is recommended to download the sources and java
 
    \centering
 
-.. figure:: img/mavenpanel.png
+.. figure:: ../img/mavenpanel.png
    :alt: Maven project panel showing the list of dependencies
    :name: fig:lvmodels:mavenpanel
    :width: 10cm
@@ -134,7 +134,7 @@ combination of gaussians.
 
    \centering
 
-.. figure:: img/staticlearning.png
+.. figure:: ../img/staticlearning.png
    :alt: Static learning process
    :name: fig:lvmodels:static:learning:scheme
    :width: 10cm
@@ -210,7 +210,7 @@ below.
 
    \centering
 
-.. figure:: img/distributedlearning.png
+.. figure:: ../img/distributedlearning.png
    :alt: Distributed learning process scheme
    :name: fig:lvmodels:static:flinklearning:scheme
    :width: 10cm
@@ -258,7 +258,7 @@ of variables of interest given some evidence over some other variables
 
    \centering
 
-.. figure:: img/staticinference.png
+.. figure:: ../img/staticinference.png
    :alt: Learning process scheme
    :name: fig:lvmodels:static:inference:scheme
    :width: 10cm
@@ -330,7 +330,7 @@ shown below.
 
    \centering
 
-.. figure:: img/dynamicLearning.png
+.. figure:: ../img/dynamicLearning.png
    :alt: Learning process scheme of a dynamic model
    :name: fig:lvmodels:dynamic:learning:scheme
    :width: 10cm

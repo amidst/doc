@@ -332,28 +332,37 @@
   <div class="section" id="flinklink-code-examples">
 <span id="sec-flinklink"></span><h1>Flinklink: Code Examples<a class="headerlink" href="#flinklink-code-examples" title="Permalink to this headline">¶</a></h1>
 <ul>
-<li><ul>
-<li></li>
-<li></li>
+<li><p class="first"><a class="reference internal" href="#input-output">Input/output</a></p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="#reading-data">Reading data</a></li>
+<li><a class="reference internal" href="#write-data">Write data</a></li>
 </ul>
+</div></blockquote>
 </li>
-<li><ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li><p class="first"><a class="reference internal" href="#parametric-learning">Parametric Learning</a></p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="#parallel-maximum-likelihood">Parallel Maximum Likelihood</a></li>
+<li><a class="reference internal" href="#distributed-variational-message-pasing">Distributed Variational Message Pasing</a></li>
+<li><a class="reference internal" href="#distributed-vi">Distributed VI</a></li>
+<li><a class="reference internal" href="#stochastic-vi">Stochastic VI</a></li>
 </ul>
+</div></blockquote>
 </li>
-<li><ul>
-<li></li>
-<li></li>
+<li><p class="first"><a class="reference internal" href="#extensions-and-applications">Extensions and applications</a></p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="#latent-variable-models-with-flink">Latent variable models with Flink</a></li>
+<li><a class="reference internal" href="#concept-drift">Concept drift</a></li>
 </ul>
+</div></blockquote>
 </li>
 </ul>
 <div class="section" id="input-output">
-<span id="sec-flinklink-io"></span><h2>Input/output<a class="headerlink" href="#input-output" title="Permalink to this headline">¶</a></h2>
+<span id="id1"></span><h2>Input/output<a class="headerlink" href="#input-output" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="reading-data">
-<span id="sec-flinklink-io-read"></span><h3>Reading data<a class="headerlink" href="#reading-data" title="Permalink to this headline">¶</a></h3>
+<span id="sec-flinklink-io-read"></span><span id="id2"></span><h3>Reading data<a class="headerlink" href="#reading-data" title="Permalink to this headline">¶</a></h3>
 <p>In this example we show how can we read a dataset using Flink. Note that
 the process is the same regardless being a single or a distributed file.</p>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.flinklink.examples.io</span><span class="o">;</span>
@@ -409,7 +418,7 @@ the process is the same regardless being a single or a distributed file.</p>
 </div>
 </div>
 <div class="section" id="writing-data">
-<span id="sec-flinklink-io-write"></span><h3>Writing data<a class="headerlink" href="#writing-data" title="Permalink to this headline">¶</a></h3>
+<span id="write-data"></span><span id="sec-flinklink-io-write"></span><h3>Writing data<a class="headerlink" href="#writing-data" title="Permalink to this headline">¶</a></h3>
 <p>Below we generate a random Flink dataset with 1000 instances, 2 discrete
 variables and 3 continuous ones. The seed used is 1234. Eventually, we
 save it as a distributed dataset (format ARFF folder).</p>
@@ -473,7 +482,7 @@ the code is almost the same of each of the algoritms, they only differ
 on the constructor used (e.g. <em>new ParallelMaximumLikelihood()</em>, <em>new
 dVMP()</em>, etc.)</p>
 <div class="section" id="parallel-maximum-likelihood">
-<span id="sec-flinklink-learning-pml"></span><h3>Parallel Maximum Likelihood<a class="headerlink" href="#parallel-maximum-likelihood" title="Permalink to this headline">¶</a></h3>
+<span id="sec-flinklink-learning-pml"></span><span id="id3"></span><h3>Parallel Maximum Likelihood<a class="headerlink" href="#parallel-maximum-likelihood" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.flinklink.examples.learning</span><span class="o">;</span>
 
 <span class="kn">import</span> <span class="nn">eu.amidst.Main</span><span class="o">;</span>
@@ -550,7 +559,7 @@ dVMP()</em>, etc.)</p>
 </div>
 </div>
 <div class="section" id="distributed-variational-message-passing">
-<span id="sec-flinklink-learning-dvmp"></span><h3>Distributed Variational Message Passing<a class="headerlink" href="#distributed-variational-message-passing" title="Permalink to this headline">¶</a></h3>
+<span id="distributed-variational-message-pasing"></span><span id="sec-flinklink-learning-dvmp"></span><h3>Distributed Variational Message Passing<a class="headerlink" href="#distributed-variational-message-passing" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.flinklink.examples.learning</span><span class="o">;</span>
 
 <span class="kn">import</span> <span class="nn">eu.amidst.Main</span><span class="o">;</span>
@@ -625,7 +634,7 @@ dVMP()</em>, etc.)</p>
 </div>
 </div>
 <div class="section" id="distributed-vi">
-<span id="sec-flinklink-learning-dvi"></span><h3>Distributed VI<a class="headerlink" href="#distributed-vi" title="Permalink to this headline">¶</a></h3>
+<span id="sec-flinklink-learning-dvi"></span><span id="id4"></span><h3>Distributed VI<a class="headerlink" href="#distributed-vi" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.flinklink.examples.learning</span><span class="o">;</span>
 
 <span class="kn">import</span> <span class="nn">eu.amidst.Main</span><span class="o">;</span>
@@ -699,7 +708,7 @@ dVMP()</em>, etc.)</p>
 </div>
 </div>
 <div class="section" id="stochastic-vi">
-<span id="sec-flinklink-learning-svi"></span><h3>Stochastic VI<a class="headerlink" href="#stochastic-vi" title="Permalink to this headline">¶</a></h3>
+<span id="sec-flinklink-learning-svi"></span><span id="id5"></span><h3>Stochastic VI<a class="headerlink" href="#stochastic-vi" title="Permalink to this headline">¶</a></h3>
 <p>An example of the learning algorithm Stochastic VI is given below. Note
 that two specific parameters must be set, namely the <em>learning factor</em>
 and the <em>data size</em>.</p>
@@ -783,9 +792,9 @@ and the <em>data size</em>.</p>
 </div>
 </div>
 <div class="section" id="extensions-and-applications">
-<span id="sec-flinklink-ext"></span><h2>Extensions and applications<a class="headerlink" href="#extensions-and-applications" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="latent-variable-models-with-flink">
-<span id="sec-flinklink-ext-models"></span><h3>Latent variable models with Flink<a class="headerlink" href="#latent-variable-models-with-flink" title="Permalink to this headline">¶</a></h3>
+<span id="sec-flinklink-ext"></span><span id="id6"></span><h2>Extensions and applications<a class="headerlink" href="#extensions-and-applications" title="Permalink to this headline">¶</a></h2>
+<span class="target" id="sec-flinklink-ext-models"></span><div class="section" id="latent-variable-models-with-flink">
+<h3>Latent variable models with Flink<a class="headerlink" href="#latent-variable-models-with-flink" title="Permalink to this headline">¶</a></h3>
 <p>The module <em>latent-variable-models</em> contains a large set of classes that
 allow to easily learn some of the standard models with latent variables.
 These models can be learnt from not only from local datasets (e.g. a
@@ -849,7 +858,7 @@ model <em>Factor Analysis</em> is learnt from a distributed dataset.</p>
 </div>
 </div>
 <div class="section" id="concept-drift-detection">
-<span id="sec-flinklink-ext-conceptdrift"></span><h3>Concept drift detection<a class="headerlink" href="#concept-drift-detection" title="Permalink to this headline">¶</a></h3>
+<span id="concept-drift"></span><span id="sec-flinklink-ext-conceptdrift"></span><h3>Concept drift detection<a class="headerlink" href="#concept-drift-detection" title="Permalink to this headline">¶</a></h3>
 <p>A salient aspect of streaming data is that the domain being modeled is
 often <em>non-stationary</em>. That is, the distribution governing the data
 changes over time. This situation is known as <em>concept drift</em> and if not
