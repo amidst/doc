@@ -96,7 +96,8 @@ In this example we show how to use the main features of a *DataStream*
 object. More precisely, we show how to load a dynamic data stream and
 how to iterate over the *DynamicDataInstance* objects.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/dynamic/examples/datastream/DataStreamsExample.java
+   :language: java
 
 .. _sec:dbns:variables:
 
@@ -106,7 +107,8 @@ Dynamic Random Variables
 This example show the basic functionalities related to dynamic
 variables.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/dynamic/examples/variables/DynamicVariablesExample.java
+   :language: java
 
 .. _sec:dbns:dbns:
 
@@ -121,7 +123,8 @@ Creating Dynamic Bayesian networks
 This example creates a dynamic BN, from a dynamic data stream, with
 randomly generated probability distributions, then saves it to a file.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/dynamic/examples/models/CreatingDBNs.java
+   :language: java
 
 .. _sec:dbns:dbns:creatingLatent:
 
@@ -133,7 +136,8 @@ simply create a BN for clustering, i.e., a naive Bayes like structure
 with a single hidden variable acting as parant of all the remaining
 observable variables.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/dynamic/examples/models/CreatingDBNsWithLatentVariables.java
+   :language: java
 
 .. _sec:dbns:dbns:modif:
 
@@ -144,7 +148,8 @@ This example shows how to create a BN model with hidden variables. We
 This example shows how to access and modify the conditional
 probabilities of a Dynamic Bayesian network model.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/dynamic/examples/models/ModifyingDBNs.java
+   :language: java
 
 .. _sec:dbns:sampling:
 
@@ -155,7 +160,8 @@ This example shows how to use the *DynamicBayesianNetworkSampler* class
 to randomly generate a dynamic data stream from a given Dynamic Bayesian
 network.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/dynamic/examples/utils/DynamicBayesianNetworkSamplerExample.java
+   :language: java
 
 .. _sec:dbns:inference:
 
@@ -169,7 +175,8 @@ The Dynamic MAP Inference
 
 This example shows how to use the Dynamic MAP Inference algorithm.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/dynamic/examples/inference/DynamicMAPInference.java
+   :language: java
 
 .. _sec:dbns:inference:dvmp:
 
@@ -180,7 +187,8 @@ This example shows how to use the Factored Frontier algorithm with
 Variational Message Passing for running inference on dynamic Bayesian
 networks.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/dynamic/examples/inference/DynamicVMP_FactoredFrontier.java
+   :language: java
 
 .. _sec:dbns:inference:dis:
 
@@ -190,7 +198,9 @@ The Dynamic Importance Sampling
 This example shows how to use the Factored Frontier algorithm with
 Importance Sampling for running inference in dynamic Bayesian networks.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/dynamic/examples/inference/DynamicIS_FactoredFrontier.java
+   :language: java
+
 
 .. _sec:dbns:learning:
 
@@ -205,7 +215,8 @@ Maximum Likelihood for DBNs
 This example shows how to learn the parameters of a dynamic Bayesian
 network using maximum likelihood from a randomly sampled data stream.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/dynamic/examples/learning/MLforDBNsampling.java
+   :language: java
 
 .. _sec:dbns:learning:sv:
 
@@ -216,6 +227,7 @@ This example shows how to learn the parameters of a dynamic Bayesian
 network using streaming variational Bayes from a randomly sampled data
 stream.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/dynamic/examples/learning/SVBforDBN.java
+   :language: java
 
 

@@ -180,7 +180,8 @@ In this example we show how to use the main features of a DataStream
 object. More precisely, we show six different ways of iterating over the
 data samples of a DataStream object.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/core/examples/datastream/DataStreamsExample.java
+   :language: java
 
 .. _sec:bns:randomvars:
 
@@ -190,7 +191,8 @@ Data Streams
 This example show the basic functionality of the classes Variables and
 Variable.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/core/examples/variables/VariablesExample.java
+   :language: java
 
 .. raw:: latex
 
@@ -214,7 +216,8 @@ In this example, we take a data set, create a BN and we compute the
 log-likelihood of all the samples of this data set. The numbers defining
 the probability distributions of the BN are randomly fixed.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/core/examples/models/CreatingBayesianNetworks.java
+   :language: java
 
 .. raw:: latex
 
@@ -234,7 +237,8 @@ variables. We simply create a BN for clustering, i.e., a naive-Bayes
 like structure with a single common hidden variable acting as parant of
 all the observable variables.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/core/examples/models/CreatingBayesianNetworksWithLatentVariables.java
+   :language: java
 
 .. raw:: latex
 
@@ -252,7 +256,8 @@ Modifiying Bayesian networks
 In this example we show how to access and modify the conditional
 probabilities of a Bayesian network model.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/core/examples/models/ModifiyingBayesianNetworks.java
+   :language: java
 
 .. raw:: latex
 
@@ -274,7 +279,8 @@ I/O of data streams
 
 In this example we show how to load and save data sets from .arff files.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/core/examples/io/DataStreamIOExample.java
+   :language: java
 
 .. raw:: latex
 
@@ -293,7 +299,8 @@ In this example we show how to load and save Bayesian networks models
 for a binary file with ".bn" extension. In this toolbox Bayesian
 networks models are saved as serialized objects.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/core/examples/io/BayesianNetworkIOExample.java
+   :language: java
 
 .. raw:: latex
 
@@ -318,7 +325,8 @@ using the InferenceEngine static class. This class aims to be a
 straigthfoward way to perform queries over a Bayesian network model. By
 the default the *VMP* inference method is invoked.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/core/examples/inference/InferenceEngineExample.java
+   :language: java
 
 .. raw:: latex
 
@@ -345,7 +353,8 @@ in
    Winn, J. M., Bishop, C. M. (2005). Variational message passing. In
    Journal of Machine Learning Research (pp. 661-694).
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/core/examples/inference/VMPExample.java
+   :language: java
 
 .. raw:: latex
 
@@ -367,7 +376,8 @@ network using an importance sampling algorithm detailed in
    stochastic simulation in Bayesian networks. arXiv preprint
    arXiv:1304.1504.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/core/examples/inference/ImportanceSamplingExample.java
+   :language: java
 
 .. raw:: latex
 
@@ -390,7 +400,9 @@ Maximum Likelihood
 This other example shows how to learn incrementally the parameters of a
 Bayesian network using data batches,
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/core/examples/learning/MaximimumLikelihoodByBatchExample.java
+   :language: java
+
 
 .. raw:: latex
 
@@ -408,7 +420,8 @@ Parallel Maximum Likelihood
 This example shows how to learn in parallel the parameters of a Bayesian
 network from a stream of data using maximum likelihood.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/core/examples/learning/ParallelMaximumLikelihoodExample.java
+   :language: java
 
 .. raw:: latex
 
@@ -434,7 +447,8 @@ the following algorithm,
 In this second example we show a alternative implementation which
 explicitly updates the model by batches by using the class SVB.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/core/examples/learning/SVBByBatchExample.java
+   :language: java
 
 .. raw:: latex
 
@@ -457,7 +471,8 @@ version of the SVB algorithm,
    I. (2013). Streaming variational Bayes. In Advances in Neural
    Information Processing Systems (pp. 1727-1735).
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/core/examples/learning/ParallelSVBExample.java
+   :language: java
 
 .. raw:: latex
 
@@ -484,7 +499,8 @@ detector detailed in
    Borchani et al. Modeling concept drift: A probabilistic graphical
    model based approach. IDA 2015.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/core/examples/conceptdrift/NaiveBayesVirtualConceptDriftDetectorExample.java
+   :language: java
 
 .. raw:: latex
 
@@ -508,7 +524,9 @@ This example shows how to use the class BNConverterToAMIDST and
 BNConverterToHugin to convert a Bayesian network models between Hugin
 and AMIDST formats
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/core/examples/huginlink/HuginConversionExample.java
+   :language: java
+
 
 .. raw:: latex
 
@@ -527,7 +545,8 @@ This example shows how to use the class BNLoaderFromHugin and
 BNWriterToHugin classes to load and write Bayesian networks in Hugin
 format
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/core/examples/huginlink/HuginIOExample.java
+   :language: java
 
 .. raw:: latex
 
@@ -546,7 +565,8 @@ This example we show how to perform inference using
 `Hugin <http://www.hugin.com>`__ inference engine within the AMiDST
 toolbox
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/core/examples/huginlink/HuginInferenceExample.java
+   :language: java
 
 .. raw:: latex
 
@@ -582,7 +602,8 @@ algorithm look at the following paper:
    Graphical Models. Lecture Notes in Computer Science Volume 8754,
    2014, pp 302-317.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/core/examples/huginlink/HuginInferenceExample.java
+   :language: java
 
 .. raw:: latex
 

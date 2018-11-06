@@ -145,7 +145,8 @@ Note that the required functionality for learning the predefined model
 is provided by the module *latent-variable-models*. A code-example for
 learning a factor analysis model is shown below.
 
-.. code:: java
+.. literalinclude:: ../../extensions/tutorials/src/main/java/eu/amidst/tutorial/usingAmidst/examples/StaticModelLearning.java
+   :language: java
 
 `See on
 GitHub <https://github.com/amidst/tutorial/blob/master/src/main/java/eu/amidst/tutorial/usingAmidst/examples/StaticModelLearning.java>`__
@@ -222,7 +223,8 @@ lines, the Flink session is configurated and the stream is loaded, which
 is managed with an object of the class *DataFlink* (instead of
 *DataStream*).
 
-.. code:: java
+.. literalinclude:: ../../extensions/tutorials/src/main/java/eu/amidst/tutorial/usingAmidst/examples/StaticModelFlink.java
+   :language: java
 
 `See on
 GitHub <https://github.com/amidst/tutorial/blob/master/src/main/java/eu/amidst/tutorial/usingAmidst/examples/StaticModelFlink.java>`__
@@ -268,7 +270,8 @@ our model: we simply have to obtain the BN learnt (stored as an object
 of the class *BayesianNetwork*), set the target variables and the
 evidence. As an example, let us consider the following code:
 
-.. code:: java
+.. literalinclude:: ../../extensions/tutorials/src/main/java/eu/amidst/tutorial/usingAmidst/examples/StaticModelInference.java
+   :language: java
 
 `See on
 GitHub <https://github.com/amidst/tutorial/blob/master/src/main/java/eu/amidst/tutorial/usingAmidst/examples/StaticModelInference.java>`__
@@ -301,7 +304,8 @@ an object *Attributes* as input parameter, and the code of the method
 and creates the object representing the DAG. As an example, the code
 below shows how to create a custom Gaussian Mixture.
 
-.. code:: java
+.. literalinclude:: ../../extensions/tutorials/src/main/java/eu/amidst/tutorial/usingAmidst/practice/CustomGaussianMixture.java
+   :language: java
 
 `See on
 GitHub <https://github.com/amidst/tutorial/blob/master/src/main/java/eu/amidst/tutorial/usingAmidst/practice/CustomGaussianMixture.java>`__
@@ -341,7 +345,8 @@ now, it is handled with an object of the class
 disk with the method *DynamicBayesianNetworkWriter::save(String
 pathFile)*.
 
-.. code:: java
+.. literalinclude:: ../../extensions/tutorials/src/main/java/eu/amidst/tutorial/usingAmidst/examples/DynamicModelLearning.java
+   :language: java
 
 `See on
 GitHub <https://github.com/amidst/tutorial/blob/master/src/main/java/eu/amidst/tutorial/usingAmidst/examples/DynamicModelLearning.java>`__
@@ -355,7 +360,8 @@ dynamic dataset is loaded for testing our model (lines 29 to 30). Then
 the inference algorithm and target variables are set. In the final loop,
 the inference is perform for each data instance.
 
-.. code:: java
+.. literalinclude:: ../../extensions/tutorials/src/main/java/eu/amidst/tutorial/usingAmidst/examples/DynamicModelInference.java
+   :language: java
 
 `See on
 GitHub <https://github.com/amidst/tutorial/blob/master/src/main/java/eu/amidst/tutorial/usingAmidst/examples/DynamicModelInference.java>`__
@@ -377,7 +383,8 @@ dynamic models. In this case, you will have to create a class inheriting
 *DynamicModel*. Here below an example of a custom *Kalman Filter* is
 given.
 
-.. code:: java
+.. literalinclude:: ../../extensions/tutorials/src/main/java/eu/amidst/tutorial/usingAmidst/practice/CustomKalmanFilter.java
+   :language: java
 
 `See on
 GitHub <https://github.com/amidst/tutorial/blob/master/src/main/java/eu/amidst/tutorial/usingAmidst/practice/CustomKalmanFilter.java>`__

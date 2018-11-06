@@ -19,7 +19,8 @@ the method *DataSparkLoader::open* automatically detects the format of
 the file (the indicated path should contain the extension). Finally all
 the instances in the data set are printed.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/sparklink/examples/io/DataStreamLoaderExample.java
+   :language: java
 
 .. _sec:sparklink:io:write:
 
@@ -31,7 +32,8 @@ set is generated using the method *DataSetGenerator::generate*.
 Afterwards, such data is save using the method
 *DataSparkWriter::writeDataToFolder*
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/sparklink/examples/io/DataStreamWriterExample.java
+   :language: java
 
 .. _sec:sparklink:learning:
 
@@ -43,6 +45,7 @@ Likelihood* algorithm. In the following example, we load a data set in
 format json and we use it for learning a simple naive bayes (more
 complex DAGs can also be learnt).
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/sparklink/examples/learning/MaximumLikelihoodLearningExample.java
+   :language: java
 
 

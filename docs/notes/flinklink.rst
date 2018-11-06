@@ -82,7 +82,8 @@ Reading data
 In this example we show how can we read a dataset using Flink. Note that
 the process is the same regardless being a single or a distributed file.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/flinklink/examples/io/DataStreamLoaderExample.java
+   :language: java
 
 .. raw:: latex
 
@@ -101,7 +102,8 @@ Below we generate a random Flink dataset with 1000 instances, 2 discrete
 variables and 3 continuous ones. The seed used is 1234. Eventually, we
 save it as a distributed dataset (format ARFF folder).
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/flinklink/examples/io/DataStreamWriterExample.java
+   :language: java
 
 .. raw:: latex
 
@@ -128,7 +130,8 @@ dVMP()*, etc.)
 Parallel Maximum Likelihood
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/flinklink/examples/learning/ParallelMLExample.java
+   :language: java
 
 .. raw:: latex
 
@@ -143,7 +146,8 @@ Parallel Maximum Likelihood
 Distributed Variational Message Passing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/flinklink/examples/learning/dVMPExample.java
+   :language: java
 
 .. raw:: latex
 
@@ -158,7 +162,8 @@ Distributed Variational Message Passing
 Distributed VI
 ~~~~~~~~~~~~~~
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/flinklink/examples/learning/DistributedVIExample.java
+   :language: java
 
 .. raw:: latex
 
@@ -177,7 +182,8 @@ An example of the learning algorithm Stochastic VI is given below. Note
 that two specific parameters must be set, namely the *learning factor*
 and the *data size*.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/flinklink/examples/learning/StochasticVIExample.java
+   :language: java
 
 .. raw:: latex
 
@@ -204,7 +210,8 @@ single ARFF file) but also from distributed ones (e.g. ARFF folder).
 These last ones are managed using Flink. In code example shown below the
 model *Factor Analysis* is learnt from a distributed dataset.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/flinklink/examples/extensions/LatentModelsFlink.java
+   :language: java
 
 .. raw:: latex
 
@@ -227,7 +234,8 @@ interpret intrinsic properties of the data during data exploration. The
 AMIDST toolbox can be used for detecting this situation as shown in the
 example below.
 
-.. code:: java
+.. literalinclude:: ../../examples/src/main/java/eu/amidst/flinklink/examples/reviewMeeting2015/ConceptDriftDetector.java
+   :language: java
 
 .. raw:: latex
 
