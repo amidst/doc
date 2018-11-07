@@ -39,8 +39,11 @@ sys.path.insert(0, os.path.abspath('..'))
 sys.path.insert(0, os.path.abspath('.'))
 
 
-"""import preprocess
-preprocess.parse_version()"""
+import util
+
+version = util.get_version()
+rst_epilog = '.. |version| replace:: %s' % version
+
 
 # -- General configuration ------------------------------------------------
 
@@ -170,7 +173,7 @@ html_static_path = ['_static']
 
 html_context = {
     'css_files': [
-        '_static/css/inferpy_theme.css'
+        '_static/css/amidst_theme.css'
     ],
 }
 

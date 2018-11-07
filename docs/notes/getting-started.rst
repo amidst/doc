@@ -106,9 +106,11 @@ given.
 In general, for start using the AMIDST toolbox, add the following lines
 to the pom.xml file of your maven project:
 
-::
 
-   <repositories>
+.. parsed-literal::
+
+
+   <repositories> 
      <repositories>
        <repository>
      <id>amidstRepo</id>
@@ -120,10 +122,11 @@ to the pom.xml file of your maven project:
      <dependency>
        <groupId>eu.amidst</groupId>
        <artifactId>module-all</artifactId>
-       <version>(*\amidstversion*)</version>
+       <version> |version| </version>
        <scope>compile</scope>
      </dependency>
    </dependencies> 
+   
 
 Getting started in detail
 -------------------------

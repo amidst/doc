@@ -1,4 +1,4 @@
-﻿/* rcabanas version 15/11/2017 13:00 */
+﻿/* rcabanas version 7/11/2018 */
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -3494,7 +3494,7 @@ a .rst-content dl dt .headerlink, .rst-content dl dt a .headerlink, a .rst-conte
 .rst-content .wy-alert-neutral.hint a, .rst-content .wy-alert-neutral.important a,
 .rst-content .wy-alert-neutral.tip a, .rst-content .wy-alert-neutral.warning a,
 .rst-content .wy-alert-neutral.seealso a, .rst-content .wy-alert-neutral.admonition-todo a {
-    color: #03AC76
+    color: #74A0CD
 }
 
 .wy-alert p:last-child, .rst-content .note p:last-child, .rst-content .attention p:last-child,
@@ -3536,7 +3536,7 @@ a .rst-content dl dt .headerlink, .rst-content dl dt a .headerlink, a .rst-conte
 }
 
 .wy-tray-container li.wy-tray-item-info {
-    background: #03AC76
+    background: #74A0CD
 }
 
 .wy-tray-container li.wy-tray-item-warning {
@@ -3675,7 +3675,7 @@ button[disabled] {
 }
 
 .btn-info {
-    background-color: #03AC76 !important
+    background-color: #74A0CD !important
 }
 
 .btn-info:hover {
@@ -3730,7 +3730,7 @@ button[disabled] {
 
 .btn-link {
     background-color: transparent !important;
-    color: #03AC76;
+    color: #74A0CD;
     box-shadow: none;
     border-color: transparent !important
 }
@@ -3748,7 +3748,7 @@ button[disabled] {
 }
 
 .btn-link:visited {
-    color: #029D6B
+    color: #74A0CD
 }
 
 .wy-btn-group .btn, .wy-control .btn {
@@ -3803,7 +3803,7 @@ button[disabled] {
 }
 
 .wy-dropdown-menu > dd > a:hover {
-    background: #03AC76;
+    background: #74A0CD;
     color: #fff
 }
 
@@ -3852,7 +3852,7 @@ button[disabled] {
 }
 
 .wy-dropdown.wy-dropdown-bubble .wy-dropdown-menu a:hover {
-    background: #03AC76;
+    background: #74A0CD;
     color: #fff
 }
 
@@ -4386,7 +4386,7 @@ input[type="radio"][disabled], input[type="checkbox"][disabled] {
 }
 
 .wy-inline-validate.wy-inline-validate-info .wy-input-context {
-    color: #03AC76
+    color: #74A0CD
 }
 
 .rotate-90 {
@@ -4652,7 +4652,7 @@ input[type="radio"][disabled], input[type="checkbox"][disabled] {
 }
 
 a {
-    color: #03AC76;
+    color: #74A0CD;
     text-decoration: none;
     cursor: pointer
 }
@@ -4662,7 +4662,7 @@ a:hover {
 }
 
 a:visited {
-    color: #029D6B
+    color: #74A0CD
 }
 
 html {
@@ -4716,7 +4716,7 @@ a.wy-text-warning:hover {
 }
 
 .wy-text-info {
-    color: #03AC76 !important
+    color: #74A0CD !important
 }
 
 a.wy-text-info:hover {
@@ -4750,7 +4750,7 @@ a.wy-text-neutral:hover {
 h1, h2, .rst-content .toctree-wrapper p.caption, h3, h4, h5, h6, legend {
     margin-top: 0;
     font-weight: 700;
-    color: #00402C;
+    color: #4A657D;
     font-family:  FontAwesome, Arial, sans-serif
 }
 
@@ -4891,7 +4891,7 @@ article ol li ul li {
     position: absolute;
     top: 0px;
     left: 0px;
-    background: #029D6B;
+    background: #74A0CD;
     color: #fff;
     padding: 6px 12px
 }
@@ -5502,7 +5502,7 @@ div[class^='highlight'] pre {
 }
 
 .wy-menu-vertical a:active {
-    background-color: #03AC76;
+    background-color: #74A0CD;
     cursor: pointer;
     color: #fff
 }
@@ -5517,7 +5517,7 @@ div[class^='highlight'] pre {
     padding: .809em;
     margin-bottom: .809em;
     z-index: 200;
-    background-color: #03AC76;
+    background-color: #74A0CD;
     text-align: center;
     padding: .809em;
     display: block;
@@ -5537,7 +5537,7 @@ div[class^='highlight'] pre {
     margin: auto auto .809em auto;
     height: 45px;
     width: 45px;
-    background-color: #03AC76;
+    background-color: #74A0CD;
     padding: 5px;
     border-radius: 100%
 }
@@ -5577,7 +5577,7 @@ div[class^='highlight'] pre {
 }
 
 .wy-nav .wy-menu-vertical header {
-    color: #03AC76
+    color: #74A0CD
 }
 
 .wy-nav .wy-menu-vertical a {
@@ -5585,7 +5585,7 @@ div[class^='highlight'] pre {
 }
 
 .wy-nav .wy-menu-vertical a:hover {
-    background-color: #03AC76;
+    background-color: #74A0CD;
     color: #fff
 }
 
@@ -5653,7 +5653,7 @@ div[class^='highlight'] pre {
 
 .wy-nav-top {
     display: none;
-    background: #03AC76;
+    background: #74A0CD;
     color: #fff;
     padding: .4045em .809em;
     position: relative;
@@ -5681,7 +5681,7 @@ div[class^='highlight'] pre {
     margin-right: 12px;
     height: 45px;
     width: 45px;
-    background-color: #03AC76;
+    background-color: #74A0CD;
     padding: 5px;
     border-radius: 100%
 }
@@ -5867,7 +5867,7 @@ footer span.commit code, footer span.commit .rst-content tt, .rst-content footer
 }
 
 .rst-versions a {
-    color: #03AC76;
+    color: #74A0CD;
     text-decoration: none
 }
 
@@ -6246,7 +6246,7 @@ a .rst-content tt, a .rst-content code {
 }
 
 .rst-content a tt, .rst-content a tt, .rst-content a code {
-    color: #03AC76
+    color: #74A0CD
 }
 
 .rst-content dl {
@@ -6275,7 +6275,7 @@ a .rst-content tt, a .rst-content code {
     font-size: 90%;
     line-height: normal;
     background: #e7f2fa;
-    color: #03AC76;
+    color: #74A0CD;
     border-top: solid 3px #6ab0de;
     padding: 6px;
     position: relative

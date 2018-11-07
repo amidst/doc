@@ -5,12 +5,8 @@ import sys
 
 # function that extract a String with the content of ../version.txt
 def get_version():
-    pass
+    return "0.7.0"
 
-
-    
-def parse_version(file):
-    print("parse version")
 
 
 
@@ -18,4 +14,3 @@ def parse_version(file):
 if __name__ == "__main__":
 	print(get_version())
 	
-	parse_version(file="./notes/getting-started.rst")
