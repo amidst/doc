@@ -31,7 +31,7 @@ of your project and open it:
 
 Add the AMIDST repository by including the following code to your pom:
 
-::
+.. code-block:: xml
 
    <repositories>
    <!-- AMIDST repository in github -->
@@ -69,7 +69,7 @@ indicate the following information:
 For example, for using the *core-dynamic* module, include the following
 code:
 
-::
+.. code-block:: xml
 
    <dependencies>
    <!-- Load any of the modules from AMIDST Toolbox -->
@@ -123,7 +123,7 @@ Finally, for testing purposes, we can run the code shown below that
 generates a random dynamic bayesian network (DBN) and prints its
 parameters.
 
-::
+.. code-block:: java
 
    import eu.amidst.dynamic.models.DynamicBayesianNetwork;
    import eu.amidst.dynamic.utils.DynamicBayesianNetworkGenerator;

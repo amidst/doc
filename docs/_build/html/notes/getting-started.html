@@ -26,7 +26,7 @@
 
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/inferpy_theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/amidst_theme.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Requirements for AMIDST Toolbox" href="requirements.html" />
@@ -342,21 +342,21 @@ AMIDST functionality. You will need to have <em>java 8, mvn</em> and <em>git</em
 installed. For more information, read the
 <a class="reference external" href="requirements.html">requirements</a> section. First, download the
 example project code:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/amidst/example-project.git
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/amidst/example-project.git
 </pre></div>
 </div>
 <p>Enter in the downloaded folder:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd example-project/
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> example-project/
 </pre></div>
 </div>
 <p>A code example illustrating the use of the toolbox is provided in the
 file <strong>./src/main/java/BasicExample.java</strong>.</p>
 <p>Compile and build the package:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ mvn clean package
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ mvn clean package
 </pre></div>
 </div>
 <p>Finally, run the code example previously mentioned:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ java -cp target/example-project-full.jar BasicExample
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ java -cp target/example-project-full.jar BasicExample
 </pre></div>
 </div>
 <p>Each time that our model is updated, the following output is shown:</p>
@@ -426,22 +426,22 @@ lower bound)</em>. Finally, distributions in the learnt Bayesian network are
 given.</p>
 <p>In general, for start using the AMIDST toolbox, add the following lines
 to the pom.xml file of your maven project:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">repositories</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="n">repositories</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">repository</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="nb">id</span><span class="o">&gt;</span><span class="n">amidstRepo</span><span class="o">&lt;/</span><span class="nb">id</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="n">url</span><span class="o">&gt;</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">raw</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">amidst</span><span class="o">/</span><span class="n">toolbox</span><span class="o">/</span><span class="n">mvn</span><span class="o">-</span><span class="n">repo</span><span class="o">/&lt;/</span><span class="n">url</span><span class="o">&gt;</span>
-  <span class="o">&lt;/</span><span class="n">repository</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">repositories</span><span class="o">&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;repositories&gt;</span>
+  <span class="nt">&lt;repositories&gt;</span>
+    <span class="nt">&lt;repository&gt;</span>
+  <span class="nt">&lt;id&gt;</span>amidstRepo<span class="nt">&lt;/id&gt;</span>
+  <span class="nt">&lt;url&gt;</span>https://raw.github.com/amidst/toolbox/mvn-repo/<span class="nt">&lt;/url&gt;</span>
+  <span class="nt">&lt;/repository&gt;</span>
+<span class="nt">&lt;/repositories&gt;</span>
 
-<span class="o">&lt;</span><span class="n">dependencies</span><span class="o">&gt;</span>
-  <span class="o">&lt;</span><span class="n">dependency</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">groupId</span><span class="o">&gt;</span><span class="n">eu</span><span class="o">.</span><span class="n">amidst</span><span class="o">&lt;/</span><span class="n">groupId</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">artifactId</span><span class="o">&gt;</span><span class="n">module</span><span class="o">-</span><span class="nb">all</span><span class="o">&lt;/</span><span class="n">artifactId</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">version</span><span class="o">&gt;</span><span class="p">(</span><span class="o">*</span>\<span class="n">amidstversion</span><span class="o">*</span><span class="p">)</span><span class="o">&lt;/</span><span class="n">version</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">scope</span><span class="o">&gt;</span><span class="nb">compile</span><span class="o">&lt;/</span><span class="n">scope</span><span class="o">&gt;</span>
-  <span class="o">&lt;/</span><span class="n">dependency</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">dependencies</span><span class="o">&gt;</span>
+<span class="nt">&lt;dependencies&gt;</span>
+  <span class="nt">&lt;dependency&gt;</span>
+    <span class="nt">&lt;groupId&gt;</span>eu.amidst<span class="nt">&lt;/groupId&gt;</span>
+    <span class="nt">&lt;artifactId&gt;</span>module-all<span class="nt">&lt;/artifactId&gt;</span>
+    <span class="nt">&lt;version&gt;</span> |version| <span class="nt">&lt;/version&gt;</span>
+    <span class="nt">&lt;scope&gt;</span>compile<span class="nt">&lt;/scope&gt;</span>
+  <span class="nt">&lt;/dependency&gt;</span>
+<span class="nt">&lt;/dependencies&gt;</span>
 </pre></div>
 </div>
 </div>

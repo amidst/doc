@@ -16,7 +16,7 @@ dependencies in a Maven project. In this case, we will have to load the
 modules **wekalink** and **latent-variable-models**. For that, add the
 following code to the file pom.xml of your project.
 
-::
+.. code-block:: xml
 
        <dependencies>
        
@@ -58,7 +58,7 @@ methods:
 Here below we show a minimal example where the Naive Bayes classifier
 provided by AMIDST is used.
 
-::
+.. code-block:: java
 
 
    import eu.amidst.core.datastream.Attributes;
@@ -121,7 +121,7 @@ from Weka. Here we show an example where we load a dataset in format
 .arff, we learn a naive Bayes classifier and we show the confusion
 matrix:
 
-::
+.. code-block:: java
 
            //Load the dataset
            BufferedReader reader = 

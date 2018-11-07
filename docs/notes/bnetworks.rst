@@ -640,7 +640,7 @@ the class variable.
 
    HODE example
 
-::
+.. code-block:: bash
 
    java -Xmx512m -cp "../lib/*" -javaagent:../lib/sizeofag-1.0.0.jar 
    moa.DoTask EvaluatePrequential -l \(bayes.AmidstClassifier -g 1 
@@ -676,7 +676,7 @@ problems <http://prdownloads.sourceforge.net/weka/datasets-numeric.jar>`__.
 
    HODE regression example
 
-::
+.. code-block:: java
 
    java -Xmx512m -cp "../lib/*" -javaagent:../lib/sizeofag-1.0.0.jar 
    moa.DoTask EvaluatePrequentialRegression -l bayes.AmidstRegressor

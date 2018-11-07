@@ -24,13 +24,13 @@ Clone the repository
 First, you can download the source code from github using the following
 command:
 
-::
+.. code-block:: bash
 
    $ git clone https://github.com/amidst/toolbox.git      
 
 Once the download has finished, enter into the downloaded folder:
 
-::
+.. code-block:: bash
 
    $ cd toolbox     
 
@@ -42,13 +42,13 @@ modify the master branch** because it should always contain the source
 of the very last release. Thus we change into the develop branch with
 the following command:
 
-::
+.. code-block:: bash
 
    $ git checkout develop    
 
 The terminal replies with the following output:
 
-::
+.. code-block:: bash
 
    Checking out files: 100% (469/469), done.
    Branch develop set up to track remote branch develop from origin.
@@ -59,17 +59,17 @@ changes in a new branch created from develop. The name of this new
 branch will be newfeature and it can be created with the following
 command
 
-::
+.. code-block:: bash
 
    $ git branch newfeature  
 
 We move into the recently created branch:
 
-::
+.. code-block:: bash
 
    $ git checkout newfeature  
 
-::
+.. code-block:: bash
 
    Switched to branch 'newfeature'
 
@@ -77,14 +77,14 @@ At any moment, we can verify which is the current branch with the
 command show below. Make sure that your current branch is always the one
 you have created.
 
-::
+.. code-block:: bash
 
    $ git branch
 
 Previous command shows a list with all the local branches, being the
 current branch the one with the symbol \*, for example:
 
-::
+.. code-block:: bash
 
    develop
    master
@@ -93,11 +93,11 @@ current branch the one with the symbol \*, for example:
 The new branch is not yet a remote branch. For uploading it to the
 server, we will use the following command:
 
-::
+.. code-block:: bash
 
    $ git push --set-upstream origin newfeature
 
-::
+.. code-block:: bash
 
    Total 0 (delta 0), reused 0 (delta 0)
    To https://github.com/amidst/toolbox.git
@@ -110,26 +110,26 @@ Modify the code and upload your changes
 As an example, we will simply create a new text file and upload it to
 the server. For creating such file run:
 
-::
+.. code-block:: bash
 
    $ echo "file to be deleted" > newfile.txt
 
 Now, we have to set the new file as a tracked file, for that purpose:
 
-::
+.. code-block:: bash
 
    $ git add newfile.txt 
 
 Which generates the output shown below indicating which of the tracked
 files contain changes to be committed
 
-::
+.. code-block:: bash
 
    $ git status
 
 that generates the following output:
 
-::
+.. code-block:: bash
 
    On branch newfeature
    Your branch is up-to-date with 'origin/newfeature'.
@@ -146,11 +146,11 @@ that generates the following output:
 | Now we will do a commit including the message “added newfile.txt” with
   the following command:
 
-::
+.. code-block:: bash
 
    $ git commit -m "added newfile.txt"
 
-::
+.. code-block:: bash
 
    [newfeature f256d1e] added newfile.txt
    1 file changed, 1 insertion(+)
@@ -158,7 +158,7 @@ that generates the following output:
 
 | Finally, we have upload all the changes to the server:
 
-::
+.. code-block:: bash
 
    $ git push
 
@@ -169,20 +169,20 @@ Merge the new branch with develop
   However, we should integrate these changes with the develop branch.
   Thus, we first change to the branch develop:
 
-::
+.. code-block:: java
 
    $ git checkout develop
 
 | Now, we will merge both branches:
 
-::
+.. code-block:: java
 
    $ git merge newfeature
 
 | If there is not conflicts, an output similar to the following one will
   be generated:
 
-::
+.. code-block:: java
 
    Updating 20ff914..f256d1e
    Fast-forward
@@ -193,7 +193,7 @@ Merge the new branch with develop
 | Finally, we will upload the result of merging both branches to the
   server:
 
-::
+.. code-block:: java
 
    $ git push
 

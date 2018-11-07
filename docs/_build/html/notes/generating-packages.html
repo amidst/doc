@@ -26,7 +26,7 @@
 
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/inferpy_theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/amidst_theme.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Basic steps for contributing" href="basic-steps-contributing.html" />
@@ -341,16 +341,16 @@ allow to use AMIDST toolbox in any java project. Alternatively, you can
 watch this
 <a class="reference external" href="https://www.youtube.com/watch?v=6iLG17UPzX0">video-tutorial</a>. First,
 you can download the source code using the following command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/amidst/toolbox.git
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/amidst/toolbox.git
 </pre></div>
 </div>
 <p>Once the download has finished, enter into the downloaded folder:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ cd toolbox
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> toolbox
 </pre></div>
 </div>
 <p>For generating the packages for all the modules, use the following
 command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ mvn clean dependency:copy-dependencies package -Dmaven.test.skip=true
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ mvn clean dependency:copy-dependencies package -Dmaven.test.skip<span class="o">=</span><span class="nb">true</span>
 </pre></div>
 </div>
 <p>Note that the argument <strong>-Dmaven.test.skip=true</strong> is optional (its
@@ -358,23 +358,23 @@ default value is false). If omitted, maven will run the unitary tests
 and hence the process will take much more time. If everything goes
 right, you will eventually obtain an output similar to the following
 one:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">INFO</span><span class="p">]</span> <span class="n">Reactor</span> <span class="n">Summary</span><span class="p">:</span>
-<span class="p">[</span><span class="n">INFO</span><span class="p">]</span>
-<span class="p">[</span><span class="n">INFO</span><span class="p">]</span> <span class="n">AmidstToolbox</span> <span class="o">......................................</span> <span class="n">SUCCESS</span> <span class="p">[</span>  <span class="mf">1.177</span> <span class="n">s</span><span class="p">]</span>
-<span class="p">[</span><span class="n">INFO</span><span class="p">]</span> <span class="n">core</span> <span class="o">...............................................</span> <span class="n">SUCCESS</span> <span class="p">[</span> <span class="mf">11.891</span> <span class="n">s</span><span class="p">]</span>
-<span class="p">[</span><span class="n">INFO</span><span class="p">]</span> <span class="n">core</span><span class="o">-</span><span class="n">dynamic</span> <span class="o">.......................................</span> <span class="n">SUCCESS</span> <span class="p">[</span>  <span class="mf">5.081</span> <span class="n">s</span><span class="p">]</span>
-<span class="p">[</span><span class="n">INFO</span><span class="p">]</span> <span class="n">huginlink</span> <span class="o">..........................................</span> <span class="n">SUCCESS</span> <span class="p">[</span>  <span class="mf">3.031</span> <span class="n">s</span><span class="p">]</span>
-<span class="p">[</span><span class="n">INFO</span><span class="p">]</span> <span class="n">standardmodels</span> <span class="o">.....................................</span> <span class="n">SUCCESS</span> <span class="p">[</span>  <span class="mf">2.976</span> <span class="n">s</span><span class="p">]</span>
-<span class="p">[</span><span class="n">INFO</span><span class="p">]</span> <span class="n">examples</span> <span class="o">...........................................</span> <span class="n">SUCCESS</span> <span class="p">[</span>  <span class="mf">4.563</span> <span class="n">s</span><span class="p">]</span>
-<span class="p">[</span><span class="n">INFO</span><span class="p">]</span> <span class="n">moalink</span> <span class="o">............................................</span> <span class="n">SUCCESS</span> <span class="p">[</span>  <span class="mf">2.609</span> <span class="n">s</span><span class="p">]</span>
-<span class="p">[</span><span class="n">INFO</span><span class="p">]</span> <span class="n">wekalink</span> <span class="o">...........................................</span> <span class="n">SUCCESS</span> <span class="p">[</span>  <span class="mf">2.515</span> <span class="n">s</span><span class="p">]</span>
-<span class="p">[</span><span class="n">INFO</span><span class="p">]</span> <span class="o">------------------------------------------------------------------------</span>
-<span class="p">[</span><span class="n">INFO</span><span class="p">]</span> <span class="n">BUILD</span> <span class="n">SUCCESS</span>
-<span class="p">[</span><span class="n">INFO</span><span class="p">]</span> <span class="o">------------------------------------------------------------------------</span>
-<span class="p">[</span><span class="n">INFO</span><span class="p">]</span> <span class="n">Total</span> <span class="n">time</span><span class="p">:</span> <span class="mf">34.504</span> <span class="n">s</span>
-<span class="p">[</span><span class="n">INFO</span><span class="p">]</span> <span class="n">Finished</span> <span class="n">at</span><span class="p">:</span> <span class="mi">2016</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">10</span><span class="n">T16</span><span class="p">:</span><span class="mi">41</span><span class="p">:</span><span class="mi">23</span><span class="o">+</span><span class="mi">02</span><span class="p">:</span><span class="mi">00</span>
-<span class="p">[</span><span class="n">INFO</span><span class="p">]</span> <span class="n">Final</span> <span class="n">Memory</span><span class="p">:</span> <span class="mi">68</span><span class="n">M</span><span class="o">/</span><span class="mi">670</span><span class="n">M</span>
-<span class="p">[</span><span class="n">INFO</span><span class="p">]</span> <span class="o">------------------------------------------------------------------------</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>INFO<span class="o">]</span> Reactor Summary:
+<span class="o">[</span>INFO<span class="o">]</span>
+<span class="o">[</span>INFO<span class="o">]</span> AmidstToolbox ...................................... SUCCESS <span class="o">[</span>  <span class="m">1</span>.177 s<span class="o">]</span>
+<span class="o">[</span>INFO<span class="o">]</span> core ............................................... SUCCESS <span class="o">[</span> <span class="m">11</span>.891 s<span class="o">]</span>
+<span class="o">[</span>INFO<span class="o">]</span> core-dynamic ....................................... SUCCESS <span class="o">[</span>  <span class="m">5</span>.081 s<span class="o">]</span>
+<span class="o">[</span>INFO<span class="o">]</span> huginlink .......................................... SUCCESS <span class="o">[</span>  <span class="m">3</span>.031 s<span class="o">]</span>
+<span class="o">[</span>INFO<span class="o">]</span> standardmodels ..................................... SUCCESS <span class="o">[</span>  <span class="m">2</span>.976 s<span class="o">]</span>
+<span class="o">[</span>INFO<span class="o">]</span> examples ........................................... SUCCESS <span class="o">[</span>  <span class="m">4</span>.563 s<span class="o">]</span>
+<span class="o">[</span>INFO<span class="o">]</span> moalink ............................................ SUCCESS <span class="o">[</span>  <span class="m">2</span>.609 s<span class="o">]</span>
+<span class="o">[</span>INFO<span class="o">]</span> wekalink ........................................... SUCCESS <span class="o">[</span>  <span class="m">2</span>.515 s<span class="o">]</span>
+<span class="o">[</span>INFO<span class="o">]</span> ------------------------------------------------------------------------
+<span class="o">[</span>INFO<span class="o">]</span> BUILD SUCCESS
+<span class="o">[</span>INFO<span class="o">]</span> ------------------------------------------------------------------------
+<span class="o">[</span>INFO<span class="o">]</span> Total time: <span class="m">34</span>.504 s
+<span class="o">[</span>INFO<span class="o">]</span> Finished at: <span class="m">2016</span>-05-10T16:41:23+02:00
+<span class="o">[</span>INFO<span class="o">]</span> Final Memory: 68M/670M
+<span class="o">[</span>INFO<span class="o">]</span> ------------------------------------------------------------------------
 </pre></div>
 </div>
 <p>Now, at each module folder, a new folder called <strong>target</strong> containing

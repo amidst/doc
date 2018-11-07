@@ -11,14 +11,14 @@ installing it.
 First, you can download the source code from the github repository using
 the following command:
 
-::
+.. code-block:: bash
 
    $ git clone https://github.com/amidst/toolbox.git      
 
 Depending on your internet connection, the process may take several
 minutes. Once the it has finished, enter into the downloaded folder:
 
-::
+.. code-block:: java
 
    $ cd toolbox     
 
@@ -26,7 +26,7 @@ Now, we should install the AMIDST artifact in our local Maven repository
 (this repository is automatically created when installing Maven). For
 that, type the following command:
 
-::
+.. code-block:: java
 
    $ mvn clean install -Dmaven.test.skip=true   
 
@@ -36,7 +36,7 @@ that, type the following command:
   false). Once the process has finished, an output similar to the
   following one will be generated:
 
-::
+.. code-block:: java
 
    [INFO] Reactor Summary:
    [INFO] 
@@ -60,13 +60,13 @@ that, type the following command:
   maven repository, which is usually placed in **~/.m2/repository/**.
   Thus, type the following command:
 
-::
+.. code-block:: java
 
    $ ls ~/.m2/repository/eu/amidst/ 
 
 And you will find a folder for each module:
 
-::
+.. code-block:: java
 
    AmidstToolbox    core-dynamic    huginlink   standardmodels
    core        examples    moalink     wekalink
@@ -116,7 +116,7 @@ following information:
 For example, for using the core-dynamicmodule, include the following
 code:
 
-::
+.. code-block:: xml
 
    <dependencies>
    <!-- Load any of the modules from AMIDST Toolbox -->
@@ -165,7 +165,7 @@ shown below.
 
 Finally, for testing purposes, we can run the following code:
 
-::
+.. code-block:: java
 
    import eu.amidst.dynamic.models.DynamicBayesianNetwork;
    import eu.amidst.dynamic.utils.DynamicBayesianNetworkGenerator;

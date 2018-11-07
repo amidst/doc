@@ -40,7 +40,7 @@ system requirements, see this
 download a ready-to-use IntelliJ maven project with all the code
 examples in this tutorial. For that, use the following command:
 
-::
+.. code-block:: bash
 
    $ git clone https://github.com/amidst/tutorial.git      
 
@@ -162,13 +162,13 @@ have to change the constructor used (assuming that our data also fits
 the constraints of the new model). For example, if we aim to learn a
 mixture of factor analysers instead, we simply have to replace the line
 
-::
+.. code-block:: java
 
    Model model = new FactorAnalysis(data.getAtributes());
 
 by
 
-::
+.. code-block:: java
 
    Model model = new MixtureOfFactorAnalysers(data.getAtributes());
 
@@ -182,14 +182,14 @@ network, we simply have to extract with the method *Model::getModel()*.
 One of the actions we can perform with it is saving it into the local
 file system. For saving it in *.bn* format:
 
-::
+.. code-block:: java
 
    BayesianNetworkWriter::save(BayesianNetwork bn, String path)
 
 Alternatively, and assuming that we have the hugin library available, we
 can also save it in *.net* format:
 
-::
+.. code-block:: java
 
    BayesianNetworkWriteToHuginr::save(BayesianNetwork bn, String path)
 
@@ -234,13 +234,13 @@ system. Instead, we might need to load from a distributed file system.
 For that, simply replace the string indicating the path. That is,
 replace
 
-::
+.. code-block:: java
 
    String filename = "datasets/simulated/cajamarDistributed.arff"
 
 by
 
-::
+.. code-block:: java
 
    String filename = "hdfs://distributed-server/path-to-file"
 
@@ -280,14 +280,14 @@ Note that the learning algorithm can be easily changed by simply
 modifying line 35 where *VMP algorithm*. If we aim to use *Importance
 Sampling algorithm*, replace such line with:
 
-::
+.. code-block:: java
 
        InferenceAlgorithm infer = new ImportanceSampling();
 
 Alternatively, we can use *Hugin Inference algorithm* (assuming that we
 have the corresponding libraries):
 
-::
+.. code-block:: java
 
    InferenceAlgorithm infer = new HuginInference();
 
@@ -369,7 +369,7 @@ GitHub <https://github.com/amidst/tutorial/blob/master/src/main/java/eu/amidst/t
 Note that the inference algorithm can be easily change if line 33 is
 modified by replacing it with:
 
-::
+.. code-block:: java
 
    InferenceAlgorithmForDBN = new FactoredFrontierForDBN(new VMP());
 

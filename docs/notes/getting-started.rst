@@ -10,13 +10,13 @@ installed. For more information, read the
 `requirements <requirements.html>`__ section. First, download the
 example project code:
 
-::
+.. code-block:: bash
 
    $ git clone https://github.com/amidst/example-project.git
 
 Enter in the downloaded folder:
 
-::
+.. code-block:: bash
 
    $ cd example-project/
 
@@ -25,13 +25,13 @@ file **./src/main/java/BasicExample.java**.
 
 Compile and build the package:
 
-::
+.. code-block:: bash
 
    $ mvn clean package
 
 Finally, run the code example previously mentioned:
 
-::
+.. code-block:: bash
 
    $ java -cp target/example-project-full.jar BasicExample
 
@@ -107,7 +107,7 @@ In general, for start using the AMIDST toolbox, add the following lines
 to the pom.xml file of your maven project:
 
 
-.. parsed-literal::
+.. code-block:: xml
 
 
    <repositories> 

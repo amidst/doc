@@ -26,7 +26,7 @@
 
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/inferpy_theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/amidst_theme.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Getting Started!" href="getting-started.html" />
@@ -1705,9 +1705,9 @@ the class variable.</p>
 <a class="reference internal image-reference" href="notes/img/HODE.jpg"><img alt="HODE example" src="notes/img/HODE.jpg" style="width: 10cm;" /></a>
 <p class="caption"><span class="caption-text">HODE example</span></p>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">java</span> <span class="o">-</span><span class="n">Xmx512m</span> <span class="o">-</span><span class="n">cp</span> <span class="s2">&quot;../lib/*&quot;</span> <span class="o">-</span><span class="n">javaagent</span><span class="p">:</span><span class="o">../</span><span class="n">lib</span><span class="o">/</span><span class="n">sizeofag</span><span class="o">-</span><span class="mf">1.0</span><span class="o">.</span><span class="mf">0.</span><span class="n">jar</span>
-<span class="n">moa</span><span class="o">.</span><span class="n">DoTask</span> <span class="n">EvaluatePrequential</span> <span class="o">-</span><span class="n">l</span> \<span class="p">(</span><span class="n">bayes</span><span class="o">.</span><span class="n">AmidstClassifier</span> <span class="o">-</span><span class="n">g</span> <span class="mi">1</span>
-<span class="o">-</span><span class="n">m</span> <span class="mi">2</span>\<span class="p">)</span> <span class="o">-</span><span class="n">s</span> <span class="n">generators</span><span class="o">.</span><span class="n">RandomRBFGenerator</span> <span class="o">-</span><span class="n">i</span> <span class="mi">10000</span> <span class="o">-</span><span class="n">f</span> <span class="mi">1000</span> <span class="o">-</span><span class="n">q</span> <span class="mi">1000</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>java -Xmx512m -cp <span class="s2">&quot;../lib/*&quot;</span> -javaagent:../lib/sizeofag-1.0.0.jar
+moa.DoTask EvaluatePrequential -l <span class="se">\(</span>bayes.AmidstClassifier -g <span class="m">1</span>
+-m <span class="m">2</span><span class="se">\)</span> -s generators.RandomRBFGenerator -i <span class="m">10000</span> -f <span class="m">1000</span> -q <span class="m">1000</span>
 </pre></div>
 </div>
 </div>
@@ -1722,9 +1722,9 @@ problems</a>.</p>
 <a class="reference internal image-reference" href="notes/img/regressionHODE.jpg"><img alt="HODE regression example" src="notes/img/regressionHODE.jpg" style="width: 10cm;" /></a>
 <p class="caption"><span class="caption-text">HODE regression example</span></p>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">java</span> <span class="o">-</span><span class="n">Xmx512m</span> <span class="o">-</span><span class="n">cp</span> <span class="s2">&quot;../lib/*&quot;</span> <span class="o">-</span><span class="n">javaagent</span><span class="p">:</span><span class="o">../</span><span class="n">lib</span><span class="o">/</span><span class="n">sizeofag</span><span class="o">-</span><span class="mf">1.0</span><span class="o">.</span><span class="mf">0.</span><span class="n">jar</span>
-<span class="n">moa</span><span class="o">.</span><span class="n">DoTask</span> <span class="n">EvaluatePrequentialRegression</span> <span class="o">-</span><span class="n">l</span> <span class="n">bayes</span><span class="o">.</span><span class="n">AmidstRegressor</span>
-<span class="o">-</span><span class="n">s</span> <span class="p">(</span><span class="n">ArffFileStream</span> <span class="o">-</span><span class="n">f</span> <span class="o">./</span><span class="n">quake</span><span class="o">.</span><span class="n">arff</span><span class="p">)</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">java</span> <span class="o">-</span><span class="n">Xmx512m</span> <span class="o">-</span><span class="n">cp</span> <span class="s">&quot;../lib/*&quot;</span> <span class="o">-</span><span class="n">javaagent</span><span class="o">:../</span><span class="n">lib</span><span class="o">/</span><span class="n">sizeofag</span><span class="o">-</span><span class="mf">1.0.0</span><span class="o">.</span><span class="na">jar</span>
+<span class="n">moa</span><span class="o">.</span><span class="na">DoTask</span> <span class="n">EvaluatePrequentialRegression</span> <span class="o">-</span><span class="n">l</span> <span class="n">bayes</span><span class="o">.</span><span class="na">AmidstRegressor</span>
+<span class="o">-</span><span class="n">s</span> <span class="o">(</span><span class="n">ArffFileStream</span> <span class="o">-</span><span class="n">f</span> <span class="o">./</span><span class="n">quake</span><span class="o">.</span><span class="na">arff</span><span class="o">)</span>
 </pre></div>
 </div>
 <p>Note that the simpler the dataset the less complex the model should be.

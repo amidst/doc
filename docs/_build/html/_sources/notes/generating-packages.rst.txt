@@ -8,20 +8,20 @@ watch this
 `video-tutorial <https://www.youtube.com/watch?v=6iLG17UPzX0>`__. First,
 you can download the source code using the following command:
 
-::
+.. code-block:: bash
 
    $ git clone https://github.com/amidst/toolbox.git      
 
 Once the download has finished, enter into the downloaded folder:
 
-::
+.. code-block:: bash
 
    $ cd toolbox     
 
 For generating the packages for all the modules, use the following
 command:
 
-::
+.. code-block:: bash
 
    $ mvn clean dependency:copy-dependencies package -Dmaven.test.skip=true    
 
@@ -31,7 +31,7 @@ and hence the process will take much more time. If everything goes
 right, you will eventually obtain an output similar to the following
 one:
 
-::
+.. code-block:: bash
 
    [INFO] Reactor Summary:
    [INFO] 

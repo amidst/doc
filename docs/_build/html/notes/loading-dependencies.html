@@ -26,7 +26,7 @@
 
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/inferpy_theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/amidst_theme.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Installing a local AMIDST repository" href="installing-local-repository.html" />
@@ -349,14 +349,14 @@ First, in the Project view (located on the left) select the file pom.xml
 of your project and open it:</p>
 <p>[fig:remoteDeps_initialPom]</p>
 <p>Add the AMIDST repository by including the following code to your pom:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;repositories&gt;
-&lt;!-- AMIDST repository in github --&gt;
-&lt;repository&gt;
-&lt;id&gt;amidstRepo&lt;/id&gt; &lt;!-- local identifier, it can be anything --&gt;
-&lt;url&gt;https://raw.github.com/amidst/toolbox/mvn-repo/&lt;/url&gt;
-&lt;/repository&gt;
-&lt;!-- ... --&gt;
-&lt;/repositories&gt;
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;repositories&gt;</span>
+<span class="c">&lt;!-- AMIDST repository in github --&gt;</span>
+<span class="nt">&lt;repository&gt;</span>
+<span class="nt">&lt;id&gt;</span>amidstRepo<span class="nt">&lt;/id&gt;</span> <span class="c">&lt;!-- local identifier, it can be anything --&gt;</span>
+<span class="nt">&lt;url&gt;</span>https://raw.github.com/amidst/toolbox/mvn-repo/<span class="nt">&lt;/url&gt;</span>
+<span class="nt">&lt;/repository&gt;</span>
+<span class="c">&lt;!-- ... --&gt;</span>
+<span class="nt">&lt;/repositories&gt;</span>
 </pre></div>
 </div>
 <p>Then, add the dependencies of modules in AMIDST you want to use.&nbsp; For
@@ -378,17 +378,17 @@ the current stage of the build. We will set this to <em>“compile”.</em></li>
 </ul>
 <p>For example, for using the <em>core-dynamic</em> module, include the following
 code:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;dependencies&gt;
-&lt;!-- Load any of the modules from AMIDST Toolbox --&gt;
-&lt;dependency&gt;
-&lt;groupId&gt;eu.amidst&lt;/groupId&gt;
-&lt;artifactId&gt;core-dynamic&lt;/artifactId&gt;
-&lt;version&gt;(*\amidstversion*)&lt;/version&gt;
-&lt;scope&gt;compile&lt;/scope&gt;
-&lt;/dependency&gt;
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;dependencies&gt;</span>
+<span class="c">&lt;!-- Load any of the modules from AMIDST Toolbox --&gt;</span>
+<span class="nt">&lt;dependency&gt;</span>
+<span class="nt">&lt;groupId&gt;</span>eu.amidst<span class="nt">&lt;/groupId&gt;</span>
+<span class="nt">&lt;artifactId&gt;</span>core-dynamic<span class="nt">&lt;/artifactId&gt;</span>
+<span class="nt">&lt;version&gt;</span>(*\amidstversion*)<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;scope&gt;</span>compile<span class="nt">&lt;/scope&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
 
-&lt;!-- ... --&gt;
-&lt;/dependencies&gt;
+<span class="c">&lt;!-- ... --&gt;</span>
+<span class="nt">&lt;/dependencies&gt;</span>
 </pre></div>
 </div>
 <p>Note that for using another module, simply change the value of the
@@ -410,24 +410,24 @@ as well. We recomend you to download the sources and the javadoc:</p>
 <p>Finally, for testing purposes, we can run the code shown below that
 generates a random dynamic bayesian network (DBN) and prints its
 parameters.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">eu.amidst.dynamic.models.DynamicBayesianNetwork</span><span class="p">;</span>
-<span class="kn">import</span> <span class="nn">eu.amidst.dynamic.utils.DynamicBayesianNetworkGenerator</span><span class="p">;</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">eu.amidst.dynamic.models.DynamicBayesianNetwork</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">eu.amidst.dynamic.utils.DynamicBayesianNetworkGenerator</span><span class="o">;</span>
 
-<span class="n">public</span> <span class="k">class</span> <span class="nc">TestingAmidst</span> <span class="p">{</span>
-  <span class="n">public</span> <span class="n">static</span> <span class="n">void</span> <span class="n">main</span><span class="p">(</span><span class="n">String</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span> <span class="n">throws</span> <span class="n">WrongConfigurationException</span> <span class="p">{</span>
-    <span class="n">DynamicBayesianNetworkGenerator</span><span class="o">.</span><span class="n">setNumberOfContinuousVars</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-    <span class="n">DynamicBayesianNetworkGenerator</span><span class="o">.</span><span class="n">setNumberOfDiscreteVars</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
-    <span class="n">DynamicBayesianNetworkGenerator</span><span class="o">.</span><span class="n">setNumberOfStates</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">TestingAmidst</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">WrongConfigurationException</span> <span class="o">{</span>
+    <span class="n">DynamicBayesianNetworkGenerator</span><span class="o">.</span><span class="na">setNumberOfContinuousVars</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>
+    <span class="n">DynamicBayesianNetworkGenerator</span><span class="o">.</span><span class="na">setNumberOfDiscreteVars</span><span class="o">(</span><span class="mi">5</span><span class="o">);</span>
+    <span class="n">DynamicBayesianNetworkGenerator</span><span class="o">.</span><span class="na">setNumberOfStates</span><span class="o">(</span><span class="mi">3</span><span class="o">);</span>
 
     <span class="n">DynamicBayesianNetwork</span> <span class="n">extendedDBN</span> <span class="o">=</span>
-    <span class="n">DynamicBayesianNetworkGenerator</span><span class="o">.</span><span class="n">generateDynamicBayesianNetwork</span><span class="p">();</span>
+    <span class="n">DynamicBayesianNetworkGenerator</span><span class="o">.</span><span class="na">generateDynamicBayesianNetwork</span><span class="o">();</span>
 
-    <span class="n">System</span><span class="o">.</span><span class="n">out</span><span class="o">.</span><span class="n">println</span><span class="p">(</span><span class="n">extendedDBN</span><span class="o">.</span><span class="n">toString</span><span class="p">());</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">extendedDBN</span><span class="o">.</span><span class="na">toString</span><span class="o">());</span>
 
 
-  <span class="p">}</span>
+  <span class="o">}</span>
 
-<span class="p">}</span>
+<span class="o">}</span>
 </pre></div>
 </div>
 <p>If everything goes right, the following output will be generated:</p>

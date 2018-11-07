@@ -26,7 +26,7 @@
 
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/inferpy_theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/amidst_theme.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Flinklink: Code Examples" href="flinklink.html" />
@@ -361,7 +361,7 @@ system requirements, see this
 <a class="reference external" href="../GettingStarted/requirements.html">link</a>. Additionally, you can
 download a ready-to-use IntelliJ maven project with all the code
 examples in this tutorial. For that, use the following command:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/amidst/tutorial.git
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/amidst/tutorial.git
 </pre></div>
 </div>
 <p>Alternativelly, you would rather create a new maven project or use an
@@ -480,11 +480,11 @@ desing: if we aim to change the model learnt from our data, we simply
 have to change the constructor used (assuming that our data also fits
 the constraints of the new model). For example, if we aim to learn a
 mixture of factor analysers instead, we simply have to replace the line</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Model</span> <span class="n">model</span> <span class="o">=</span> <span class="n">new</span> <span class="n">FactorAnalysis</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">getAtributes</span><span class="p">());</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Model</span> <span class="n">model</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FactorAnalysis</span><span class="o">(</span><span class="n">data</span><span class="o">.</span><span class="na">getAtributes</span><span class="o">());</span>
 </pre></div>
 </div>
 <p>by</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Model</span> <span class="n">model</span> <span class="o">=</span> <span class="n">new</span> <span class="n">MixtureOfFactorAnalysers</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">getAtributes</span><span class="p">());</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Model</span> <span class="n">model</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MixtureOfFactorAnalysers</span><span class="o">(</span><span class="n">data</span><span class="o">.</span><span class="na">getAtributes</span><span class="o">());</span>
 </pre></div>
 </div>
 <p>Note that the method for learning the model, namely
@@ -495,12 +495,12 @@ which is stored as a member variable of <em>Model</em>. Thus, for using the
 network, we simply have to extract with the method <em>Model::getModel()</em>.
 One of the actions we can perform with it is saving it into the local
 file system. For saving it in <em>.bn</em> format:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BayesianNetworkWriter</span><span class="p">::</span><span class="n">save</span><span class="p">(</span><span class="n">BayesianNetwork</span> <span class="n">bn</span><span class="p">,</span> <span class="n">String</span> <span class="n">path</span><span class="p">)</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="nl">BayesianNetworkWriter:</span><span class="o">:</span><span class="n">save</span><span class="o">(</span><span class="n">BayesianNetwork</span> <span class="n">bn</span><span class="o">,</span> <span class="n">String</span> <span class="n">path</span><span class="o">)</span>
 </pre></div>
 </div>
 <p>Alternatively, and assuming that we have the hugin library available, we
 can also save it in <em>.net</em> format:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BayesianNetworkWriteToHuginr</span><span class="p">::</span><span class="n">save</span><span class="p">(</span><span class="n">BayesianNetwork</span> <span class="n">bn</span><span class="p">,</span> <span class="n">String</span> <span class="n">path</span><span class="p">)</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="nl">BayesianNetworkWriteToHuginr:</span><span class="o">:</span><span class="n">save</span><span class="o">(</span><span class="n">BayesianNetwork</span> <span class="n">bn</span><span class="o">,</span> <span class="n">String</span> <span class="n">path</span><span class="o">)</span>
 </pre></div>
 </div>
 </div>
@@ -580,11 +580,11 @@ GitHub</a></p>
 system. Instead, we might need to load from a distributed file system.
 For that, simply replace the string indicating the path. That is,
 replace</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">String</span> <span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;datasets/simulated/cajamarDistributed.arff&quot;</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">String</span> <span class="n">filename</span> <span class="o">=</span> <span class="s">&quot;datasets/simulated/cajamarDistributed.arff&quot;</span>
 </pre></div>
 </div>
 <p>by</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">String</span> <span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;hdfs://distributed-server/path-to-file&quot;</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">String</span> <span class="n">filename</span> <span class="o">=</span> <span class="s">&quot;hdfs://distributed-server/path-to-file&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -658,12 +658,12 @@ GitHub</a></p>
 <p>Note that the learning algorithm can be easily changed by simply
 modifying line 35 where <em>VMP algorithm</em>. If we aim to use <em>Importance
 Sampling algorithm</em>, replace such line with:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">InferenceAlgorithm</span> <span class="n">infer</span> <span class="o">=</span> <span class="n">new</span> <span class="n">ImportanceSampling</span><span class="p">();</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">InferenceAlgorithm</span> <span class="n">infer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ImportanceSampling</span><span class="o">();</span>
 </pre></div>
 </div>
 <p>Alternatively, we can use <em>Hugin Inference algorithm</em> (assuming that we
 have the corresponding libraries):</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">InferenceAlgorithm</span> <span class="n">infer</span> <span class="o">=</span> <span class="n">new</span> <span class="n">HuginInference</span><span class="p">();</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">InferenceAlgorithm</span> <span class="n">infer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HuginInference</span><span class="o">();</span>
 </pre></div>
 </div>
 </div>
@@ -899,7 +899,7 @@ the inference is perform for each data instance.</p>
 GitHub</a></p>
 <p>Note that the inference algorithm can be easily change if line 33 is
 modified by replacing it with:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">InferenceAlgorithmForDBN</span> <span class="o">=</span> <span class="n">new</span> <span class="n">FactoredFrontierForDBN</span><span class="p">(</span><span class="n">new</span> <span class="n">VMP</span><span class="p">());</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">InferenceAlgorithmForDBN</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FactoredFrontierForDBN</span><span class="o">(</span><span class="k">new</span> <span class="n">VMP</span><span class="o">());</span>
 </pre></div>
 </div>
 </div>

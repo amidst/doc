@@ -10,14 +10,14 @@ This toolbox has been specifically designed for using the
 functional-style features provided by the Java 8 release. You can check
 the Java version installed in your system with the following command:
 
-::
+.. code-block:: bash
 
    $ java -version    
 
 | If everything is right, the following output (or similar) will be
   generated:
 
-::
+.. code-block:: bash
 
    java version "1.8.0_73"
    Java(TM) SE Runtime Environment (build 1.8.0_73-b02)
@@ -32,13 +32,13 @@ The second requirement consists of having maven installed your system:
 (follow specific instructions for your OS). Use the following command
 for verifying that everything works properly:
 
-::
+.. code-block:: bash
 
    $ mvn -v
 
 | which should generate an output similar to
 
-::
+.. code-block:: bash
 
    Apache Maven 3.2.3 (33f8c3e1027c3ddde99d3cdebad2656a31e8fdf4; 2014-08-11T22:58:10+02:00)
    Maven home: /sw/share/maven
