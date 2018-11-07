@@ -173,7 +173,7 @@ html_static_path = ['_static']
 
 html_context = {
     'css_files': [
-        '_static/css/inferpy_theme.css'
+        '_static/css/amidst_theme.css'
     ],
 }
 
