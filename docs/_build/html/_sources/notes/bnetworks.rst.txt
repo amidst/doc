@@ -3,175 +3,63 @@
 Bayesian Networks: Code Examples
 ================================
 
--  
+* `Data Streams`_
 
-   .. raw:: latex
+* `Models`_
 
-      \hyperref[sec:bns:datastreams]{Data Streams}
+	- `Creating BNs`_
 
--  
+	- `Creating Bayesian networks with latent variables`_
 
-   .. raw:: latex
+	- `Modifying Bayesian Networks`_
 
-      \hyperref[sec:bns:randomvars]{Data Streams}
+* `Input/Output`_
 
--  
+	- `I/O of data streams`_
 
-   .. raw:: latex
+	- `I/O of BNs`_
 
-      \hyperref[sec:bns:models]{Models}
+* `Inference`_
 
-   -  
+	- `The inference engine`_
 
-      .. raw:: latex
+	- `Variational Message Passing`_
 
-         \hyperref[sec:bns:models:creating]{Creating BNs}
+	- `Importance Sampling`_
 
-   -  
+* `Learning Algorithms`_
 
-      .. raw:: latex
+	- `Maximum Likelihood`_
 
-         \hyperref[sec:bns:models:creatinglatent]{Creating Bayesian networks with latent variables}
+	- `Parallel Maximum Likelihood`_
 
-   -  
+	- `Streaming Variational Bayes`_
+	
+	- `Parallel Streaming Variational Bayes`_ 
 
-      .. raw:: latex
+* `Concept Drift Methods`_
 
-         \hyperref[sec:bns:models:modif]{Modifiying Bayesian networks}
+	- `Naive Bayes with Virtual Concept Drift Detection`_
 
--  
+* `HuginLink`_
 
-   .. raw:: latex
+	- `Models conversion between AMIDST and Hugin`_
 
-      \hyperref[sec:bns:io]{Input/Output}
+	- `I/O of Bayesian Networks with Hugin net format`_
 
-   -  
+	- `Invoking Hugin's inference engine`_
+	
+	- `Invoking Hugin's Parallel TAN`_
 
-      .. raw:: latex
+* `MoaLink`_
 
-         \hyperref[sec:bns:io:iods]{I/O of data streams}
+	- `AMIDST Classifiers from MOA`_  
 
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:bns:io:iobn]{I/O of BNs}
-
--  
-
-   .. raw:: latex
-
-      \hyperref[sec:bns:inference]{Inference}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:bns:inference:engine]{The inference engine}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:bns:inference:vmp]{Variational Message Passing}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:bns:inference:sampling]{Importance Sampling}
-
--  
-
-   .. raw:: latex
-
-      \hyperref[sec:bns:learning]{Learning Algorithms}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:bns:learning:batchml]{Maximum Likelihood}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:bns:learning:parallelml]{Parallel Maximum Likelihood}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:bns:learning:svb]{Streaming Variational Bayes}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:bns:learning:parallelsvb]{Parallel Streaming Variational Bayes}
-
--  
-
-   .. raw:: latex
-
-      \hyperref[sec:bns:conceptdrift]{Concept Drift Methods}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:bns:conceptdrift:nbayes]{Naive Bayes with Virtual Concept Drift Detection}
-
--  
-
-   .. raw:: latex
-
-      \hyperref[sec:bns:huginlink]{HuginLink}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:bns:huginlink:conversion]{Models conversion between AMiDST and Hugin}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:bns:huginlink:io]{I/O of Bayesian Networks with Hugin net format}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:bns:huginlink:inference]{Invoking Hugin's inference engine}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:bns:huginlink:huginTAN]{Invoking Hugin's Parallel TAN}
-
--  
-
-   .. raw:: latex
-
-      \hyperref[sec:bns:moalink]{MoaLink}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:bns:moalink:moaclass]{AMIDST Classifiers from MOA}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:bns:moalink:moareg]{AMIDST Classifiers from MOA}
+ 
 
 .. _sec:bns:datastreams:
+
+.. _`Data Streams`:
 
 Data Streams
 ------------
@@ -204,10 +92,12 @@ Variable.
 
 .. _sec:bns:models:
 
+.. _`Models`:
+
 Models
 ------
 
-.. _sec:bns:models:creating:
+.. _`Creating BNs`:
 
 Creating BNs
 ~~~~~~~~~~~~
@@ -227,7 +117,7 @@ the probability distributions of the BN are randomly fixed.
 
    \newline 
 
-.. _sec:bns:models:creatinglatent:
+.. _`Creating Bayesian networks with latent variables`:
 
 Creating Bayesian networks with latent variables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -248,9 +138,10 @@ all the observable variables.
 
    \newline 
 
-.. _sec:bns:models:modif:
+.. _`Modifying Bayesian networks`:
 
-Modifiying Bayesian networks
+
+Modifying Bayesian networks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In this example we show how to access and modify the conditional
@@ -267,12 +158,12 @@ probabilities of a Bayesian network model.
 
    \newline 
 
-.. _sec:bns:io:
+.. _`Input/Output`:
 
 Input/Output
 ------------
 
-.. _sec:bns:io:iods:
+.. _`I/O of data streams`:
 
 I/O of data streams
 ~~~~~~~~~~~~~~~~~~~
@@ -290,7 +181,7 @@ In this example we show how to load and save data sets from .arff files.
 
    \newline 
 
-.. _sec:bns:io:iobn:
+.. _`I/O of BNs`:
 
 I/O of BNs
 ~~~~~~~~~~
@@ -310,12 +201,12 @@ networks models are saved as serialized objects.
 
    \newline 
 
-.. _sec:bns:inference:
+.. _`Inference`:
 
 Inference
 ---------
 
-.. _sec:bns:inference:engine:
+.. _`The inference engine`:
 
 The inference engine
 ~~~~~~~~~~~~~~~~~~~~
@@ -341,7 +232,7 @@ the default the *VMP* inference method is invoked.
 Inference
 ---------
 
-.. _sec:bns:inference:vmp:
+.. _`Variational Message Passing`:
 
 Variational Message Passing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -364,7 +255,7 @@ in
 
    \newline 
 
-.. _sec:bns:inference:sampling:
+.. _`Importance Sampling`:
 
 Importance Sampling
 ~~~~~~~~~~~~~~~~~~~
@@ -387,12 +278,12 @@ network using an importance sampling algorithm detailed in
 
    \newline 
 
-.. _sec:bns:learning:
+.. _`Learning Algorithms`:
 
 Learning Algorithms
 -------------------
 
-.. _sec:bns:learning:batchml:
+.. _`Maximum Likelihood`:
 
 Maximum Likelihood
 ~~~~~~~~~~~~~~~~~~
@@ -412,7 +303,7 @@ Bayesian network using data batches,
 
    \newline 
 
-.. _sec:bns:learning:parallelml:
+.. _`Parallel Maximum Likelihood`:
 
 Parallel Maximum Likelihood
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -431,7 +322,7 @@ network from a stream of data using maximum likelihood.
 
    \newline 
 
-.. _sec:bns:learning:svb:
+.. _`Streaming Variational Bayes`:
 
 Streaming Variational Bayes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -458,7 +349,7 @@ explicitly updates the model by batches by using the class SVB.
 
    \newline 
 
-.. _sec:bns:learning:parallelsvb:
+.. _`Parallel Streaming Variational Bayes`:
 
 Parallel Streaming Variational Bayes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -482,12 +373,12 @@ version of the SVB algorithm,
 
    \newline 
 
-.. _sec:bns:conceptdrift:
+.. _`Concept Drift Methods`:
 
 Concept Drift Methods
 ---------------------
 
-.. _sec:bns:conceptdrift:nbayes:
+.. _`Naive Bayes with Virtual Concept Drift Detection`:
 
 Naive Bayes with Virtual Concept Drift Detection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -510,12 +401,12 @@ detector detailed in
 
    \newline 
 
-.. _sec:bns:huginlink:
+.. _`HuginLink`:
 
 HuginLink
 ---------
 
-.. _sec:bns:huginlink:conversion:
+.. _`Models conversion between AMiDST and Hugin`:
 
 Models conversion between AMiDST and Hugin
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -536,7 +427,8 @@ and AMIDST formats
 
    \newline 
 
-.. _sec:bns:huginlink:io:
+.. _`I/O of Bayesian Networks with Hugin net format`:
+
 
 I/O of Bayesian Networks with Hugin net format
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -556,7 +448,8 @@ format
 
    \newline 
 
-.. _sec:bns:huginlink:inference:
+.. _`Invoking Hugin's inference engine`:
+
 
 Invoking Hugin’s inference engine
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -576,7 +469,8 @@ toolbox
 
    \newline 
 
-.. _sec:bns:huginlink:huginTAN:
+.. _`Invoking Hugin's Parallel TAN`:
+
 
 Invoking Hugin’s Parallel TAN
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -613,12 +507,12 @@ algorithm look at the following paper:
 
    \newline 
 
-.. _sec:bns:moalink:
+.. _`MoaLink`:
 
 MoaLink
 -------
 
-.. _sec:bns:moalink:moaclass:
+.. _`AMIDST Classifiers from MOA`:
 
 AMIDST Classifiers from MOA
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~

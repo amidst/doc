@@ -181,7 +181,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#models">Models</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#creating-bns">Creating BNs</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#creating-bayesian-networks-with-latent-variables">Creating Bayesian networks with latent variables</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#modifiying-bayesian-networks">Modifiying Bayesian networks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modifying-bayesian-networks">Modifying Bayesian networks</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#input-output">Input/Output</a><ul>
@@ -193,7 +193,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#the-inference-engine">The inference engine</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#id2">Inference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#sec-bns-inference">Inference</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#variational-message-passing">Variational Message Passing</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#importance-sampling">Importance Sampling</a></li>
 </ul>
@@ -336,51 +336,71 @@
   <div class="section" id="bayesian-networks-code-examples">
 <span id="sec-bns"></span><h1>Bayesian Networks: Code Examples<a class="headerlink" href="#bayesian-networks-code-examples" title="Permalink to this headline">¶</a></h1>
 <ul>
-<li></li>
-<li></li>
-<li><ul>
-<li></li>
-<li></li>
-<li></li>
-</ul>
+<li><p class="first"><a class="reference internal" href="#data-streams">Data Streams</a></p>
 </li>
-<li><ul>
-<li></li>
-<li></li>
+<li><p class="first"><a class="reference internal" href="#models">Models</a></p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="#creating-bns">Creating BNs</a></li>
+<li><a class="reference internal" href="#creating-bayesian-networks-with-latent-variables">Creating Bayesian networks with latent variables</a></li>
+<li><a class="reference internal" href="#modifying-bayesian-networks">Modifying Bayesian Networks</a></li>
 </ul>
+</div></blockquote>
 </li>
-<li><ul>
-<li></li>
-<li></li>
-<li></li>
+<li><p class="first"><a class="reference internal" href="#input-output">Input/Output</a></p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="#i-o-of-data-streams">I/O of data streams</a></li>
+<li><a class="reference internal" href="#i-o-of-bns">I/O of BNs</a></li>
 </ul>
+</div></blockquote>
 </li>
-<li><ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li><p class="first"><a class="reference internal" href="#inference">Inference</a></p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="#the-inference-engine">The inference engine</a></li>
+<li><a class="reference internal" href="#variational-message-passing">Variational Message Passing</a></li>
+<li><a class="reference internal" href="#importance-sampling">Importance Sampling</a></li>
 </ul>
+</div></blockquote>
 </li>
-<li><ul>
-<li></li>
+<li><p class="first"><a class="reference internal" href="#learning-algorithms">Learning Algorithms</a></p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="#maximum-likelihood">Maximum Likelihood</a></li>
+<li><a class="reference internal" href="#parallel-maximum-likelihood">Parallel Maximum Likelihood</a></li>
+<li><a class="reference internal" href="#streaming-variational-bayes">Streaming Variational Bayes</a></li>
+<li><a class="reference internal" href="#parallel-streaming-variational-bayes">Parallel Streaming Variational Bayes</a></li>
 </ul>
+</div></blockquote>
 </li>
-<li><ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li><p class="first"><a class="reference internal" href="#concept-drift-methods">Concept Drift Methods</a></p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="#naive-bayes-with-virtual-concept-drift-detection">Naive Bayes with Virtual Concept Drift Detection</a></li>
 </ul>
+</div></blockquote>
 </li>
-<li><ul>
-<li></li>
-<li></li>
+<li><p class="first"><a class="reference internal" href="#huginlink">HuginLink</a></p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="#models-conversion-between-amidst-and-hugin">Models conversion between AMIDST and Hugin</a></li>
+<li><a class="reference internal" href="#i-o-of-bayesian-networks-with-hugin-net-format">I/O of Bayesian Networks with Hugin net format</a></li>
+<li><a class="reference internal" href="#invoking-hugin-s-inference-engine">Invoking Hugin’s inference engine</a></li>
+<li><a class="reference internal" href="#invoking-hugin-s-parallel-tan">Invoking Hugin’s Parallel TAN</a></li>
 </ul>
+</div></blockquote>
+</li>
+<li><p class="first"><a class="reference internal" href="#moalink">MoaLink</a></p>
+<blockquote>
+<div><ul class="simple">
+<li><a class="reference internal" href="#amidst-classifiers-from-moa">AMIDST Classifiers from MOA</a></li>
+</ul>
+</div></blockquote>
 </li>
 </ul>
 <div class="section" id="data-streams">
-<span id="sec-bns-datastreams"></span><h2>Data Streams<a class="headerlink" href="#data-streams" title="Permalink to this headline">¶</a></h2>
+<span id="sec-bns-datastreams"></span><span id="id1"></span><h2>Data Streams<a class="headerlink" href="#data-streams" title="Permalink to this headline">¶</a></h2>
 <p>In this example we show how to use the main features of a DataStream
 object. More precisely, we show six different ways of iterating over the
 data samples of a DataStream object.</p>
@@ -467,7 +487,7 @@ data samples of a DataStream object.</p>
 </div>
 </div>
 <div class="section" id="sec-bns-randomvars">
-<span id="id1"></span><h2>Data Streams<a class="headerlink" href="#sec-bns-randomvars" title="Permalink to this headline">¶</a></h2>
+<span id="id2"></span><h2>Data Streams<a class="headerlink" href="#sec-bns-randomvars" title="Permalink to this headline">¶</a></h2>
 <p>This example show the basic functionality of the classes Variables and
 Variable.</p>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.variables</span><span class="o">;</span>
@@ -520,9 +540,9 @@ Variable.</p>
 </div>
 </div>
 <div class="section" id="models">
-<span id="sec-bns-models"></span><h2>Models<a class="headerlink" href="#models" title="Permalink to this headline">¶</a></h2>
+<span id="sec-bns-models"></span><span id="id3"></span><h2>Models<a class="headerlink" href="#models" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="creating-bns">
-<span id="sec-bns-models-creating"></span><h3>Creating BNs<a class="headerlink" href="#creating-bns" title="Permalink to this headline">¶</a></h3>
+<span id="id4"></span><h3>Creating BNs<a class="headerlink" href="#creating-bns" title="Permalink to this headline">¶</a></h3>
 <p>In this example, we take a data set, create a BN and we compute the
 log-likelihood of all the samples of this data set. The numbers defining
 the probability distributions of the BN are randomly fixed.</p>
@@ -645,7 +665,7 @@ the probability distributions of the BN are randomly fixed.</p>
 </div>
 </div>
 <div class="section" id="creating-bayesian-networks-with-latent-variables">
-<span id="sec-bns-models-creatinglatent"></span><h3>Creating Bayesian networks with latent variables<a class="headerlink" href="#creating-bayesian-networks-with-latent-variables" title="Permalink to this headline">¶</a></h3>
+<span id="id5"></span><h3>Creating Bayesian networks with latent variables<a class="headerlink" href="#creating-bayesian-networks-with-latent-variables" title="Permalink to this headline">¶</a></h3>
 <p>In this example, we simply show how to create a BN model with hidden
 variables. We simply create a BN for clustering, i.e., a naive-Bayes
 like structure with a single common hidden variable acting as parant of
@@ -760,8 +780,8 @@ all the observable variables.</p>
 </pre></div>
 </div>
 </div>
-<div class="section" id="modifiying-bayesian-networks">
-<span id="sec-bns-models-modif"></span><h3>Modifiying Bayesian networks<a class="headerlink" href="#modifiying-bayesian-networks" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="modifying-bayesian-networks">
+<span id="id6"></span><h3>Modifying Bayesian networks<a class="headerlink" href="#modifying-bayesian-networks" title="Permalink to this headline">¶</a></h3>
 <p>In this example we show how to access and modify the conditional
 probabilities of a Bayesian network model.</p>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.models</span><span class="o">;</span>
@@ -817,9 +837,9 @@ probabilities of a Bayesian network model.</p>
 </div>
 </div>
 <div class="section" id="input-output">
-<span id="sec-bns-io"></span><h2>Input/Output<a class="headerlink" href="#input-output" title="Permalink to this headline">¶</a></h2>
+<span id="id7"></span><h2>Input/Output<a class="headerlink" href="#input-output" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="i-o-of-data-streams">
-<span id="sec-bns-io-iods"></span><h3>I/O of data streams<a class="headerlink" href="#i-o-of-data-streams" title="Permalink to this headline">¶</a></h3>
+<span id="id8"></span><h3>I/O of data streams<a class="headerlink" href="#i-o-of-data-streams" title="Permalink to this headline">¶</a></h3>
 <p>In this example we show how to load and save data sets from .arff files.</p>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.io</span><span class="o">;</span>
 
@@ -853,7 +873,7 @@ probabilities of a Bayesian network model.</p>
 </div>
 </div>
 <div class="section" id="i-o-of-bns">
-<span id="sec-bns-io-iobn"></span><h3>I/O of BNs<a class="headerlink" href="#i-o-of-bns" title="Permalink to this headline">¶</a></h3>
+<span id="id9"></span><h3>I/O of BNs<a class="headerlink" href="#i-o-of-bns" title="Permalink to this headline">¶</a></h3>
 <p>In this example we show how to load and save Bayesian networks models
 for a binary file with “.bn” extension. In this toolbox Bayesian
 networks models are saved as serialized objects.</p>
@@ -896,9 +916,9 @@ networks models are saved as serialized objects.</p>
 </div>
 </div>
 <div class="section" id="inference">
-<span id="sec-bns-inference"></span><h2>Inference<a class="headerlink" href="#inference" title="Permalink to this headline">¶</a></h2>
+<span id="id10"></span><h2>Inference<a class="headerlink" href="#inference" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="the-inference-engine">
-<span id="sec-bns-inference-engine"></span><h3>The inference engine<a class="headerlink" href="#the-inference-engine" title="Permalink to this headline">¶</a></h3>
+<span id="id11"></span><h3>The inference engine<a class="headerlink" href="#the-inference-engine" title="Permalink to this headline">¶</a></h3>
 <p>This example show how to perform inference in a Bayesian network model
 using the InferenceEngine static class. This class aims to be a
 straigthfoward way to perform queries over a Bayesian network model. By
@@ -947,10 +967,10 @@ the default the <em>VMP</em> inference method is invoked.</p>
 </div>
 </div>
 </div>
-<div class="section" id="id2">
-<span id="id3"></span><h2>Inference<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="sec-bns-inference">
+<span id="id12"></span><h2>Inference<a class="headerlink" href="#sec-bns-inference" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="variational-message-passing">
-<span id="sec-bns-inference-vmp"></span><h3>Variational Message Passing<a class="headerlink" href="#variational-message-passing" title="Permalink to this headline">¶</a></h3>
+<span id="id13"></span><h3>Variational Message Passing<a class="headerlink" href="#variational-message-passing" title="Permalink to this headline">¶</a></h3>
 <p>This example we show how to perform inference on a general Bayesian
 network using the Variational Message Passing (VMP) algorithm detailed
 in</p>
@@ -1016,7 +1036,7 @@ Journal of Machine Learning Research (pp. 661-694).</div></blockquote>
 </div>
 </div>
 <div class="section" id="importance-sampling">
-<span id="sec-bns-inference-sampling"></span><h3>Importance Sampling<a class="headerlink" href="#importance-sampling" title="Permalink to this headline">¶</a></h3>
+<span id="id14"></span><h3>Importance Sampling<a class="headerlink" href="#importance-sampling" title="Permalink to this headline">¶</a></h3>
 <p>This example we show how to perform inference on a general Bayesian
 network using an importance sampling algorithm detailed in</p>
 <blockquote>
@@ -1092,9 +1112,9 @@ arXiv:1304.1504.</div></blockquote>
 </div>
 </div>
 <div class="section" id="learning-algorithms">
-<span id="sec-bns-learning"></span><h2>Learning Algorithms<a class="headerlink" href="#learning-algorithms" title="Permalink to this headline">¶</a></h2>
+<span id="id15"></span><h2>Learning Algorithms<a class="headerlink" href="#learning-algorithms" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="maximum-likelihood">
-<span id="sec-bns-learning-batchml"></span><h3>Maximum Likelihood<a class="headerlink" href="#maximum-likelihood" title="Permalink to this headline">¶</a></h3>
+<span id="id16"></span><h3>Maximum Likelihood<a class="headerlink" href="#maximum-likelihood" title="Permalink to this headline">¶</a></h3>
 <p>This other example shows how to learn incrementally the parameters of a
 Bayesian network using data batches,</p>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.learning</span><span class="o">;</span>
@@ -1178,7 +1198,7 @@ Bayesian network using data batches,</p>
 </div>
 </div>
 <div class="section" id="parallel-maximum-likelihood">
-<span id="sec-bns-learning-parallelml"></span><h3>Parallel Maximum Likelihood<a class="headerlink" href="#parallel-maximum-likelihood" title="Permalink to this headline">¶</a></h3>
+<span id="id17"></span><h3>Parallel Maximum Likelihood<a class="headerlink" href="#parallel-maximum-likelihood" title="Permalink to this headline">¶</a></h3>
 <p>This example shows how to learn in parallel the parameters of a Bayesian
 network from a stream of data using maximum likelihood.</p>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.learning</span><span class="o">;</span>
@@ -1239,7 +1259,7 @@ network from a stream of data using maximum likelihood.</p>
 </div>
 </div>
 <div class="section" id="streaming-variational-bayes">
-<span id="sec-bns-learning-svb"></span><h3>Streaming Variational Bayes<a class="headerlink" href="#streaming-variational-bayes" title="Permalink to this headline">¶</a></h3>
+<span id="id18"></span><h3>Streaming Variational Bayes<a class="headerlink" href="#streaming-variational-bayes" title="Permalink to this headline">¶</a></h3>
 <p>This example shows how to learn incrementally the parameters of a
 Bayesian network from a stream of data with a Bayesian approach using
 the following algorithm,</p>
@@ -1316,7 +1336,7 @@ explicitly updates the model by batches by using the class SVB.</p>
 </div>
 </div>
 <div class="section" id="parallel-streaming-variational-bayes">
-<span id="sec-bns-learning-parallelsvb"></span><h3>Parallel Streaming Variational Bayes<a class="headerlink" href="#parallel-streaming-variational-bayes" title="Permalink to this headline">¶</a></h3>
+<span id="id19"></span><h3>Parallel Streaming Variational Bayes<a class="headerlink" href="#parallel-streaming-variational-bayes" title="Permalink to this headline">¶</a></h3>
 <p>This example shows how to learn in the parameters of a Bayesian network
 from a stream of data with a Bayesian approach using the parallel
 version of the SVB algorithm,</p>
@@ -1387,9 +1407,9 @@ Information Processing Systems (pp. 1727-1735).</div></blockquote>
 </div>
 </div>
 <div class="section" id="concept-drift-methods">
-<span id="sec-bns-conceptdrift"></span><h2>Concept Drift Methods<a class="headerlink" href="#concept-drift-methods" title="Permalink to this headline">¶</a></h2>
+<span id="id20"></span><h2>Concept Drift Methods<a class="headerlink" href="#concept-drift-methods" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="naive-bayes-with-virtual-concept-drift-detection">
-<span id="sec-bns-conceptdrift-nbayes"></span><h3>Naive Bayes with Virtual Concept Drift Detection<a class="headerlink" href="#naive-bayes-with-virtual-concept-drift-detection" title="Permalink to this headline">¶</a></h3>
+<span id="id21"></span><h3>Naive Bayes with Virtual Concept Drift Detection<a class="headerlink" href="#naive-bayes-with-virtual-concept-drift-detection" title="Permalink to this headline">¶</a></h3>
 <p>This example shows how to use the class
 NaiveBayesVirtualConceptDriftDetector to run the virtual concept drift
 detector detailed in</p>
@@ -1492,9 +1512,9 @@ model based approach. IDA 2015.</div></blockquote>
 </div>
 </div>
 <div class="section" id="huginlink">
-<span id="sec-bns-huginlink"></span><h2>HuginLink<a class="headerlink" href="#huginlink" title="Permalink to this headline">¶</a></h2>
+<span id="id22"></span><h2>HuginLink<a class="headerlink" href="#huginlink" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="models-conversion-between-amidst-and-hugin">
-<span id="sec-bns-huginlink-conversion"></span><h3>Models conversion between AMiDST and Hugin<a class="headerlink" href="#models-conversion-between-amidst-and-hugin" title="Permalink to this headline">¶</a></h3>
+<span id="id23"></span><h3>Models conversion between AMiDST and Hugin<a class="headerlink" href="#models-conversion-between-amidst-and-hugin" title="Permalink to this headline">¶</a></h3>
 <p>This example shows how to use the class BNConverterToAMIDST and
 BNConverterToHugin to convert a Bayesian network models between Hugin
 and AMIDST formats</p>
@@ -1530,7 +1550,7 @@ and AMIDST formats</p>
 </div>
 </div>
 <div class="section" id="i-o-of-bayesian-networks-with-hugin-net-format">
-<span id="sec-bns-huginlink-io"></span><h3>I/O of Bayesian Networks with Hugin net format<a class="headerlink" href="#i-o-of-bayesian-networks-with-hugin-net-format" title="Permalink to this headline">¶</a></h3>
+<span id="id24"></span><h3>I/O of Bayesian Networks with Hugin net format<a class="headerlink" href="#i-o-of-bayesian-networks-with-hugin-net-format" title="Permalink to this headline">¶</a></h3>
 <p>This example shows how to use the class BNLoaderFromHugin and
 BNWriterToHugin classes to load and write Bayesian networks in Hugin
 format</p>
@@ -1561,7 +1581,7 @@ format</p>
 </div>
 </div>
 <div class="section" id="invoking-hugins-inference-engine">
-<span id="sec-bns-huginlink-inference"></span><h3>Invoking Hugin’s inference engine<a class="headerlink" href="#invoking-hugins-inference-engine" title="Permalink to this headline">¶</a></h3>
+<span id="invoking-hugin-s-inference-engine"></span><h3>Invoking Hugin’s inference engine<a class="headerlink" href="#invoking-hugins-inference-engine" title="Permalink to this headline">¶</a></h3>
 <p>This example we show how to perform inference using
 <a class="reference external" href="http://www.hugin.com">Hugin</a> inference engine within the AMiDST
 toolbox</p>
@@ -1619,7 +1639,7 @@ toolbox</p>
 </div>
 </div>
 <div class="section" id="invoking-hugins-parallel-tan">
-<span id="sec-bns-huginlink-hugintan"></span><h3>Invoking Hugin’s Parallel TAN<a class="headerlink" href="#invoking-hugins-parallel-tan" title="Permalink to this headline">¶</a></h3>
+<span id="invoking-hugin-s-parallel-tan"></span><h3>Invoking Hugin’s Parallel TAN<a class="headerlink" href="#invoking-hugins-parallel-tan" title="Permalink to this headline">¶</a></h3>
 <p>This example we show how to perform inference using
 <a class="reference external" href="http://www.hugin.com">Hugin</a> inference engine within the AMIDST
 toolbox.</p>
@@ -1693,9 +1713,9 @@ Graphical Models. Lecture Notes in Computer Science Volume 8754,
 </div>
 </div>
 <div class="section" id="moalink">
-<span id="sec-bns-moalink"></span><h2>MoaLink<a class="headerlink" href="#moalink" title="Permalink to this headline">¶</a></h2>
+<span id="id25"></span><h2>MoaLink<a class="headerlink" href="#moalink" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="amidst-classifiers-from-moa">
-<span id="sec-bns-moalink-moaclass"></span><h3>AMIDST Classifiers from MOA<a class="headerlink" href="#amidst-classifiers-from-moa" title="Permalink to this headline">¶</a></h3>
+<span id="id26"></span><h3>AMIDST Classifiers from MOA<a class="headerlink" href="#amidst-classifiers-from-moa" title="Permalink to this headline">¶</a></h3>
 <p>The following command can be used to learn a Bayesian model with a
 latent Gaussian variable (HG) and a multinomial with 2 states (HM), as
 displayed in figure below. The VMP algorithm is used to learn the
@@ -1712,7 +1732,7 @@ moa.DoTask EvaluatePrequential -l <span class="se">\(</span>bayes.AmidstClassifi
 </div>
 </div>
 <div class="section" id="sec-bns-moalink-moareg">
-<span id="id4"></span><h3>AMIDST Classifiers from MOA<a class="headerlink" href="#sec-bns-moalink-moareg" title="Permalink to this headline">¶</a></h3>
+<span id="id27"></span><h3>AMIDST Classifiers from MOA<a class="headerlink" href="#sec-bns-moalink-moareg" title="Permalink to this headline">¶</a></h3>
 <p>It is possible to learn an enriched naive Bayes model for regression if
 the class label is of a continuous nature. The following command uses
 the model in Figure <a class="reference external" href="#fig:bns:moalink:HODEreg">2</a> on a toy dataset

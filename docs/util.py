@@ -5,7 +5,10 @@ import sys
 
 # function that extract a String with the content of ../version.txt
 def get_version():
-    return "0.7.0"
+    # Open file
+    file = open("../version.txt")
+    return file.read()
+    
 
 
 

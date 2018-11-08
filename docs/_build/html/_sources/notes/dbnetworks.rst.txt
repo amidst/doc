@@ -3,7 +3,28 @@
 Dynamic Bayesian Networks: Code Examples
 ========================================
 
--  
+* `Data Streams`_
+
+	- `Reading data`_
+
+	- `Write data`_
+
+* `Parametric Learning`_
+
+	- `Parallel Maximum Likelihood`_
+
+	- `Distributed Variational Message Pasing`_
+
+	- `Distributed VI`_
+
+	- `Stochastic VI`_
+
+* `Extensions and applications`_
+
+	- `Latent variable models with Flink`_
+
+	- `Concept drift`_  
+
 
    .. raw:: latex
 
@@ -88,6 +109,9 @@ Dynamic Bayesian Networks: Code Examples
          \hyperref[sec:dbns:learning:sv]{Streaming Variational Bayes for DBNs}
 
 .. _sec:dbns:datastreams:
+
+.. _`Data Streams`:
+
 
 Data Streams
 ------------
