@@ -14,10 +14,11 @@ lines of code.
 
    \centering
 
-.. figure:: ../img/amidstModels.png
+.. figure:: ../_static/img/amidstModels.png
    :alt: Set of predefined latent variable models in AMIDST
    :name: fig:lvmodels:amidstModels
    :width: 13cm
+   :align: center
 
    Set of predefined latent variable models in AMIDST
 
@@ -58,10 +59,11 @@ transparent way for the user. An scheme of this idea is shown below:
 
    \centering
 
-.. figure:: ../img/overview.png
+.. figure:: ../_static/img/overview.png
    :alt: Set of predefined latent variable models in AMIDST
    :name: fig:lvmodels:overview
    :width: 13cm
+   :align: center
 
    Set of predefined latent variable models in AMIDST
 
@@ -98,10 +100,11 @@ button. It is recommended to download the sources and java
 
    \centering
 
-.. figure:: ../img/mavenpanel.png
+.. figure:: ../_static/img/mavenpanel.png
    :alt: Maven project panel showing the list of dependencies
    :name: fig:lvmodels:mavenpanel
    :width: 10cm
+   :align: center
 
    Maven project panel showing the list of dependencies
 
@@ -134,10 +137,11 @@ combination of gaussians.
 
    \centering
 
-.. figure:: ../img/staticlearning.png
+.. figure:: ../_static/img/staticlearning.png
    :alt: Static learning process
    :name: fig:lvmodels:static:learning:scheme
    :width: 10cm
+   :align: center
 
    Static learning process
 
@@ -210,10 +214,11 @@ below.
 
    \centering
 
-.. figure:: ../img/distributedlearning.png
+.. figure:: ../_static/img/distributedlearning.png
    :alt: Distributed learning process scheme
    :name: fig:lvmodels:static:flinklearning:scheme
    :width: 10cm
+   :align: center
 
    Distributed learning process scheme
 
@@ -258,10 +263,11 @@ of variables of interest given some evidence over some other variables
 
    \centering
 
-.. figure:: ../img/staticinference.png
+.. figure:: ../_static/img/staticinference.png
    :alt: Learning process scheme
    :name: fig:lvmodels:static:inference:scheme
    :width: 10cm
+   :align: center
 
    Learning process scheme
 
@@ -330,10 +336,11 @@ shown below.
 
    \centering
 
-.. figure:: ../img/dynamicLearning.png
+.. figure:: ../_static/img/dynamicLearning.png
    :alt: Learning process scheme of a dynamic model
    :name: fig:lvmodels:dynamic:learning:scheme
    :width: 10cm
+   :align: center
 
    Learning process scheme of a dynamic model
 

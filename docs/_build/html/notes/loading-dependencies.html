@@ -347,7 +347,10 @@ for getting more information about how to create a new mavenproject.</p>
 <p>For using the AMIDST Toolbox, the <strong>pom.xlm</strong> file will be modified.
 First, in the Project view (located on the left) select the file pom.xml
 of your project and open it:</p>
-<p>[fig:remoteDeps_initialPom]</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/use_amidst05.png"><img alt="Capture of Maven project in IntelliJ and the initial pom.xml file" src="../_images/use_amidst05.png" style="width: 8.5cm;" /></a>
+<p class="caption"><span class="caption-text">Capture of Maven project in IntelliJ and the initial pom.xml file</span></p>
+</div>
 <p>Add the AMIDST repository by including the following code to your pom:</p>
 <div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;repositories&gt;</span>
 <span class="c">&lt;!-- AMIDST repository in github --&gt;</span>
@@ -395,18 +398,16 @@ code:</p>
 element artifactId (i.e. the content between the tags &lt;artifactId&gt; and
 &lt;artifactId&gt;). Now you can check in the <strong>Maven Projects panel</strong> that
 all the dependencies have been loaded:</p>
-<div class="figure" id="id1">
-<a class="reference internal image-reference" href="notes/img/use_amidst07.png"><img alt="List of loaded dependencies" src="notes/img/use_amidst07.png" style="width: 8.5cm;" /></a>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/use_amidst07.png"><img alt="List of loaded dependencies" src="../_images/use_amidst07.png" style="width: 8.5cm;" /></a>
 <p class="caption"><span class="caption-text">List of loaded dependencies</span></p>
 </div>
-<p>[fig:remoteDeps_mavenPanel]</p>
 <p>Note that the <em>core-dynamic module</em> depends on corethat has been loaded
 as well. We recomend you to download the sources and the javadoc:</p>
-<div class="figure" id="id2">
-<a class="reference internal image-reference" href="notes/img/use_amidst08.png"><img alt="Download the JavaDoc and the source code" src="notes/img/use_amidst08.png" style="width: 10cm;" /></a>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="../_images/use_amidst08.png"><img alt="Download the JavaDoc and the source code" src="../_images/use_amidst08.png" style="width: 10cm;" /></a>
 <p class="caption"><span class="caption-text">Download the JavaDoc and the source code</span></p>
 </div>
-<p>[fig:remoteDeps_downloadJD]</p>
 <p>Finally, for testing purposes, we can run the code shown below that
 generates a random dynamic bayesian network (DBN) and prints its
 parameters.</p>
@@ -431,11 +432,10 @@ parameters.</p>
 </pre></div>
 </div>
 <p>If everything goes right, the following output will be generated:</p>
-<div class="figure" id="id3">
-<a class="reference internal image-reference" href="notes/img/use_amidst09.png"><img alt="Ouput of the testing code that generates a random DBN" src="notes/img/use_amidst09.png" style="width: 8.5cm;" /></a>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="../_images/use_amidst09.png"><img alt="Ouput of the testing code that generates a random DBN" src="../_images/use_amidst09.png" style="width: 8.5cm;" /></a>
 <p class="caption"><span class="caption-text">Ouput of the testing code that generates a random DBN</span></p>
 </div>
-<p>[fig:remoteDeps_output]</p>
 </div>
 
 

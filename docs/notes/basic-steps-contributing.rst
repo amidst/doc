@@ -8,13 +8,13 @@ you can watch this
 general scheme to follow for contributing to the AMIDST source code is
 shown below:
 
-.. figure:: img/scheme_contributing.png
+.. figure:: ../_static/img/scheme_contributing.png
    :alt: Scheme for contributing to AMIDST toolbox.
    :width: 12cm
+   :align: center
 
    Scheme for contributing to AMIDST toolbox.
 
-[fig:scheme_contributing]
 
 Now we will explain each of these steps and the involved commands.
 
@@ -205,10 +205,10 @@ develop contains the changes in the code:
 
    \centering
 
-.. figure:: img/merge_result.png
+.. figure:: ../_static/img/merge_result.png
    :alt: View of the result of the contribution in the github website.
    :width: 10cm
+   :align: center
 
    View of the result of the contribution in the github website.
 
-[fig:merge_result]

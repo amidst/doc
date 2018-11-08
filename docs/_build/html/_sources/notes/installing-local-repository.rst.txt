@@ -86,9 +86,10 @@ of your project and open it:
 
    \centering  
 
-.. figure:: img/use_amidst05.png
+.. figure:: ../_static/img/use_amidst05.png
    :alt: Initial view of an empty maven project in IntelliJ IDEA
    :width: 12cm
+   :align: center
 
    Initial view of an empty maven project in IntelliJ IDEA
 
@@ -139,9 +140,10 @@ all the dependencies have been loaded:
 
    \centering  
 
-.. figure:: img/use_amidst07.png
+.. figure:: ../_static/img/use_amidst07.png
    :alt: Loaded dependencies
    :width: 12cm
+   :align: center
 
    Loaded dependencies
 
@@ -153,9 +155,10 @@ shown below.
 
    \centering  
 
-.. figure:: img/use_amidst08.png
+.. figure:: ../_static/img/use_amidst08.png
    :alt: Downloading JavaDoc and source code
    :width: 12cm
+   Align: center
 
    Downloading JavaDoc and source code
 
@@ -192,8 +195,9 @@ If everything goes right, the following output will be generated:
 
    \centering  
 
-.. figure:: img/use_amidst09.png
+.. figure:: ../_static/img/use_amidst09.png
    :alt: Output generated when running the example code
    :width: 12cm
+   :align: center
 
    Output generated when running the example code

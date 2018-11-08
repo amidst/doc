@@ -20,14 +20,13 @@ of your project and open it:
 
    \centering 
 
-.. figure:: img/use_amidst05.png
-   :alt: Capture of Maven project in IntelliJ and the initial pom.xml
-   file
+.. figure:: ../_static/img/use_amidst05.png
+   :alt: Capture of Maven project in IntelliJ and the initial pom.xml file
    :width: 8.5cm
+   :align: center
 
    Capture of Maven project in IntelliJ and the initial pom.xml file
 
-[fig:remoteDeps_initialPom]
 
 Add the AMIDST repository by including the following code to your pom:
 
@@ -92,13 +91,13 @@ all the dependencies have been loaded:
 
    \centering
 
-.. figure:: img/use_amidst07.png
+.. figure:: ../_static/img/use_amidst07.png
    :alt: List of loaded dependencies
    :width: 8.5cm
+   :align: center
 
    List of loaded dependencies
 
-[fig:remoteDeps_mavenPanel]
 
 .. raw:: latex
 
@@ -111,13 +110,13 @@ as well. We recomend you to download the sources and the javadoc:
 
    \centering
 
-.. figure:: img/use_amidst08.png
+.. figure:: ../_static/img/use_amidst08.png
    :alt: Download the JavaDoc and the source code
    :width: 10cm
+   :align: center
 
    Download the JavaDoc and the source code
 
-[fig:remoteDeps_downloadJD]
 
 Finally, for testing purposes, we can run the code shown below that
 generates a random dynamic bayesian network (DBN) and prints its
@@ -150,10 +149,10 @@ If everything goes right, the following output will be generated:
 
    \centering
 
-.. figure:: img/use_amidst09.png
+.. figure:: ../_static/img/use_amidst09.png
    :alt: Ouput of the testing code that generates a random DBN
    :width: 8.5cm
+   :align: center
 
    Ouput of the testing code that generates a random DBN
 
-[fig:remoteDeps_output]

@@ -64,11 +64,13 @@ ARFF format.
 
    \centering
 
-.. figure:: ../img/multicore_res.png
+.. figure:: ../_static/img/multicore_res.png
    :alt: fig:multicoreres
    :width: 15cm
+   :align: center
+   
+   Results in a multicore CPU	
 
-   fig:multicoreres
 
 Distributed Scalablity using Apache Flink
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -86,11 +88,11 @@ scalability of our approach under these settings.
 
    \centering
 
-.. figure:: ../img/cluster_res.png
+.. figure:: ../_static/img/cluster_res.png
    :alt: fig:clusterres
    :width: 15cm
 
-   fig:clusterres
+  
 
 Related Software
 ----------------
@@ -105,11 +107,13 @@ toolbox are compared against other related tools.
 
    \centering
 
-.. figure:: ../img/related_tools.png
+.. figure:: ../_static/img/related_tools.png
    :alt: fig:relatedtools
    :width: 15cm
+   :align: center
 
-   fig:relatedtools
+   Features of the related tools
+
 
 The vast majority of the similar tools do not support scalable inference
 and learning algorithms. To the best of our knowledge, this is the first
