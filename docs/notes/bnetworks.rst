@@ -57,7 +57,6 @@ Bayesian Networks: Code Examples
 
  
 
-.. _sec:bns:datastreams:
 
 .. _`Data Streams`:
 

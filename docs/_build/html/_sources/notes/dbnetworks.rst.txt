@@ -5,110 +5,31 @@ Dynamic Bayesian Networks: Code Examples
 
 * `Data Streams`_
 
-	- `Reading data`_
+* `Dynamic Random Variables`_
 
-	- `Write data`_
+* `Dynamic Bayesian networks`_
 
-* `Parametric Learning`_
+	- `Creating Dynamic Bayesian networks`_
 
-	- `Parallel Maximum Likelihood`_
+	- `Creating Dynamic Bayesian Networks with Latent Variables`_
 
-	- `Distributed Variational Message Pasing`_
+	- `Modifying Dynamic Bayesian Networks`_
 
-	- `Distributed VI`_
+* `Sampling from Dynamic Bayesian Networks`_
 
-	- `Stochastic VI`_
+* `Inference Algorithms for Dynamic Bayesian Networks`_
 
-* `Extensions and applications`_
+	- `The Dynamic MAP Inference`_
 
-	- `Latent variable models with Flink`_
+	- `The Dynamic Variational Message Passing`_
 
-	- `Concept drift`_  
+	- `The Dynamic Importance sampling`_
 
+* `Dynamic Learning Algorithms`_
 
-   .. raw:: latex
+	- `Maximum Likelihood for DBNs`_
+	- `Streaming Variational Bayes for DBNS`_ 
 
-      \hyperref[sec:dbns:datastreams]{Data Streams}
-
--  
-
-   .. raw:: latex
-
-      \hyperref[sec:dbns:variables]{Dynamic Random Variables}
-
--  
-
-   .. raw:: latex
-
-      \hyperref[sec:dbns:dbns]{Dynamic Bayesian networks}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:dbns:dbns:creating]{Creating Dynamic Bayesian networks}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:dbns:dbns:creatingLatent]{Creating Dynamic Bayesian Networks with Latent Variables}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:dbns:dbns:modif]{Modifying Dynamic Bayesian Networks}
-
--  
-
-   .. raw:: latex
-
-      \hyperref[sec:dbns:sampling]{Sampling from Dynamic Bayesian Networks}
-
--  
-
-   .. raw:: latex
-
-      \hyperref[sec:dbns:inference]{Inference Algorithms for Dynamic Bayesian Networks}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:dbns:inference:dmap]{The Dynamic MAP Inference}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:dbns:inference:dvmp]{The Dynamic Variational Message Passing}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:dbns:inference:dis]{The Dynamic Importance Sampling}
-
--  
-
-   .. raw:: latex
-
-      \hyperref[sec:dbns:learning]{Dynamic Learning Algorithms}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:dbns:learning:ml]{Maximum Likelihood for DBNs}
-
-   -  
-
-      .. raw:: latex
-
-         \hyperref[sec:dbns:learning:sv]{Streaming Variational Bayes for DBNs}
-
-.. _sec:dbns:datastreams:
 
 .. _`Data Streams`:
 
@@ -123,7 +44,7 @@ how to iterate over the *DynamicDataInstance* objects.
 .. literalinclude:: ../../examples/src/main/java/eu/amidst/dynamic/examples/datastream/DataStreamsExample.java
    :language: java
 
-.. _sec:dbns:variables:
+.. _`Dynamic Random Variables`:
 
 Dynamic Random Variables
 ------------------------
@@ -134,12 +55,12 @@ variables.
 .. literalinclude:: ../../examples/src/main/java/eu/amidst/dynamic/examples/variables/DynamicVariablesExample.java
    :language: java
 
-.. _sec:dbns:dbns:
+.. _`Dynamic Bayesian networks`:
 
 Dynamic Bayesian networks
 -------------------------
 
-.. _sec:dbns:dbns:creating:
+.. _`Creating Dynamic Bayesian networks`:
 
 Creating Dynamic Bayesian networks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -150,7 +71,7 @@ randomly generated probability distributions, then saves it to a file.
 .. literalinclude:: ../../examples/src/main/java/eu/amidst/dynamic/examples/models/CreatingDBNs.java
    :language: java
 
-.. _sec:dbns:dbns:creatingLatent:
+.. _`Creating Dynamic Bayesian Networks with Latent Variables`:
 
 Creating Dynamic Bayesian Networks with Latent Variables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -163,7 +84,7 @@ observable variables.
 .. literalinclude:: ../../examples/src/main/java/eu/amidst/dynamic/examples/models/CreatingDBNsWithLatentVariables.java
    :language: java
 
-.. _sec:dbns:dbns:modif:
+.. _`Modifying Dynamic Bayesian Networks`:
 
 Modifying Dynamic Bayesian Networks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -175,7 +96,7 @@ probabilities of a Dynamic Bayesian network model.
 .. literalinclude:: ../../examples/src/main/java/eu/amidst/dynamic/examples/models/ModifyingDBNs.java
    :language: java
 
-.. _sec:dbns:sampling:
+.. _`Sampling from Dynamic Bayesian Networks`:
 
 Sampling from Dynamic Bayesian Networks
 ---------------------------------------
@@ -187,12 +108,12 @@ network.
 .. literalinclude:: ../../examples/src/main/java/eu/amidst/dynamic/examples/utils/DynamicBayesianNetworkSamplerExample.java
    :language: java
 
-.. _sec:dbns:inference:
+.. _`Inference Algorithms for Dynamic Bayesian Networks`:
 
 Inference Algorithms for Dynamic Bayesian Networks
 --------------------------------------------------
 
-.. _sec:dbns:inference:dmap:
+.. _`The Dynamic MAP Inference`:
 
 The Dynamic MAP Inference
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -202,7 +123,7 @@ This example shows how to use the Dynamic MAP Inference algorithm.
 .. literalinclude:: ../../examples/src/main/java/eu/amidst/dynamic/examples/inference/DynamicMAPInference.java
    :language: java
 
-.. _sec:dbns:inference:dvmp:
+.. _`The Dynamic Variational Message Passing`:
 
 The Dynamic Variational Message Passing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -214,7 +135,8 @@ networks.
 .. literalinclude:: ../../examples/src/main/java/eu/amidst/dynamic/examples/inference/DynamicVMP_FactoredFrontier.java
    :language: java
 
-.. _sec:dbns:inference:dis:
+.. _`The Dynamic Importance Sampling`:
+
 
 The Dynamic Importance Sampling
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -226,12 +148,13 @@ Importance Sampling for running inference in dynamic Bayesian networks.
    :language: java
 
 
-.. _sec:dbns:learning:
+.. _`Dynamic Learning Algorithms`:
+
 
 Dynamic Learning Algorithms
 ---------------------------
 
-.. _sec:dbns:learning:ml:
+.. _`Maximum Likelihood for DBNs`:
 
 Maximum Likelihood for DBNs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -242,7 +165,7 @@ network using maximum likelihood from a randomly sampled data stream.
 .. literalinclude:: ../../examples/src/main/java/eu/amidst/dynamic/examples/learning/MLforDBNsampling.java
    :language: java
 
-.. _sec:dbns:learning:sv:
+.. _`Streaming Variational Bayes for DBNs`:
 
 Streaming Variational Bayes for DBNs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

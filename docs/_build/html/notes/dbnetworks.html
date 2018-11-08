@@ -337,57 +337,40 @@
 <span id="sec-dbns"></span><h1>Dynamic Bayesian Networks: Code Examples<a class="headerlink" href="#dynamic-bayesian-networks-code-examples" title="Permalink to this headline">¶</a></h1>
 <ul>
 <li><p class="first"><a class="reference internal" href="#data-streams">Data Streams</a></p>
+</li>
+<li><p class="first"><a class="reference internal" href="#dynamic-random-variables">Dynamic Random Variables</a></p>
+</li>
+<li><p class="first"><a class="reference internal" href="#dynamic-bayesian-networks">Dynamic Bayesian networks</a></p>
 <blockquote>
 <div><ul class="simple">
-<li><a href="#id2"><span class="problematic" id="id3">`Reading data`_</span></a></li>
-<li><a href="#id4"><span class="problematic" id="id5">`Write data`_</span></a></li>
+<li><a class="reference internal" href="#creating-dynamic-bayesian-networks">Creating Dynamic Bayesian networks</a></li>
+<li><a class="reference internal" href="#creating-dynamic-bayesian-networks-with-latent-variables">Creating Dynamic Bayesian Networks with Latent Variables</a></li>
+<li><a class="reference internal" href="#modifying-dynamic-bayesian-networks">Modifying Dynamic Bayesian Networks</a></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first"><a href="#id6"><span class="problematic" id="id7">`Parametric Learning`_</span></a></p>
+<li><p class="first"><a class="reference internal" href="#sampling-from-dynamic-bayesian-networks">Sampling from Dynamic Bayesian Networks</a></p>
+</li>
+<li><p class="first"><a class="reference internal" href="#inference-algorithms-for-dynamic-bayesian-networks">Inference Algorithms for Dynamic Bayesian Networks</a></p>
 <blockquote>
 <div><ul class="simple">
-<li><a href="#id8"><span class="problematic" id="id9">`Parallel Maximum Likelihood`_</span></a></li>
-<li><a href="#id10"><span class="problematic" id="id11">`Distributed Variational Message Pasing`_</span></a></li>
-<li><a href="#id12"><span class="problematic" id="id13">`Distributed VI`_</span></a></li>
-<li><a href="#id14"><span class="problematic" id="id15">`Stochastic VI`_</span></a></li>
+<li><a class="reference internal" href="#the-dynamic-map-inference">The Dynamic MAP Inference</a></li>
+<li><a class="reference internal" href="#the-dynamic-variational-message-passing">The Dynamic Variational Message Passing</a></li>
+<li><a class="reference internal" href="#the-dynamic-importance-sampling">The Dynamic Importance sampling</a></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p class="first"><a href="#id16"><span class="problematic" id="id17">`Extensions and applications`_</span></a></p>
+<li><p class="first"><a class="reference internal" href="#dynamic-learning-algorithms">Dynamic Learning Algorithms</a></p>
 <blockquote>
-<div><blockquote>
 <div><ul class="simple">
-<li><a href="#id18"><span class="problematic" id="id19">`Latent variable models with Flink`_</span></a></li>
-<li><a href="#id20"><span class="problematic" id="id21">`Concept drift`_</span></a></li>
+<li><a class="reference internal" href="#maximum-likelihood-for-dbns">Maximum Likelihood for DBNs</a></li>
+<li><a class="reference internal" href="#streaming-variational-bayes-for-dbns">Streaming Variational Bayes for DBNS</a></li>
 </ul>
 </div></blockquote>
-</div></blockquote>
-</li>
-</ul>
-<ul>
-<li></li>
-<li><ul>
-<li></li>
-<li></li>
-<li></li>
-</ul>
-</li>
-<li></li>
-<li><ul>
-<li></li>
-<li></li>
-<li></li>
-</ul>
-</li>
-<li><ul>
-<li></li>
-<li></li>
-</ul>
 </li>
 </ul>
 <div class="section" id="data-streams">
-<span id="sec-dbns-datastreams"></span><span id="id1"></span><h2>Data Streams<a class="headerlink" href="#data-streams" title="Permalink to this headline">¶</a></h2>
+<span id="id1"></span><h2>Data Streams<a class="headerlink" href="#data-streams" title="Permalink to this headline">¶</a></h2>
 <p>In this example we show how to use the main features of a <em>DataStream</em>
 object. More precisely, we show how to load a dynamic data stream and
 how to iterate over the <em>DynamicDataInstance</em> objects.</p>
@@ -450,7 +433,7 @@ how to iterate over the <em>DynamicDataInstance</em> objects.</p>
 </div>
 </div>
 <div class="section" id="dynamic-random-variables">
-<span id="sec-dbns-variables"></span><h2>Dynamic Random Variables<a class="headerlink" href="#dynamic-random-variables" title="Permalink to this headline">¶</a></h2>
+<span id="id2"></span><h2>Dynamic Random Variables<a class="headerlink" href="#dynamic-random-variables" title="Permalink to this headline">¶</a></h2>
 <p>This example show the basic functionalities related to dynamic
 variables.</p>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
@@ -523,9 +506,9 @@ variables.</p>
 </div>
 </div>
 <div class="section" id="dynamic-bayesian-networks">
-<span id="sec-dbns-dbns"></span><h2>Dynamic Bayesian networks<a class="headerlink" href="#dynamic-bayesian-networks" title="Permalink to this headline">¶</a></h2>
+<span id="id3"></span><h2>Dynamic Bayesian networks<a class="headerlink" href="#dynamic-bayesian-networks" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="creating-dynamic-bayesian-networks">
-<span id="sec-dbns-dbns-creating"></span><h3>Creating Dynamic Bayesian networks<a class="headerlink" href="#creating-dynamic-bayesian-networks" title="Permalink to this headline">¶</a></h3>
+<span id="id4"></span><h3>Creating Dynamic Bayesian networks<a class="headerlink" href="#creating-dynamic-bayesian-networks" title="Permalink to this headline">¶</a></h3>
 <p>This example creates a dynamic BN, from a dynamic data stream, with
 randomly generated probability distributions, then saves it to a file.</p>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
@@ -635,7 +618,7 @@ randomly generated probability distributions, then saves it to a file.</p>
 </div>
 </div>
 <div class="section" id="creating-dynamic-bayesian-networks-with-latent-variables">
-<span id="sec-dbns-dbns-creatinglatent"></span><h3>Creating Dynamic Bayesian Networks with Latent Variables<a class="headerlink" href="#creating-dynamic-bayesian-networks-with-latent-variables" title="Permalink to this headline">¶</a></h3>
+<span id="id5"></span><h3>Creating Dynamic Bayesian Networks with Latent Variables<a class="headerlink" href="#creating-dynamic-bayesian-networks-with-latent-variables" title="Permalink to this headline">¶</a></h3>
 <p>This example shows how to create a BN model with hidden variables. We
 simply create a BN for clustering, i.e., a naive Bayes like structure
 with a single hidden variable acting as parant of all the remaining
@@ -800,7 +783,7 @@ observable variables.</p>
 </div>
 </div>
 <div class="section" id="modifying-dynamic-bayesian-networks">
-<span id="sec-dbns-dbns-modif"></span><h3>Modifying Dynamic Bayesian Networks<a class="headerlink" href="#modifying-dynamic-bayesian-networks" title="Permalink to this headline">¶</a></h3>
+<span id="id6"></span><h3>Modifying Dynamic Bayesian Networks<a class="headerlink" href="#modifying-dynamic-bayesian-networks" title="Permalink to this headline">¶</a></h3>
 <p>This example shows how to create a BN model with hidden variables. We
 This example shows how to access and modify the conditional
 probabilities of a Dynamic Bayesian network model.</p>
@@ -1026,7 +1009,7 @@ probabilities of a Dynamic Bayesian network model.</p>
 </div>
 </div>
 <div class="section" id="sampling-from-dynamic-bayesian-networks">
-<span id="sec-dbns-sampling"></span><h2>Sampling from Dynamic Bayesian Networks<a class="headerlink" href="#sampling-from-dynamic-bayesian-networks" title="Permalink to this headline">¶</a></h2>
+<span id="id7"></span><h2>Sampling from Dynamic Bayesian Networks<a class="headerlink" href="#sampling-from-dynamic-bayesian-networks" title="Permalink to this headline">¶</a></h2>
 <p>This example shows how to use the <em>DynamicBayesianNetworkSampler</em> class
 to randomly generate a dynamic data stream from a given Dynamic Bayesian
 network.</p>
@@ -1093,9 +1076,9 @@ network.</p>
 </div>
 </div>
 <div class="section" id="inference-algorithms-for-dynamic-bayesian-networks">
-<span id="sec-dbns-inference"></span><h2>Inference Algorithms for Dynamic Bayesian Networks<a class="headerlink" href="#inference-algorithms-for-dynamic-bayesian-networks" title="Permalink to this headline">¶</a></h2>
+<span id="id8"></span><h2>Inference Algorithms for Dynamic Bayesian Networks<a class="headerlink" href="#inference-algorithms-for-dynamic-bayesian-networks" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="the-dynamic-map-inference">
-<span id="sec-dbns-inference-dmap"></span><h3>The Dynamic MAP Inference<a class="headerlink" href="#the-dynamic-map-inference" title="Permalink to this headline">¶</a></h3>
+<span id="id9"></span><h3>The Dynamic MAP Inference<a class="headerlink" href="#the-dynamic-map-inference" title="Permalink to this headline">¶</a></h3>
 <p>This example shows how to use the Dynamic MAP Inference algorithm.</p>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm"> *</span>
@@ -1238,7 +1221,7 @@ network.</p>
 </div>
 </div>
 <div class="section" id="the-dynamic-variational-message-passing">
-<span id="sec-dbns-inference-dvmp"></span><h3>The Dynamic Variational Message Passing<a class="headerlink" href="#the-dynamic-variational-message-passing" title="Permalink to this headline">¶</a></h3>
+<span id="id10"></span><h3>The Dynamic Variational Message Passing<a class="headerlink" href="#the-dynamic-variational-message-passing" title="Permalink to this headline">¶</a></h3>
 <p>This example shows how to use the Factored Frontier algorithm with
 Variational Message Passing for running inference on dynamic Bayesian
 networks.</p>
@@ -1336,7 +1319,7 @@ networks.</p>
 </div>
 </div>
 <div class="section" id="the-dynamic-importance-sampling">
-<span id="sec-dbns-inference-dis"></span><h3>The Dynamic Importance Sampling<a class="headerlink" href="#the-dynamic-importance-sampling" title="Permalink to this headline">¶</a></h3>
+<span id="id11"></span><h3>The Dynamic Importance Sampling<a class="headerlink" href="#the-dynamic-importance-sampling" title="Permalink to this headline">¶</a></h3>
 <p>This example shows how to use the Factored Frontier algorithm with
 Importance Sampling for running inference in dynamic Bayesian networks.</p>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
@@ -1436,9 +1419,9 @@ Importance Sampling for running inference in dynamic Bayesian networks.</p>
 </div>
 </div>
 <div class="section" id="dynamic-learning-algorithms">
-<span id="sec-dbns-learning"></span><h2>Dynamic Learning Algorithms<a class="headerlink" href="#dynamic-learning-algorithms" title="Permalink to this headline">¶</a></h2>
+<span id="id12"></span><h2>Dynamic Learning Algorithms<a class="headerlink" href="#dynamic-learning-algorithms" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="maximum-likelihood-for-dbns">
-<span id="sec-dbns-learning-ml"></span><h3>Maximum Likelihood for DBNs<a class="headerlink" href="#maximum-likelihood-for-dbns" title="Permalink to this headline">¶</a></h3>
+<span id="id13"></span><h3>Maximum Likelihood for DBNs<a class="headerlink" href="#maximum-likelihood-for-dbns" title="Permalink to this headline">¶</a></h3>
 <p>This example shows how to learn the parameters of a dynamic Bayesian
 network using maximum likelihood from a randomly sampled data stream.</p>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
@@ -1515,7 +1498,7 @@ network using maximum likelihood from a randomly sampled data stream.</p>
 </div>
 </div>
 <div class="section" id="streaming-variational-bayes-for-dbns">
-<span id="sec-dbns-learning-sv"></span><h3>Streaming Variational Bayes for DBNs<a class="headerlink" href="#streaming-variational-bayes-for-dbns" title="Permalink to this headline">¶</a></h3>
+<span id="id14"></span><h3>Streaming Variational Bayes for DBNs<a class="headerlink" href="#streaming-variational-bayes-for-dbns" title="Permalink to this headline">¶</a></h3>
 <p>This example shows how to learn the parameters of a dynamic Bayesian
 network using streaming variational Bayes from a randomly sampled data
 stream.</p>
