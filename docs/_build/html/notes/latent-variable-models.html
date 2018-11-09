@@ -24,29 +24,20 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../_static/css/amidst_theme.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../genindex.html"/>
-        <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="InferPy 1.0 documentation" href="../index.html"/>
-        <link rel="next" title="Flinklink: Code Examples" href="flinklink.html"/>
-        <link rel="prev" title="Wekalink: using an AMIDST classifier in Weka" href="wekalink.html"/> 
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/amidst_theme.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Flinklink: Code Examples" href="flinklink.html" />
+    <link rel="prev" title="Wekalink: using an AMIDST classifier in Weka" href="wekalink.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -63,7 +54,7 @@
 
           
             
-            <img src="../_static/logo-doc.png" class="logo" />
+            <img src="../_static/logo-doc.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -234,7 +225,7 @@
 </li>
 </ul>
 <p class="caption"><span class="caption-text">First steps</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started!</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="getting-started.html#quick-start">Quick start</a></li>
 <li class="toctree-l2"><a class="reference internal" href="getting-started.html#getting-started-in-detail">Getting started in detail</a></li>
@@ -246,22 +237,6 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="loading-dependencies.html">Loading AMIDST dependencies from a remote maven repository</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Tutorial: Easy Machine Learning with Latent Variable Models in AMIDST</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#setting-up">Setting up</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#static-models">Static Models</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#learning-and-saving-to-disk">Learning and saving to disk</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#learning-from-flink">Learning from Flink</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#inference">Inference</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#custom-static-model">Custom static model</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#dynamic-models">Dynamic Models</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id1">Inference</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#custom-dynamic-model">Custom dynamic model</a></li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal" href="installing-local-repository.html">Installing a local AMIDST repository</a></li>
 <li class="toctree-l1"><a class="reference internal" href="generating-packages.html">Generating the packages for each module and for its dependencies</a></li>
 </ul>
@@ -289,7 +264,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">InferPy</a>
@@ -297,9 +272,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -369,7 +345,7 @@ system requirements, see this
 <a class="reference external" href="../GettingStarted/requirements.html">link</a>. Additionally, you can
 download a ready-to-use IntelliJ maven project with all the code
 examples in this tutorial. For that, use the following command:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ git clone https://github.com/amidst/tutorial.git
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git clone https://github.com/amidst/tutorial.git
 </pre></div>
 </div>
 <p>Alternativelly, you would rather create a new maven project or use an
@@ -420,8 +396,8 @@ distributed) variables. From this data, a <em>Factor Analysis</em> model will
 be learnt. In short, this model aims to reduce the dimensionality of a
 set of observed continuous variables by expressing them as combination
 of gaussians. A synthesis of this process is shown in the image below
-where: <span class="math">\(X1, X2, X3\)</span> and <span class="math">\(X4\)</span> are the observed variables and
-<span class="math">\(H1, H2\)</span> and <span class="math">\(H3\)</span> are the latent variables representing the
+where: <span class="math notranslate nohighlight">\(X1, X2, X3\)</span> and <span class="math notranslate nohighlight">\(X4\)</span> are the observed variables and
+<span class="math notranslate nohighlight">\(H1, H2\)</span> and <span class="math notranslate nohighlight">\(H3\)</span> are the latent variables representing the
 combination of gaussians.</p>
 <div class="figure align-center" id="fig-lvmodels-static-learning-scheme">
 <a class="reference internal image-reference" href="../_images/staticlearning.png"><img alt="Static learning process" src="../_images/staticlearning.png" style="width: 10cm;" /></a>
@@ -430,7 +406,7 @@ combination of gaussians.</p>
 <p>Note that the required functionality for learning the predefined model
 is provided by the module <em>latent-variable-models</em>. A code-example for
 learning a factor analysis model is shown below.</p>
-<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.tutorial.usingAmidst.examples</span><span class="o">;</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.tutorial.usingAmidst.examples</span><span class="o">;</span>
 
 
 
@@ -488,11 +464,11 @@ desing: if we aim to change the model learnt from our data, we simply
 have to change the constructor used (assuming that our data also fits
 the constraints of the new model). For example, if we aim to learn a
 mixture of factor analysers instead, we simply have to replace the line</p>
-<div class="highlight-java"><div class="highlight"><pre><span></span><span class="n">Model</span> <span class="n">model</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FactorAnalysis</span><span class="o">(</span><span class="n">data</span><span class="o">.</span><span class="na">getAtributes</span><span class="o">());</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Model</span> <span class="n">model</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FactorAnalysis</span><span class="o">(</span><span class="n">data</span><span class="o">.</span><span class="na">getAtributes</span><span class="o">());</span>
 </pre></div>
 </div>
 <p>by</p>
-<div class="highlight-java"><div class="highlight"><pre><span></span><span class="n">Model</span> <span class="n">model</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MixtureOfFactorAnalysers</span><span class="o">(</span><span class="n">data</span><span class="o">.</span><span class="na">getAtributes</span><span class="o">());</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">Model</span> <span class="n">model</span> <span class="o">=</span> <span class="k">new</span> <span class="n">MixtureOfFactorAnalysers</span><span class="o">(</span><span class="n">data</span><span class="o">.</span><span class="na">getAtributes</span><span class="o">());</span>
 </pre></div>
 </div>
 <p>Note that the method for learning the model, namely
@@ -503,12 +479,12 @@ which is stored as a member variable of <em>Model</em>. Thus, for using the
 network, we simply have to extract with the method <em>Model::getModel()</em>.
 One of the actions we can perform with it is saving it into the local
 file system. For saving it in <em>.bn</em> format:</p>
-<div class="highlight-java"><div class="highlight"><pre><span></span><span class="nl">BayesianNetworkWriter:</span><span class="o">:</span><span class="n">save</span><span class="o">(</span><span class="n">BayesianNetwork</span> <span class="n">bn</span><span class="o">,</span> <span class="n">String</span> <span class="n">path</span><span class="o">)</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="nl">BayesianNetworkWriter:</span><span class="o">:</span><span class="n">save</span><span class="o">(</span><span class="n">BayesianNetwork</span> <span class="n">bn</span><span class="o">,</span> <span class="n">String</span> <span class="n">path</span><span class="o">)</span>
 </pre></div>
 </div>
 <p>Alternatively, and assuming that we have the hugin library available, we
 can also save it in <em>.net</em> format:</p>
-<div class="highlight-java"><div class="highlight"><pre><span></span><span class="nl">BayesianNetworkWriteToHuginr:</span><span class="o">:</span><span class="n">save</span><span class="o">(</span><span class="n">BayesianNetwork</span> <span class="n">bn</span><span class="o">,</span> <span class="n">String</span> <span class="n">path</span><span class="o">)</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="nl">BayesianNetworkWriteToHuginr:</span><span class="o">:</span><span class="n">save</span><span class="o">(</span><span class="n">BayesianNetwork</span> <span class="n">bn</span><span class="o">,</span> <span class="n">String</span> <span class="n">path</span><span class="o">)</span>
 </pre></div>
 </div>
 </div>
@@ -530,7 +506,7 @@ differs from the one in previous section in lines 25 to 33. In these
 lines, the Flink session is configurated and the stream is loaded, which
 is managed with an object of the class <em>DataFlink</em> (instead of
 <em>DataStream</em>).</p>
-<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.tutorial.usingAmidst.examples</span><span class="o">;</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.tutorial.usingAmidst.examples</span><span class="o">;</span>
 
 <span class="kn">import</span> <span class="nn">COM.hugin.HAPI.ExceptionHugin</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">eu.amidst.core.datastream.DataInstance</span><span class="o">;</span>
@@ -588,11 +564,11 @@ GitHub</a></p>
 system. Instead, we might need to load from a distributed file system.
 For that, simply replace the string indicating the path. That is,
 replace</p>
-<div class="highlight-java"><div class="highlight"><pre><span></span><span class="n">String</span> <span class="n">filename</span> <span class="o">=</span> <span class="s">&quot;datasets/simulated/cajamarDistributed.arff&quot;</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">String</span> <span class="n">filename</span> <span class="o">=</span> <span class="s">&quot;datasets/simulated/cajamarDistributed.arff&quot;</span>
 </pre></div>
 </div>
 <p>by</p>
-<div class="highlight-java"><div class="highlight"><pre><span></span><span class="n">String</span> <span class="n">filename</span> <span class="o">=</span> <span class="s">&quot;hdfs://distributed-server/path-to-file&quot;</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">String</span> <span class="n">filename</span> <span class="o">=</span> <span class="s">&quot;hdfs://distributed-server/path-to-file&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -610,7 +586,7 @@ of variables of interest given some evidence over some other variables
 our model: we simply have to obtain the BN learnt (stored as an object
 of the class <em>BayesianNetwork</em>), set the target variables and the
 evidence. As an example, let us consider the following code:</p>
-<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.tutorial.usingAmidst.examples</span><span class="o">;</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.tutorial.usingAmidst.examples</span><span class="o">;</span>
 
 <span class="kn">import</span> <span class="nn">eu.amidst.core.distribution.Distribution</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">eu.amidst.core.inference.InferenceAlgorithm</span><span class="o">;</span>
@@ -666,12 +642,12 @@ GitHub</a></p>
 <p>Note that the learning algorithm can be easily changed by simply
 modifying line 35 where <em>VMP algorithm</em>. If we aim to use <em>Importance
 Sampling algorithm</em>, replace such line with:</p>
-<div class="highlight-java"><div class="highlight"><pre><span></span><span class="n">InferenceAlgorithm</span> <span class="n">infer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ImportanceSampling</span><span class="o">();</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">InferenceAlgorithm</span> <span class="n">infer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ImportanceSampling</span><span class="o">();</span>
 </pre></div>
 </div>
 <p>Alternatively, we can use <em>Hugin Inference algorithm</em> (assuming that we
 have the corresponding libraries):</p>
-<div class="highlight-java"><div class="highlight"><pre><span></span><span class="n">InferenceAlgorithm</span> <span class="n">infer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HuginInference</span><span class="o">();</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">InferenceAlgorithm</span> <span class="n">infer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HuginInference</span><span class="o">();</span>
 </pre></div>
 </div>
 </div>
@@ -684,7 +660,7 @@ an object <em>Attributes</em> as input parameter, and the code of the method
 <em>void buildDAG()</em>. This last method is called before learning process
 and creates the object representing the DAG. As an example, the code
 below shows how to create a custom Gaussian Mixture.</p>
-<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.tutorial.usingAmidst.practice</span><span class="o">;</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.tutorial.usingAmidst.practice</span><span class="o">;</span>
 
 <span class="kn">import</span> <span class="nn">eu.amidst.core.datastream.Attributes</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">eu.amidst.core.datastream.DataInstance</span><span class="o">;</span>
@@ -779,7 +755,7 @@ now, it is handled with an object of the class
 <em>DataStream&lt;DynamicDataInstance&gt;</em>. Finally, the DBN learnt is saved to
 disk with the method <em>DynamicBayesianNetworkWriter::save(String
 pathFile)</em>.</p>
-<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.tutorial.usingAmidst.examples</span><span class="o">;</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.tutorial.usingAmidst.examples</span><span class="o">;</span>
 
 <span class="kn">import</span> <span class="nn">COM.hugin.HAPI.ExceptionHugin</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">eu.amidst.core.datastream.DataStream</span><span class="o">;</span>
@@ -834,7 +810,7 @@ is illustrated. First, a DBN is loaded from disk (line 24). Then, a
 dynamic dataset is loaded for testing our model (lines 29 to 30). Then
 the inference algorithm and target variables are set. In the final loop,
 the inference is perform for each data instance.</p>
-<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.tutorial.usingAmidst.examples</span><span class="o">;</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.tutorial.usingAmidst.examples</span><span class="o">;</span>
 
 
 <span class="kn">import</span> <span class="nn">eu.amidst.core.datastream.DataStream</span><span class="o">;</span>
@@ -907,7 +883,7 @@ the inference is perform for each data instance.</p>
 GitHub</a></p>
 <p>Note that the inference algorithm can be easily change if line 33 is
 modified by replacing it with:</p>
-<div class="highlight-java"><div class="highlight"><pre><span></span><span class="n">InferenceAlgorithmForDBN</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FactoredFrontierForDBN</span><span class="o">(</span><span class="k">new</span> <span class="n">VMP</span><span class="o">());</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">InferenceAlgorithmForDBN</span> <span class="o">=</span> <span class="k">new</span> <span class="n">FactoredFrontierForDBN</span><span class="o">(</span><span class="k">new</span> <span class="n">VMP</span><span class="o">());</span>
 </pre></div>
 </div>
 </div>
@@ -917,7 +893,7 @@ modified by replacing it with:</p>
 dynamic models. In this case, you will have to create a class inheriting
 <em>DynamicModel</em>. Here below an example of a custom <em>Kalman Filter</em> is
 given.</p>
-<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.tutorial.usingAmidst.practice</span><span class="o">;</span>
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.tutorial.usingAmidst.practice</span><span class="o">;</span>
 
 <span class="kn">import</span> <span class="nn">COM.hugin.HAPI.ExceptionHugin</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">eu.amidst.core.datastream.Attributes</span><span class="o">;</span>
@@ -1025,9 +1001,7 @@ GitHub</a></p>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -1045,11 +1019,11 @@ GitHub</a></p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Andrés R. Masegosa, Rafael Cabañas.
+        &copy; Copyright 2017, Andrés R. Masegosa, Rafael Cabañas
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -1064,37 +1038,24 @@ GitHub</a></p>
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'1.0',
-            LANGUAGE:'None',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
 
   
 
-  
-  
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="../_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

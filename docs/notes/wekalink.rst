@@ -16,21 +16,21 @@ dependencies in a Maven project. In this case, we will have to load the
 modules **wekalink** and **latent-variable-models**. For that, add the
 following code to the file pom.xml of your project.
 
-.. code-block:: xml
+.. parsed-literal::
 
        <dependencies>
        
          <dependency>
            <groupId>eu.amidst</groupId>
            <artifactId>wekalink</artifactId>
-           <version>(*\amidstversion*)</version>
+           <version> |version| </version>
            <scope>compile</scope>
         </dependency>
         
          <dependency>
            <groupId>eu.amidst</groupId>
            <artifactId>latent-variable-models</artifactId>
-           <version>(*\amidstversion*)</version>
+           <version> |version| </version>
            <scope>compile</scope>
          </dependency>
        

@@ -45,7 +45,6 @@ version = util.get_version()
 
 rst_epilog = '.. |version| replace:: %s' % version
 
-print (rst_epilog)
 
 
 # -- General configuration ------------------------------------------------

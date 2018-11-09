@@ -77,7 +77,6 @@ The main features of the tooblox are listed below:
    notes/getting-started
    notes/requirements
    notes/loading-dependencies
-   notes/latent-variable-models
    notes/installing-local-repository
    notes/generating-packages
   

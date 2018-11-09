@@ -68,14 +68,14 @@ indicate the following information:
 For example, for using the *core-dynamic* module, include the following
 code:
 
-.. code-block:: xml
+.. parsed-literal::
 
    <dependencies>
    <!-- Load any of the modules from AMIDST Toolbox -->
    <dependency>
    <groupId>eu.amidst</groupId>
    <artifactId>core-dynamic</artifactId>
-   <version>(*\amidstversion*)</version>
+   <version> |version| </version>
    <scope>compile</scope>
    </dependency>
 

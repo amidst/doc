@@ -107,7 +107,7 @@ In general, for start using the AMIDST toolbox, add the following lines
 to the pom.xml file of your maven project:
 
 
-.. code-block:: xml
+.. parsed-literal::
 
 
    <repositories> 
