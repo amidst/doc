@@ -95,7 +95,10 @@ ignored/*
 #ignore target folders
 */target/*
 */*/target/*
-*_build/*
+*/_build/*
+*/*/_build/*
+
+*.pyc
 
 
 *.DS_Store

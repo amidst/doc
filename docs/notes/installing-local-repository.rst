@@ -158,7 +158,7 @@ shown below.
 .. figure:: ../_static/img/use_amidst08.png
    :alt: Downloading JavaDoc and source code
    :width: 12cm
-   Align: center
+   :align: center
 
    Downloading JavaDoc and source code
 

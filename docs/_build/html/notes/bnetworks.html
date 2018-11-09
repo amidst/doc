@@ -24,20 +24,29 @@
 
   
 
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/amidst_theme.css" type="text/css" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Getting Started!" href="getting-started.html" />
-    <link rel="prev" title="Dynamic Bayesian Networks: Code Examples" href="dbnetworks.html" /> 
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/amidst_theme.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="InferPy 1.0 documentation" href="../index.html"/>
+        <link rel="next" title="Getting Started!" href="getting-started.html"/>
+        <link rel="prev" title="Dynamic Bayesian Networks: Code Examples" href="dbnetworks.html"/> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav" role="document">
 
    
   <div class="wy-grid-for-nav">
@@ -54,7 +63,7 @@
 
           
             
-            <img src="../_static/logo-doc.png" class="logo" alt="Logo"/>
+            <img src="../_static/logo-doc.png" class="logo" />
           
           </a>
 
@@ -280,7 +289,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" aria-label="top navigation">
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">InferPy</a>
@@ -288,10 +297,9 @@
       </nav>
 
 
+      
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
           
 
 
@@ -404,7 +412,7 @@
 <p>In this example we show how to use the main features of a DataStream
 object. More precisely, we show six different ways of iterating over the
 data samples of a DataStream object.</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.datastream</span><span class="o">;</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.datastream</span><span class="o">;</span>
 
 
 <span class="kn">import</span> <span class="nn">eu.amidst.core.datastream.Attribute</span><span class="o">;</span>
@@ -490,7 +498,7 @@ data samples of a DataStream object.</p>
 <span id="id2"></span><h2>Data Streams<a class="headerlink" href="#sec-bns-randomvars" title="Permalink to this headline">¶</a></h2>
 <p>This example show the basic functionality of the classes Variables and
 Variable.</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.variables</span><span class="o">;</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.variables</span><span class="o">;</span>
 
 
 <span class="kn">import</span> <span class="nn">eu.amidst.core.variables.Variable</span><span class="o">;</span>
@@ -546,7 +554,7 @@ Variable.</p>
 <p>In this example, we take a data set, create a BN and we compute the
 log-likelihood of all the samples of this data set. The numbers defining
 the probability distributions of the BN are randomly fixed.</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.models</span><span class="o">;</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.models</span><span class="o">;</span>
 
 <span class="kn">import</span> <span class="nn">eu.amidst.core.datastream.DataInstance</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">eu.amidst.core.datastream.DataStream</span><span class="o">;</span>
@@ -670,7 +678,7 @@ the probability distributions of the BN are randomly fixed.</p>
 variables. We simply create a BN for clustering, i.e., a naive-Bayes
 like structure with a single common hidden variable acting as parant of
 all the observable variables.</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.models</span><span class="o">;</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.models</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">eu.amidst.core.datastream.DataInstance</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">eu.amidst.core.datastream.DataStream</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">eu.amidst.core.io.BayesianNetworkWriter</span><span class="o">;</span>
@@ -784,7 +792,7 @@ all the observable variables.</p>
 <span id="id6"></span><h3>Modifying Bayesian networks<a class="headerlink" href="#modifying-bayesian-networks" title="Permalink to this headline">¶</a></h3>
 <p>In this example we show how to access and modify the conditional
 probabilities of a Bayesian network model.</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.models</span><span class="o">;</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.models</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">eu.amidst.core.distribution.Multinomial</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">eu.amidst.core.distribution.Normal_MultinomialParents</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">eu.amidst.core.models.BayesianNetwork</span><span class="o">;</span>
@@ -841,7 +849,7 @@ probabilities of a Bayesian network model.</p>
 <div class="section" id="i-o-of-data-streams">
 <span id="id8"></span><h3>I/O of data streams<a class="headerlink" href="#i-o-of-data-streams" title="Permalink to this headline">¶</a></h3>
 <p>In this example we show how to load and save data sets from .arff files.</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.io</span><span class="o">;</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.io</span><span class="o">;</span>
 
 
 <span class="kn">import</span> <span class="nn">eu.amidst.core.datastream.DataInstance</span><span class="o">;</span>
@@ -877,7 +885,7 @@ probabilities of a Bayesian network model.</p>
 <p>In this example we show how to load and save Bayesian networks models
 for a binary file with “.bn” extension. In this toolbox Bayesian
 networks models are saved as serialized objects.</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.io</span><span class="o">;</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.io</span><span class="o">;</span>
 
 
 <span class="kn">import</span> <span class="nn">eu.amidst.core.io.BayesianNetworkLoader</span><span class="o">;</span>
@@ -923,7 +931,7 @@ networks models are saved as serialized objects.</p>
 using the InferenceEngine static class. This class aims to be a
 straigthfoward way to perform queries over a Bayesian network model. By
 the default the <em>VMP</em> inference method is invoked.</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.inference</span><span class="o">;</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.inference</span><span class="o">;</span>
 
 
 <span class="kn">import</span> <span class="nn">eu.amidst.core.inference.InferenceEngine</span><span class="o">;</span>
@@ -977,7 +985,7 @@ in</p>
 <blockquote>
 <div>Winn, J. M., Bishop, C. M. (2005). Variational message passing. In
 Journal of Machine Learning Research (pp. 661-694).</div></blockquote>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.inference</span><span class="o">;</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.inference</span><span class="o">;</span>
 
 <span class="kn">import</span> <span class="nn">eu.amidst.core.inference.InferenceAlgorithm</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">eu.amidst.core.inference.messagepassing.VMP</span><span class="o">;</span>
@@ -1043,7 +1051,7 @@ network using an importance sampling algorithm detailed in</p>
 <div>Fung, R., Chang, K. C. (2013). Weighing and integrating evidence for
 stochastic simulation in Bayesian networks. arXiv preprint
 arXiv:1304.1504.</div></blockquote>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.inference</span><span class="o">;</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.inference</span><span class="o">;</span>
 
 
 <span class="kn">import</span> <span class="nn">eu.amidst.core.inference.ImportanceSampling</span><span class="o">;</span>
@@ -1117,7 +1125,7 @@ arXiv:1304.1504.</div></blockquote>
 <span id="id16"></span><h3>Maximum Likelihood<a class="headerlink" href="#maximum-likelihood" title="Permalink to this headline">¶</a></h3>
 <p>This other example shows how to learn incrementally the parameters of a
 Bayesian network using data batches,</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.learning</span><span class="o">;</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.learning</span><span class="o">;</span>
 
 
 
@@ -1201,7 +1209,7 @@ Bayesian network using data batches,</p>
 <span id="id17"></span><h3>Parallel Maximum Likelihood<a class="headerlink" href="#parallel-maximum-likelihood" title="Permalink to this headline">¶</a></h3>
 <p>This example shows how to learn in parallel the parameters of a Bayesian
 network from a stream of data using maximum likelihood.</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.learning</span><span class="o">;</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.learning</span><span class="o">;</span>
 
 
 <span class="kn">import</span> <span class="nn">eu.amidst.core.datastream.DataInstance</span><span class="o">;</span>
@@ -1269,7 +1277,7 @@ I. (2013). Streaming variational Bayes. In Advances in Neural
 Information Processing Systems (pp. 1727-1735).</div></blockquote>
 <p>In this second example we show a alternative implementation which
 explicitly updates the model by batches by using the class SVB.</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.learning</span><span class="o">;</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.learning</span><span class="o">;</span>
 
 
 
@@ -1344,7 +1352,7 @@ version of the SVB algorithm,</p>
 <div>Broderick, T., Boyd, N., Wibisono, A., Wilson, A. C., and Jordan, M.
 I. (2013). Streaming variational Bayes. In Advances in Neural
 Information Processing Systems (pp. 1727-1735).</div></blockquote>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.learning</span><span class="o">;</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.learning</span><span class="o">;</span>
 
 
 <span class="kn">import</span> <span class="nn">eu.amidst.core.datastream.DataInstance</span><span class="o">;</span>
@@ -1416,7 +1424,7 @@ detector detailed in</p>
 <blockquote>
 <div>Borchani et al. Modeling concept drift: A probabilistic graphical
 model based approach. IDA 2015.</div></blockquote>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm"> *</span>
 <span class="cm"> *</span>
 <span class="cm"> *    Licensed to the Apache Software Foundation (ASF) under one or more contributor license agreements.</span>
@@ -1518,7 +1526,7 @@ model based approach. IDA 2015.</div></blockquote>
 <p>This example shows how to use the class BNConverterToAMIDST and
 BNConverterToHugin to convert a Bayesian network models between Hugin
 and AMIDST formats</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.huginlink</span><span class="o">;</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.huginlink</span><span class="o">;</span>
 
 <span class="kn">import</span> <span class="nn">COM.hugin.HAPI.Domain</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">COM.hugin.HAPI.ExceptionHugin</span><span class="o">;</span>
@@ -1554,7 +1562,7 @@ and AMIDST formats</p>
 <p>This example shows how to use the class BNLoaderFromHugin and
 BNWriterToHugin classes to load and write Bayesian networks in Hugin
 format</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.huginlink</span><span class="o">;</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.huginlink</span><span class="o">;</span>
 
 <span class="kn">import</span> <span class="nn">COM.hugin.HAPI.Domain</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">COM.hugin.HAPI.ExceptionHugin</span><span class="o">;</span>
@@ -1585,7 +1593,7 @@ format</p>
 <p>This example we show how to perform inference using
 <a class="reference external" href="http://www.hugin.com">Hugin</a> inference engine within the AMiDST
 toolbox</p>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.huginlink</span><span class="o">;</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.huginlink</span><span class="o">;</span>
 
 <span class="kn">import</span> <span class="nn">eu.amidst.core.inference.InferenceAlgorithm</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">eu.amidst.core.io.BayesianNetworkLoader</span><span class="o">;</span>
@@ -1658,7 +1666,7 @@ algorithm look at the following paper:</p>
 Learning Based on Balanced Incomplete Block Designs. Probabilistic
 Graphical Models. Lecture Notes in Computer Science Volume 8754,
 2014, pp 302-317.</div></blockquote>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.huginlink</span><span class="o">;</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nn">eu.amidst.core.examples.huginlink</span><span class="o">;</span>
 
 <span class="kn">import</span> <span class="nn">eu.amidst.core.inference.InferenceAlgorithm</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">eu.amidst.core.io.BayesianNetworkLoader</span><span class="o">;</span>
@@ -1725,7 +1733,7 @@ the class variable.</p>
 <a class="reference internal image-reference" href="notes/img/HODE.jpg"><img alt="HODE example" src="notes/img/HODE.jpg" style="width: 10cm;" /></a>
 <p class="caption"><span class="caption-text">HODE example</span></p>
 </div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>java -Xmx512m -cp <span class="s2">&quot;../lib/*&quot;</span> -javaagent:../lib/sizeofag-1.0.0.jar
+<div class="highlight-bash"><div class="highlight"><pre><span></span>java -Xmx512m -cp <span class="s2">&quot;../lib/*&quot;</span> -javaagent:../lib/sizeofag-1.0.0.jar
 moa.DoTask EvaluatePrequential -l <span class="se">\(</span>bayes.AmidstClassifier -g <span class="m">1</span>
 -m <span class="m">2</span><span class="se">\)</span> -s generators.RandomRBFGenerator -i <span class="m">10000</span> -f <span class="m">1000</span> -q <span class="m">1000</span>
 </pre></div>
@@ -1742,13 +1750,13 @@ problems</a>.</p>
 <a class="reference internal image-reference" href="notes/img/regressionHODE.jpg"><img alt="HODE regression example" src="notes/img/regressionHODE.jpg" style="width: 10cm;" /></a>
 <p class="caption"><span class="caption-text">HODE regression example</span></p>
 </div>
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="n">java</span> <span class="o">-</span><span class="n">Xmx512m</span> <span class="o">-</span><span class="n">cp</span> <span class="s">&quot;../lib/*&quot;</span> <span class="o">-</span><span class="n">javaagent</span><span class="o">:../</span><span class="n">lib</span><span class="o">/</span><span class="n">sizeofag</span><span class="o">-</span><span class="mf">1.0.0</span><span class="o">.</span><span class="na">jar</span>
+<div class="highlight-java"><div class="highlight"><pre><span></span><span class="n">java</span> <span class="o">-</span><span class="n">Xmx512m</span> <span class="o">-</span><span class="n">cp</span> <span class="s">&quot;../lib/*&quot;</span> <span class="o">-</span><span class="n">javaagent</span><span class="o">:../</span><span class="n">lib</span><span class="o">/</span><span class="n">sizeofag</span><span class="o">-</span><span class="mf">1.0.0</span><span class="o">.</span><span class="na">jar</span>
 <span class="n">moa</span><span class="o">.</span><span class="na">DoTask</span> <span class="n">EvaluatePrequentialRegression</span> <span class="o">-</span><span class="n">l</span> <span class="n">bayes</span><span class="o">.</span><span class="na">AmidstRegressor</span>
 <span class="o">-</span><span class="n">s</span> <span class="o">(</span><span class="n">ArffFileStream</span> <span class="o">-</span><span class="n">f</span> <span class="o">./</span><span class="n">quake</span><span class="o">.</span><span class="na">arff</span><span class="o">)</span>
 </pre></div>
 </div>
 <p>Note that the simpler the dataset the less complex the model should be.
-In this case, <code class="docutils literal notranslate"><span class="pre">quake.arff</span></code> is a very simple and small dataset that
+In this case, <code class="docutils literal"><span class="pre">quake.arff</span></code> is a very simple and small dataset that
 should probably be learn with a more simple classifier, that is, a
 high-bias-low-variance classifier, in order to avoid overfitting. This
 aims at providing a simple running example.</p>
@@ -1758,7 +1766,9 @@ aims at providing a simple running example.</p>
 
 
            </div>
-           
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
@@ -1776,11 +1786,11 @@ aims at providing a simple running example.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2017, Andrés R. Masegosa, Rafael Cabañas
+        &copy; Copyright 2017, Andrés R. Masegosa, Rafael Cabañas.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -1795,24 +1805,37 @@ aims at providing a simple running example.</p>
 
   
 
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-        <script type="text/javascript" src="../_static/jquery.js"></script>
-        <script type="text/javascript" src="../_static/underscore.js"></script>
-        <script type="text/javascript" src="../_static/doctools.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'1.0',
+            LANGUAGE:'None',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
-  <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
 
+  
+  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
+          SphinxRtdTheme.StickyNav.enable();
       });
-  </script> 
+  </script>
+   
 
 </body>
 </html>
